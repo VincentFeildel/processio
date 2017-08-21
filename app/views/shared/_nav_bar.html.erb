@@ -1,38 +1,59 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <a href="/" class="navbar-wagon-brand">
-    <img src="images/logo.png" alt="logo">
-  </a>
+  <%= link_to 'Leasy', root_path %>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
-
     <!-- Profile picture with dropdown list -->
+    <div class="search-bar">
+      <form action="events_path">
+        <input type="text">
+        <i class='fa fa-search', type='submit'></i>
+      </form>
+    </div>
+
     <div class="navbar-wagon-item">
       <div class="dropdown">
-        <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <img src="https://kitt.lewagon.com/placeholder/users/florentlienard" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Log Out</a></li>
+          <li><a href="#">Profil</a></li>
+          <li><a href="#">Messages</a></li>
         </ul>
       </div>
     </div>
   </div>
-
   <!-- Dropdown appearing on mobile only -->
   <div class="navbar-wagon-item hidden-md hidden-lg">
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Host</a></li>
-        <li><a href="#">Trips</a></li>
-        <li><a href="#">Messagese</a></li>
+        <li><a href="#">Profil</a></li>
+        <li><a href="#">Messages</a></li>
       </ul>
     </div>
   </div>
 </div>
+<!-- Second nav bar -->
+<div class="navbar-features">
+  <%= link_to 'Accueil', root_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'home'%>
+  <%= link_to 'Evenements', events_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'events'%>
+  <%= link_to 'Contrats', leases_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'leases'%>
+</div>
+
+<script>
+
+  const zone = document.getElementsByClassName("navbar-features")[0];
+
+  zone.querySelectorAll("a").forEach((a) => {
+    // a.addEventListener("click", (event) => {
+    let url = window.location.href;
+    if (url === 'http://localhost:3000/events') {
+      document.getElementById('events').classList.add("navbar-active");
+    } else if (url === 'http://localhost:3000/leases') {
+        document.getElementById('leases').classList.add("navbar-active");
+    } else {
+        document.getElementById('home').classList.add("navbar-active");
+    }
+  });
+</script>
