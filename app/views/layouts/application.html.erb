@@ -9,9 +9,17 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class="page-framing">
+      <%=  render 'shared/nav_bar' %>
+      <%=  render 'shared/side_bar' %>
+    </div>
+
+    <div class="content-page">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </div>
+
     <%= javascript_include_tag 'application' %>
   </body>
 </html>
