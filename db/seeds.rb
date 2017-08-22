@@ -8,6 +8,11 @@
 
 require 'csv'
 
+# Suppression DB events
+
+events = Event.all
+events.each { |e| e.destroy }
+
 # Suppression DB contrats
 
 leases = Lease.all
@@ -33,6 +38,11 @@ u.save
 csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
 filepath    = 'db/Seed_leasy.csv'
 
+
+#Initialisation dates:
+incr = Date.today - Date.new(2017,4,15)
+
+
 CSV.foreach(filepath, csv_options) do |row|
   l = Lease.new()
   # user
@@ -51,15 +61,49 @@ CSV.foreach(filepath, csv_options) do |row|
   l.owner_address = row['owner_address']
 
   l.num_lot = row['num_lot']
-  l.end_date = Date.strptime(row['end_date'],'%m/%d/%Y')
+  l.end_date = Date.strptime(row['end_date'],'%m/%d/%Y') + incr.days
   l.nature = row['nature']
 
   # rent
   l.monthly_rent = row['monthly_rent']
   l.rent_balance = row['rent_balance']
   l.overdue_days = row['overdue_days']
-  l.next_revision = Date.strptime(row['next_revision'],'%m/%d/%Y')
-
-  row['owner_name']
+  l.next_revision = Date.strptime(row['next_revision'],'%m/%d/%Y') + incr.days
   l.save
+end
+
+
+# Génération des évènements
+
+Lease.all.each do |lease|
+  now = Date.today
+
+  # Fin de bail
+  if now > lease.end_date - 8.months
+    e = Event.new()
+    e.lease = lease
+    e.start_date = lease.end_date - 7.months
+    e.end_date = lease.end_date - 6.months
+    e.urgent_date = e.end_date - 1.weeks
+    e.status = 'demande bailleur à envoyer'
+    e.save
+  # Revision de loyer
+  elsif now > lease.next_revision - 2.months
+    e = Event.new()
+    e.lease = lease
+    e.start_date = lease.next_revision - 1.month
+    e.end_date = lease.end_date - 7.months
+    e.urgent_date = lease.next_revision
+    e.status = 'demande bailleur à envoyer'
+    e.save
+  end
+
+  # loyer
+  if lease.rent_balance > 0
+    e = Event.new()
+    e.lease = lease
+    e.status = 'notification locataire envoyée'
+    e.save
+  end
+
 end
