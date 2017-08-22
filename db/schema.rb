@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170821151019) do
+ActiveRecord::Schema.define(version: 20170822132940) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,9 @@ ActiveRecord::Schema.define(version: 20170821151019) do
     t.string "nature"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "tenant_first_name"
+    t.string "tenant_gender"
+    t.string "tenant_company"
     t.index ["user_id"], name: "index_leases_on_user_id"
   end
 

@@ -1,0 +1,872 @@
+user_id,tenant_company,tenant_first_name,tenant_name,owner_name,owner_email,tenant_gender,tenant_address,num_lot,monthly_rent,rent_balance,overdue_days,next_revision,end_date,nature,Départ
+1,BANQUE POPULAIRE COTE D AZUR,Carine,SOUCHET,Philippe FOUCHER,philippefoucher@gmail.com,F,1 ALLEE BERNADOTTE,0001,900,0,0,12/18/2017,12/18/2018,Commercial 3 ans,12/18/2015
+1,PRICEWATERHOUSECOOPERS ENTREPRISES,Bob,RENIER,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0002,1020,0,0,1/13/2018,1/13/2020,Commercial 3 ans,1/13/2017
+1,COTE D'AZUR SOTHEBY'S INTERNATIONAL REALTY,Christophe,DERO,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0003,310,0,0,6/15/2017,6/15/2019,Commercial 3 ans,6/15/2016
+1,ALLIOS SAS,Damien,DEREN,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0004,4750,0,0,9/1/2017,9/1/2019,Commercial 3 ans,9/1/2016
+1,W I T,Olivier,MARCHAND,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0005,2150,0,0,2/19/2018,6/1/2018,Commercial 3 ans,6/1/2015
+1,SAS MUST,Herve,GACHET,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0006,3840,0,0,8/25/2017,8/25/2018,Commercial 3 ans,8/25/2015
+1,GUIBAN MÉDITERRANÉE,Marc,BLOHORN,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0007,4040,0,0,3/15/2018,3/15/2020,Commercial 3 ans,3/15/2017
+1,GROUPE PAVILLON,Jean Charles,SCHMITT,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0008,2690,0,0,2/1/2018,2/1/2020,Commercial 3 ans,2/1/2017
+1,PARFUMS MOLINARD,Nicolas,GUIR,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0009,4460,0,0,8/18/2017,8/18/2019,Commercial 3 ans,8/18/2016
+1,AZURLINGUA,Christophe,BOURGERY,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0010,2620,0,0,3/17/2018,3/17/2020,Commercial 3 ans,3/17/2017
+1,E R D F,Sebastien,REGIS,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0011,730,0,0,12/23/2017,12/23/2019,Commercial 3 ans,12/23/2016
+1,ALISTER AVOCATS,Martine,HILLAIRET,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0013,4630,0,0,1/28/2018,1/28/2019,Commercial 3 ans,1/28/2016
+1,PAYAN BERTRAND,Werner,GAUDEFROY,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,F,1 Rue Frederic Mistral,0014,4560,0,0,11/1/2017,11/1/2017,Commercial 3 ans,11/1/2014
+1,MIDI MAS,Anne-Catherine,BREARD-GOULVEN,Antoine MALLET,antoinemallet@gmail.com,F,10 PASSAGE MONTBRUN,0001,860,8600,296,8/30/2017,8/30/2019,Commercial 3 ans,8/30/2016
+1,LABORATOIRE ENEOMEY,Patrick,LETOURNEUR,Antoine MALLET,antoinemallet@gmail.com,F,10 PASSAGE MONTBRUN,0002,1090,0,0,10/25/2017,10/25/2019,Commercial 3 ans,10/25/2016
+1,TOURNAIRE SA,damien,RICHET,Pierre-Alain HILARIO,pierre-alainhilario@gmail.com,F,10 Rue Bochart De Saron,0001,790,0,0,3/4/2018,3/4/2019,Commercial 3 ans,3/4/2016
+1,etoile du rhone,Thomas,DELOBEL,Pierre-Alain HILARIO,pierre-alainhilario@gmail.com,F,10 Rue Bochart De Saron,0006,2690,0,0,5/11/2017,5/11/2018,Commercial 3 ans,5/11/2015
+1,apm,Jean Francois,GOUGENHEIM,Jean-Pierre SAMMAN,jean-pierresamman@gmail.com,F,103 RUE DU THEATRE,0100,2300,0,0,8/31/2017,8/31/2018,Commercial 3 ans,8/31/2015
+1,UVICA-VIGNERONS ARDECHOIS,Francois,LE DENIC,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0005,3910,0,0,4/29/2017,4/29/2017,Commercial 3 ans,4/29/2014
+1,BOIRON FRÈRES SAS,Franck,ARLIGUIE,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0007,2940,0,0,4/24/2017,4/24/2018,Commercial 3 ans,4/24/2015
+1,INFOLOGIC,Florence,SOUWEINE,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0008,1010,0,0,2/6/2018,2/6/2020,Commercial 3 ans,2/6/2017
+1,JALIN,Jean-Luc,AUCLAIR,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0009,3840,0,0,4/26/2017,4/26/2019,Commercial 3 ans,4/26/2016
+1,ALPHAGEC,Pierrick,LARRENDUCHE,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0010,1100,0,0,10/18/2017,10/18/2019,Commercial 3 ans,10/18/2016
+1,FAURE AUTOMATISME,Thomas,GUILLEMET,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0011,4720,0,0,7/28/2017,7/28/2019,Commercial 3 ans,7/28/2016
+1,PROPCO SAS,Gilles,HARDY,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0012,2530,0,0,7/28/2017,7/28/2019,Commercial 3 ans,7/28/2016
+1,MOULIN CHARPENTE,Pierre-Olivier,DIBOT,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0013,3520,0,0,8/28/2017,8/28/2018,Commercial 3 ans,8/28/2015
+1,HOREIGON,Stéphane,RÉGIMBEAU,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0014,3990,0,0,10/29/2017,10/29/2018,Commercial 3 ans,10/29/2015
+1,BANQUE MARZE,Veronique,ROUX,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0015,1720,0,0,10/1/2017,10/1/2017,Commercial 3 ans,10/1/2014
+1,CONSEILS RHONE ALPES PLANTEVIN ET A,Asma,OROS,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0016,3570,0,0,12/1/2017,12/1/2018,Commercial 3 ans,12/1/2015
+1,SUCHIER SAS,Sébastien,TRAHIN,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0017,3980,0,0,5/16/2017,5/16/2018,Commercial 3 ans,5/16/2015
+1,SEQUOIAS,Cyril,FROMENT,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0018,3040,0,0,1/21/2018,12/1/2017,Commercial 3 ans,12/1/2014
+1,LARGIER TECHNOLOGIE,Claude,GLUMINEAU,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0019,1520,0,0,1/1/2016,1/10/2019,Commercial 3 ans,1/10/2016
+1,C'PRO,Vincent,SICARD,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0020,2990,0,0,12/1/2015,12/1/2018,Commercial 3 ans,12/1/2015
+1,SELAS ROUVIERE EXPERTISE ET CONSEIL,Jean-Luc,COLIN,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0021,1860,0,0,7/1/2017,7/1/2019,Commercial 3 ans,7/1/2016
+1,CIC BANQUE LYONNAISE,Charles-Emmanuel,FRANQUIN,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0022,4430,0,0,3/9/2018,3/9/2018,Commercial 3 ans,3/9/2015
+1,VALCOM,Jean-Louis,GIRAUD,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0023,1020,0,0,4/20/2017,4/20/2019,Commercial 3 ans,4/20/2016
+1,cabinet leven,Frédéric,LAURENT,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0024,4070,0,0,5/1/2017,5/1/2018,Commercial 3 ans,5/1/2015
+1,apm ardennes,Jean,METAIS,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0025,4890,0,0,3/22/2018,3/22/2019,Commercial 3 ans,3/22/2016
+1,ARTI,Marie,MONNET,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0026,3230,0,0,9/1/2017,9/1/2017,Commercial 3 ans,9/1/2014
+1,AA COM AUX COMPTES,Olivier,WATELET,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0028,3330,0,0,7/1/2017,7/1/2017,Commercial 3 ans,7/1/2014
+1,METALBLANC,Gérard,NOISETTE,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0030,4160,0,0,11/1/2017,11/1/2018,Commercial 3 ans,11/1/2015
+1,ACBS+,Pierre,ROTHE,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0032,2110,0,0,9/24/2017,9/24/2019,Commercial 3 ans,9/24/2016
+1,DURBECQ TRANSPORTS ET LOGISTIQUE,Patrice,SOLE,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0033,4030,0,0,9/24/2017,9/24/2019,Commercial 3 ans,9/24/2016
+1,NEXANS FRANCE,Françoise Emmanuelle,BORGOLTZ,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0039,880,0,0,4/1/2017,4/1/2018,Commercial 3 ans,4/1/2015
+1,ISOPAC,Charles,DELEPLANQUE,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0041,4670,0,0,10/16/2017,10/16/2017,Commercial 3 ans,10/16/2014
+1,AFEIPH,Capucine,DELEPLANQUE,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0042,980,0,0,2/26/2018,2/26/2019,Commercial 3 ans,2/26/2016
+1,GS AVOCATS,Fabien,DERREUMAUX,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0043,4450,0,0,2/26/2018,2/26/2019,Commercial 3 ans,2/26/2016
+1,SA MAGASINS JEANTEUR,Ismael,DHERBECOURT,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0040,40,0,0,6/1/2017,6/20/2019,Commercial 3 ans,6/20/2016
+1,L'ARDENNAISE DES BOIS,François,RICHE,Maxime VANAVERBECK,maximevanaverbeck@gmail.com,F,105 RUE DE LA CONVENTION,0238,2370,0,0,9/1/2017,9/1/2017,Commercial 3 ans,9/1/2014
+1,ERDF - GRDF UNITÉ CLIENTS ET FOURNISSEURS CHAMPAGNE-ARDENNE,Pit,RIMBAUD,Sylvain LETTER,sylvainletter@gmail.com,F,11 RUE EMILE DUCLAUX,0003,3050,0,0,4/1/2017,4/1/2019,Commercial 3 ans,4/1/2016
+1,TARKETT FRANCE,Pierre-François,VILA,Sylvain LETTER,sylvainletter@gmail.com,F,11 RUE EMILE DUCLAUX,0004,4070,0,0,6/1/2017,6/1/2017,Commercial 3 ans,6/1/2014
+1,NEXANS INTERFACE,Frank,PIGANEAU,Sylvain LETTER,sylvainletter@gmail.com,F,11 RUE EMILE DUCLAUX,0005,4600,0,0,12/31/2049,9/1/2019,Commercial 3 ans,9/1/2016
+1,CANJAERE,Bertrand,ERULIN,Sylvain LETTER,sylvainletter@gmail.com,F,11 RUE EMILE DUCLAUX,0006,2590,0,0,3/1/2018,3/1/2019,Commercial 3 ans,3/1/2016
+1,ARDEN EQUIPMENT,Régis,OLDRA,Sylvain LETTER,sylvainletter@gmail.com,F,11 RUE EMILE DUCLAUX,0009,3930,0,0,10/1/2017,10/1/2018,Commercial 3 ans,10/1/2015
+1,SAS JFR,Nadine,FOUQUE,Sylvain LETTER,sylvainletter@gmail.com,F,11 RUE EMILE DUCLAUX,0010,2960,0,0,8/1/2017,8/1/2017,Commercial 3 ans,8/1/2014
+1,ARBOR,Pierre,MORENO,Pierre BARAT,pierrebarat@gmail.com,F,11 RUE JEAN NICOT,0012,1230,0,0,1/29/2018,1/29/2018,Commercial 3 ans,1/29/2015
+1,GROUPE ARDEN'VERINS,Thierry,SAINT AUBIN,Nathalie DURAND,nathaliedurand@gmail.com,F,110 RUE DE MONTREUIL,0001,4410,0,0,12/16/2017,12/16/2017,Commercial 3 ans,12/16/2014
+1,BUSINESS TEAM,Laurie,BETREMIEUX,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0003,2730,0,0,9/1/2017,9/1/2018,Commercial 3 ans,9/1/2015
+1,EJ EMEA,Jérôme,COMBE,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0004,3710,0,0,7/22/2017,7/22/2019,Commercial 3 ans,7/22/2016
+1,KPMG SA,Pierre,LAUBIES,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0005,290,0,0,4/1/2017,4/1/2019,Commercial 3 ans,4/1/2016
+1,norelem sas,Jean-Thierry,JALENQUES DE LABEAU,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0006,4120,0,0,1/1/2018,12/24/2018,Commercial 3 ans,12/24/2015
+1,j&t strategie,Philippe,AGUERA,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0007,1520,0,0,4/1/2017,4/1/2017,Commercial 3 ans,4/1/2014
+1,BDS ASSOCIES,Virginie,PARIS,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0008,3600,0,0,11/8/2017,11/8/2019,Commercial 3 ans,11/8/2016
+1,SEDIS,Luis,ETIENNE,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0009,2870,0,0,7/5/2017,7/5/2019,Commercial 3 ans,7/5/2016
+1,IFAC AVOCATS,Jean-Louis,SAVIN,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0010,1580,0,0,1/23/2018,1/23/2018,Commercial 3 ans,1/23/2015
+1,CEPHAS IMMOBILIER,Karin,BOUVEROT,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0011,860,0,0,4/1/2017,4/1/2019,Commercial 3 ans,4/1/2016
+1,UNION AUB./CHAMPAGNE DEVAUX,Jerome,GANGLOFF,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0012,2420,0,0,7/15/2017,7/15/2019,Commercial 3 ans,7/15/2016
+1,GRAVOTECH MARKING SAS,François,CHESSE,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0013,4480,0,0,7/28/2017,7/28/2019,Commercial 3 ans,7/28/2016
+1,KPMG,Letitia,LOZE,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0016,2130,0,0,11/24/2017,11/24/2017,Commercial 3 ans,11/24/2014
+1,LAMBERT ENTREPRISE,Stephane,REMIGNON,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0201,4000,0,0,4/29/2017,4/29/2017,Commercial 3 ans,4/29/2014
+1,GL FINANCES,Jeremie,SOENEN,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0401,4170,0,0,7/4/2017,7/4/2019,Commercial 3 ans,7/4/2016
+1,ACODI,Charles,HURET,Mohamed MAZEAU,mohamedmazeau@gmail.com,F,115 Rue Raymond Losserand,0002,2490,0,0,11/1/2017,11/1/2019,Commercial 3 ans,11/1/2016
+1,HMWC,Mickael,LESCANNE,Laurent CHEVILLARD,laurentchevillard@gmail.com,F,12 AVENUE RENE COTY,0003,4760,0,0,1/9/2018,1/9/2018,Commercial 3 ans,1/9/2015
+1,MARTINE ROUSSEL VOYAGES SAS,Dominique,THOMAS,Laurent CHEVILLARD,laurentchevillard@gmail.com,F,12 AVENUE RENE COTY,0005,770,0,0,6/17/2017,6/17/2017,Commercial 3 ans,6/17/2014
+1,NT BOIS,Philippe,PARARD,Laurent CHEVILLARD,laurentchevillard@gmail.com,F,12 AVENUE RENE COTY,0006,1110,0,0,9/23/2017,1/1/2018,Commercial 3 ans,1/1/2015
+1,TIMBER PRODUCTIONS,Max Joël,GRUMMER,Laurent CHEVILLARD,laurentchevillard@gmail.com,F,12 AVENUE RENE COTY,0008,1360,0,0,10/21/2016,10/21/2017,Commercial 3 ans,10/21/2014
+1,societe bellegardienne d'investissement,Jérôme,CHEVALIER,Laurent CHEVILLARD,laurentchevillard@gmail.com,F,12 AVENUE RENE COTY,0010,3450,0,0,4/1/2017,3/21/2020,Commercial 3 ans,3/21/2017
+1,inconnu,Jean Francois,TRESANINI,Laurent CHEVILLARD,laurentchevillard@gmail.com,F,12 AVENUE RENE COTY,0012,3930,0,0,3/12/2018,3/12/2018,Commercial 3 ans,3/12/2015
+1,CVB CABINET VINCENT BAUD,Rodolphe,FARINOLE,Laurent CHEVILLARD,laurentchevillard@gmail.com,F,12 AVENUE RENE COTY,0013,50,0,0,9/8/2017,9/8/2019,Commercial 3 ans,9/8/2016
+1,MOTELEC INDUSTRIE,Franckie,PERRIN,Laurent CHEVILLARD,laurentchevillard@gmail.com,F,12 AVENUE RENE COTY,0009,4360,0,0,1/1/2018,1/1/2018,Commercial 3 ans,1/1/2015
+1,MARTIPLAST,Armand,RERAT,Laurent CHEVILLARD,laurentchevillard@gmail.com,F,12 AVENUE RENE COTY,0011,2560,0,0,9/1/2017,9/1/2018,Commercial 3 ans,9/1/2015
+1,CARPEL SA,Jérémie,VANCO,Pierre BEAUBELIQUE,pierrebeaubelique@gmail.com,F,12 Square du PORT ROYAL,1102,1510,0,0,8/1/2017,8/1/2017,Commercial 3 ans,8/1/2014
+1,JOUETS ECOIFFIER,Christiane,ARNAUD,Patrick MAHE,patrickmahe@gmail.com,F,128 Rue de Vaugirard,0001,1650,16500,284,8/25/2017,8/25/2018,Commercial 3 ans,8/25/2015
+1,ADB,Julien,LHERONDEL,Patrick MAHE,patrickmahe@gmail.com,F,128 Rue de Vaugirard,0001,3350,0,0,2/10/2018,2/10/2020,Commercial 3 ans,2/10/2017
+1,SOFINEDA,Jean-Etienne,DUPREZ,Damien LE PAPE,damienlepape@gmail.com,F,13 RUE DUPLEIX (9016),0090,1010,0,0,7/1/2017,7/1/2020,Commercial 3 ans,7/1/2016
+1,NARC-CY,Claire,ISTASSE,Thierry BEAUMONT,thierrybeaumont@gmail.com,F,13 Rue Ledion,0001,1490,0,0,11/1/2017,11/1/2017,Commercial 3 ans,11/1/2014
+1,ETD,Claudine,CAZAUX,Erwan MERIENNE,erwanmerienne@gmail.com,F,13 Rue Robert Fleury,0001,4030,36270,259,9/27/2017,9/27/2019,Commercial 3 ans,9/27/2016
+1,IDICE,Thierry,STETTEN-PIGASSE,Laurent FUMERON,laurentfumeron@gmail.com,F,14 Rue de Cadix,0001,2850,0,0,1/18/2018,1/18/2019,Commercial 3 ans,1/18/2016
+1,RD MACHINES OUTILS,Arnaud,PAUMELLE,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0006,530,0,0,10/1/2017,10/1/2019,Commercial 3 ans,10/1/2016
+1,CICAM,Bernard,DESANDRE,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0007,1730,0,0,8/1/2017,8/1/2018,Commercial 3 ans,8/1/2015
+1,FROMAGERIE SEIGNEMARTIN SAS,Jean-Michel,BEILVERT,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0010,2820,0,0,5/11/2017,5/11/2017,Commercial 3 ans,5/11/2014
+1,MARRON & ASSOCIES,Frédéric,BREBOIN,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0011,580,0,0,4/11/2017,4/11/2017,Commercial 3 ans,4/11/2014
+1,SMP,Julien,ZELIE,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0012,1000,0,0,3/15/2018,12/1/2018,Commercial 3 ans,12/1/2015
+1,ROVIP,Pascal,DEMARTIAL,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0013,4980,0,0,8/25/2017,8/25/2019,Commercial 3 ans,8/25/2016
+1,P.X.L. SEALS SAS,Sandrine,CLERGET,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0014,4850,0,0,12/8/2017,12/8/2018,Commercial 3 ans,12/8/2015
+1,IPC,François-Eric,BOEUF,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0015,1270,0,0,12/26/2017,7/1/2019,Commercial 3 ans,7/1/2016
+1,GIROD MORETTI,Jean-Luc,DELACOUR,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0016,3420,0,0,6/1/2017,6/1/2018,Commercial 3 ans,6/1/2015
+1,aarpi skbg & associes,Thomas,BOUDARD,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0017,2270,0,0,12/5/2017,12/5/2017,Commercial 3 ans,12/5/2014
+1,apm,Joelle,DUJARDIN,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0018,2330,0,0,12/16/2017,12/16/2019,Commercial 3 ans,12/16/2016
+1,MBA PROMOTION,Sophie,VANRHEE,Jean-Loic BLAIZEAU,jean-loicblaizeau@gmail.com,F,14-16 RUE LAGILLE,1656,1800,0,0,7/1/2017,7/1/2019,Commercial 3 ans,7/1/2016
+1,ALSEAMAR,Franck-Eric,VERHAEGHE,Jean-Loic BLAIZEAU,jean-loicblaizeau@gmail.com,F,14-16 RUE LAGILLE,1669,3070,0,0,1/30/2018,1/30/2018,Commercial 3 ans,1/30/2015
+1,YSY GROUP,Daniel,VAUXCLAIRS,Benoit HELAINE,benoithelaine@gmail.com,F,14/16 Rue de Reims,0001,1320,0,0,1/26/2018,1/26/2019,Commercial 3 ans,1/26/2016
+1,NAWA TECHNOLOGIES SA,Julien,SCHERER,Benoit HELAINE,benoithelaine@gmail.com,F,14/16 Rue de Reims,0304,1660,0,0,12/30/2017,12/30/2019,Commercial 3 ans,12/30/2016
+1,GROUPE OMNIUM,Guillaume,KORCHI,Thierry HALNA DU FRETAY,thierryhalnadufretay@gmail.com,F,148 RUE ROGER SALENGRO,0045,3550,0,0,8/23/2017,8/23/2019,Commercial 3 ans,8/23/2016
+1,NOVRH,Anne,DELAFOSSE,Simon LEBRUN,simonlebrun@gmail.com,F,15 Av.Elisee Reclus,0005,3040,0,0,11/1/2017,11/1/2017,Commercial 3 ans,11/1/2014
+1,S.2.C.,Gérard,GAUDILLOT,Roger EL BIED,rogerelbied@gmail.com,F,15 Rue Lagrange,0002,2790,0,0,8/11/2017,8/11/2019,Commercial 3 ans,8/11/2016
+1,FINANCIERE GEM INDUSTRIE,Sophie,DEBRAIZE,Antoine GRENIER,antoinegrenier@gmail.com,F,16 Place du Commerce,0011,4970,0,0,5/19/2017,5/19/2017,Commercial 3 ans,5/19/2014
+1,X INVEST,Antony,FAYAND,Isabelle COATANEA,isabellecoatanea@gmail.com,F,16 Rue d'Alembert,0001,1520,1520,20,4/1/2017,4/1/2018,Commercial 3 ans,4/1/2015
+1,CAPSTAN,Matthieu,ROUGIER,Mathieu TOUHLALI,mathieutouhlali@gmail.com,F,16 RUE DU CHAMP DE MARS,0008,1320,0,0,1/29/2018,1/29/2018,Commercial 3 ans,1/29/2015
+1,RAPHAEL MICHEL GROUP,Emmanuel,GRECH,Mathieu TOUHLALI,mathieutouhlali@gmail.com,F,16 RUE DU CHAMP DE MARS,0016,2080,0,0,9/2/2017,9/2/2019,Commercial 3 ans,9/2/2016
+1,FRECHE PÈRE ET FILS,Jean François,SURIN,Mathieu TOUHLALI,mathieutouhlali@gmail.com,F,16 RUE DU CHAMP DE MARS,0035,4160,0,0,1/5/2018,1/5/2019,Commercial 3 ans,1/5/2016
+1,DELOITTE ET ASSOCIES,Guillaume,HENRY,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0004,1750,0,0,11/1/2017,11/1/2019,Commercial 3 ans,11/1/2016
+1,CONSEIL PLUS GESTION,Francois,CHALMEY,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0006,20,0,0,6/11/2017,6/11/2018,Commercial 3 ans,6/11/2015
+1,MEDITERRANEENNE DE SALAISONS SAS,Gaelle,CHAPOTARD,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0014,1840,0,0,12/1/2017,12/1/2018,Commercial 3 ans,12/1/2015
+1,ULTEAM SAS,Yvon,PATOUX,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0015,810,0,0,7/1/2017,6/19/2019,Commercial 3 ans,6/19/2016
+1,MATANEL,Jean-Marc,CATERNET,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0016,3970,0,0,6/1/2017,6/1/2017,Commercial 3 ans,6/1/2014
+1,RICHARDSON,Bernard,CADU,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0017,110,0,0,1/1/2018,1/1/2019,Commercial 3 ans,1/1/2016
+1,REACTIS,Laurence,CORTOT,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0018,4260,0,0,12/1/2017,12/1/2017,Commercial 3 ans,12/1/2014
+1,GURKIN INVEST,Sylvain,RENAUDEAU,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0019,2040,0,0,12/16/2017,12/16/2019,Commercial 3 ans,12/16/2016
+1,SBM DEVELOPPEMENT,Xavier,BROUSSE,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0020,570,0,0,10/1/2017,10/1/2017,Commercial 3 ans,10/1/2014
+1,cerfrance normandie ouest,Pascal,DEMANGE,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0021,4700,0,0,2/1/2018,2/1/2020,Commercial 3 ans,2/1/2017
+1,inconnu,Edouard,ETIENNE,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0022,2650,0,0,8/17/2017,8/17/2018,Commercial 3 ans,8/17/2015
+1,ABSCIS - BERTIN CONSTRUCTION,Jean,HESSE,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0023,1500,0,0,11/1/2017,10/18/2017,Commercial 3 ans,10/18/2014
+1,KEOLIS,Louis,LECHNER,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0024,4860,0,0,9/1/2017,9/1/2019,Commercial 3 ans,9/1/2016
+1,CRÉDIT MUTUEL DE NORMANDIE,Christine,MERCIER,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0025,990,0,0,10/1/2017,10/1/2019,Commercial 3 ans,10/1/2016
+1,ASSISTECO,Pascal,PEDUZZI,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0026,90,0,0,2/1/2018,2/1/2019,Commercial 3 ans,2/1/2016
+1,SAINT-LOUIS SUCRE,Nadège,THIEBAUT,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0027,4970,0,0,4/1/2017,4/1/2019,Commercial 3 ans,4/1/2016
+1,FRANCE EQUIPEMENT DE VEHICULES,Bruno,BOUFFORT,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0028,4800,0,0,2/1/2018,2/1/2018,Commercial 3 ans,2/1/2015
+1,LÉA ET LÉO GROUPE,Sylvestre,SOINNE,Estelle BARRY,estellebarry@gmail.com,F,167 SAINT-CHARLES,0999,1320,0,0,5/1/2017,5/1/2015,Commercial 3 ans,5/1/2012
+1,CALCIA,Stanislas,GEIGER,David BENOMAR,davidbenomar@gmail.com,F,17 AV. DU Gal DE GAULLE,0013,540,0,0,11/1/2017,11/1/2018,Commercial 3 ans,11/1/2015
+1,AS U WISH,Christian,DUCLERCQ,David BENOMAR,davidbenomar@gmail.com,F,17 AV. DU Gal DE GAULLE,0014,3650,0,0,1/18/2018,1/18/2019,Commercial 3 ans,1/18/2016
+1,VINCI ENERGIES FRANCE COMMUNICATION & SYSTEMES,Edouard,TIERNY,David BENOMAR,davidbenomar@gmail.com,F,17 AV. DU Gal DE GAULLE,0051,580,0,0,9/1/2017,9/1/2018,Commercial 3 ans,9/1/2015
+1,GRANDSIRE TRAITEUR,Thierry,NAVREZ,Yves-Marie SPARFEL,yves-mariesparfel@gmail.com,F,17 RUE CLAVEL,0153,4160,0,0,1/1/2018,1/1/2019,Commercial 3 ans,1/1/2016
+1,BIRDIES,Alain,DURR,Thierry BUTROT,thierrybutrot@gmail.com,F,17 RUE DU LAOS,0001,4050,4050,20,4/1/2017,4/1/2019,Commercial 3 ans,4/1/2016
+1,BONAFINI,Bruno,THOUVENEL,Eric JEAULT,ericjeault@gmail.com,F,17 Rue Eugene Gibez,0001,4180,33440,219,7/18/2017,7/18/2017,Commercial 3 ans,7/18/2014
+1,DECATHLON REGION,Marc,HORNET,Eric JEAULT,ericjeault@gmail.com,F,17 Rue Eugene Gibez,0001,2660,0,0,10/16/2017,10/16/2018,Commercial 3 ans,10/16/2015
+1,FIDAL,Romuald,DE SUTTER,Eric JEAULT,ericjeault@gmail.com,F,17 Rue Eugene Gibez,0002,3980,0,0,4/17/2017,4/17/2019,Commercial 3 ans,4/17/2016
+1,LEGALLAIS,Olivier,MADINIER,Eric JEAULT,ericjeault@gmail.com,F,17 Rue Eugene Gibez,0011,3330,0,0,11/6/2017,6/1/2018,Commercial 3 ans,6/1/2015
+1,LOGIPAYS,Philippe,DENYS,Eric JEAULT,ericjeault@gmail.com,F,17 Rue Eugene Gibez,0014,1870,0,0,11/6/2017,11/6/2017,Commercial 3 ans,11/6/2014
+1,SARL PARTENAIRES PLUS,Marc,KUCHEIDA,Eric JEAULT,ericjeault@gmail.com,F,17 Rue Eugene Gibez,0003,3440,0,0,7/1/2017,6/23/2019,Commercial 3 ans,6/23/2016
+1,INTERFILTRE,Jeannine,CAULLIEZ,Raymond LAIZE,raymondlaize@gmail.com,F,17 RUE OLIVIER DE SERRES,0084,2820,0,0,5/15/2017,5/15/2018,Commercial 3 ans,5/15/2015
+1,MANPOWER,Christophe,ETIENNE,André-Jean TOURREL ,andré-jeantourrel@gmail.com,F,177 RUE DES PYRENNEES,0043,4330,0,0,3/26/2018,3/26/2020,Commercial 3 ans,3/26/2017
+1,silc sa,Carole,HANEN,Francis DENIAU,francisdeniau@gmail.com,F,19 Rue Casimir Perier,0001,3780,37800,280,4/1/2017,4/6/2019,Commercial 3 ans,4/6/2016
+1,parties liées,Bernard,JEDRZEJEWSKI,Lionel PATRU,lionelpatru@gmail.com,F,19 RUE D'ESTIENNE D'ORVES,0007,400,0,0,10/27/2017,10/27/2017,Commercial 3 ans,10/27/2016
+1,SCOTPA,Jean-Yves,DENIZOT,Fabrice LE FLOCH,fabricelefloch@gmail.com,F,19 RUE MONSIGNY,0088,60,0,0,10/1/2017,10/1/2017,Commercial 3 ans,10/1/2014
+1,SIGNALISATION DEVELOPPEMENT,Alex,GUEUDRY,Denis COMPAS,deniscompas@gmail.com,F,2 AV.EMILE ACOLLAS,0002,3220,0,0,8/16/2017,8/16/2018,Commercial 3 ans,8/16/2015
+1,DISTILLERIE DE LA PERRUGE,Serge,CHEVALIER,Xavier BOURDIN,xavierbourdin@gmail.com,F,2 Rue des Halles,0005,750,0,0,7/26/2017,7/26/2019,Commercial 3 ans,7/26/2016
+1,LES BOUCHAGES DELAGE SAS,Pierre,VALLETTE,Xavier BOURDIN,xavierbourdin@gmail.com,F,2 Rue des Halles,0006,4730,0,0,12/1/2017,12/5/2018,Commercial 3 ans,12/5/2015
+1,DISTILLERIE DE GIRONDE,Sandrine,NUSSE,Xavier BOURDIN,xavierbourdin@gmail.com,F,2 Rue des Halles,0012,710,0,0,3/1/2018,3/1/2020,Commercial 3 ans,3/1/2017
+1,DISTILLERIE YVON,Philippe,PEAN DE PONFILLY,Frédéric VIGHETTO,frédéricvighetto@gmail.com,F,2 RUE HENRI BOCQUILLON,0032,2080,0,0,7/1/2017,7/1/2017,Commercial 3 ans,7/1/2014
+1,DEMHOTEL,Stéphane,PROYE,Alain TAILLEBEAU,alaintaillebeau@gmail.com,F,2/8 RUE DU GENERAL HENRYS,0188,1620,0,0,2/1/2018,2/1/2020,Commercial 3 ans,2/1/2017
+1,TRANSPORTS BERNIS,Didier,TRANCART,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0005,1410,0,0,6/24/2017,6/24/2018,Commercial 3 ans,6/24/2015
+1,JURICA,Christophe,HAMIDI,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0007,1040,0,0,10/1/2017,10/1/2017,Commercial 3 ans,10/1/2014
+1,EXCO VALLIANCE,Stephanie,LUCAS,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0008,1020,0,0,7/16/2017,7/16/2018,Commercial 3 ans,7/16/2015
+1,SUEZ/APROVAL,Ludovic,SANCIER,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0009,670,0,0,12/12/2017,12/12/2019,Commercial 3 ans,12/12/2016
+1,SOCIETE GENERALE,Benoit,DELIRY,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0010,3820,0,0,6/25/2017,6/25/2018,Commercial 3 ans,6/25/2015
+1,SELP SECURE,Stephane,MIGNOT,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0011,3450,0,0,11/21/2017,11/21/2019,Commercial 3 ans,11/21/2016
+1,S.I.L.C. SA,Christine,HUYGHUES-DESPOINTES,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0012,2310,0,0,9/1/2017,10/15/2018,Commercial 3 ans,10/15/2015
+1,ANALYSYS,Roland,HULOT,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0013,2200,0,0,3/1/2018,3/12/2020,Commercial 3 ans,3/12/2017
+1,SAS EXPANSION,Patricia,LEPRINCE,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0014,600,0,0,5/16/2017,5/16/2017,Commercial 3 ans,5/16/2014
+1,GARANDEAU SAS,Jean-Paul,BUNAN,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0015,2660,0,0,1/1/2018,1/15/2019,Commercial 3 ans,1/15/2016
+1,SCACHAP - (PLATEFORME LOGISTIQUE E.LECLERC),Christophe,LOVY,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0016,110,0,0,11/1/2017,11/1/2019,Commercial 3 ans,11/1/2016
+1,terre atlantique,Marc-Henri,BIRON,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0017,3410,0,0,8/8/2017,8/8/2019,Commercial 3 ans,8/8/2016
+1,optymus,Maria,CLOCHARD,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0018,630,0,0,11/4/2017,11/4/2019,Commercial 3 ans,11/4/2016
+1,MILCO SAS,Hugues,MERCIER,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0019,4010,0,0,12/1/2017,11/1/2017,Commercial 3 ans,11/1/2014
+1,SOLUTIONS COMPETENCES,Bruno,BAILLY,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0020,3640,0,0,11/25/2017,11/25/2019,Commercial 3 ans,11/25/2016
+1,COUTANT AQUARIUM,Pierre,DA SILVA,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0021,4860,0,0,7/28/2017,7/28/2018,Commercial 3 ans,7/28/2015
+1,VINCI ENERGIES FRANCE,Brice,FERRY,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0022,3490,0,0,2/1/2018,2/4/2018,Commercial 3 ans,2/4/2015
+1,SOCIÉTÉ DU DÉPÔT DE LA ROCHELLE,Alain,MANGENOT,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0025,1790,0,0,6/13/2017,6/13/2019,Commercial 3 ans,6/13/2016
+1,COOKUP SOLUTIONS,Pascal,GUYOT,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0027,1970,0,0,11/1/2017,10/20/2017,Commercial 3 ans,10/20/2014
+1,VEOLIA,Olivier,CAVAGNA,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0028,3330,0,0,2/1/2018,2/1/2018,Commercial 3 ans,2/1/2015
+1,FINANCIERE ERETRIE,Nadine,DJIAN,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0030,4330,0,0,5/1/2017,5/1/2018,Commercial 3 ans,5/1/2015
+1,EXCO VALLIANCE,Monique,COLIN,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0023,2370,0,0,5/1/2017,4/15/2018,Commercial 3 ans,4/15/2015
+1,GALVA ATLANTIQUE,Alexander Mehdi,DELEAU,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0024,1250,0,0,11/1/2017,11/15/2018,Commercial 3 ans,11/15/2015
+1,CEGELEC LA ROCHELLE,Véronique,GESP,Claude COULOMB,claudecoulomb@gmail.com,F,20 RUE MOLIERE,0035,2680,0,0,10/27/2017,10/27/2017,Commercial 3 ans,10/27/2014
+1,CENTRE HOSPITALIER DE LA ROCHELLE,Frédéric,MAUDUIT,Florian POMMIER,florianpommier@gmail.com,F,21 RUE DE L'ABBE GROULT,0005,2850,0,0,3/27/2018,3/27/2018,Commercial 3 ans,3/27/2015
+1,SARP SUD OUEST - SNATI,Pierre,DEGOS,Florian POMMIER,florianpommier@gmail.com,F,21 RUE DE L'ABBE GROULT,0011,280,0,0,6/2/2017,6/2/2018,Commercial 3 ans,6/2/2015
+1,GE SUPPORT FRANCE,Olivier,FORTEGUERRE,Florian POMMIER,florianpommier@gmail.com,F,21 RUE DE L'ABBE GROULT,0014,1240,0,0,1/18/2018,1/18/2020,Commercial 3 ans,1/18/2017
+1,ADEFIM LIMOUSION POITOU CHARENTES,Didier,BODET,Florian POMMIER,florianpommier@gmail.com,F,21 RUE DE L'ABBE GROULT,0017,3760,0,0,8/28/2017,8/28/2019,Commercial 3 ans,8/28/2016
+1,RESE - RÉGIE D'EXPLOITATION DES SERVICES D'EAU CHARENTE MARITIME,Sandrine,COLIN,Patrick FOURNIER,patrickfournier@gmail.com,F,21 RUE MALTE-BRUN,0005,1140,0,0,8/12/2017,8/12/2019,Commercial 3 ans,8/12/2016
+1,CHOGNOT SAS,Richard,STORY,Patrick FOURNIER,patrickfournier@gmail.com,F,21 RUE MALTE-BRUN,0008,1460,0,0,3/15/2018,3/15/2018,Commercial 3 ans,3/15/2015
+1,SARL SALBREUX PESAGE,Jean-Marc,VIDAL-SIMI,Patrick FOURNIER,patrickfournier@gmail.com,F,21 RUE MALTE-BRUN,0009,4170,0,0,1/30/2018,1/30/2020,Commercial 3 ans,1/30/2017
+1,SADIS S.A.,Yann,DEBOVE JAILLETTE,Yann LE BESCONTE,yannlebesconte@gmail.com,F,22 RUE EMILE DUBOIS,0085,210,0,0,7/15/2017,7/15/2019,Commercial 3 ans,7/15/2016
+1,hefed,Alain,COLIN,Claude PLANCHAIS,claudeplanchais@gmail.com,F,23 RUE BERNARD JUGAULT,0001,4800,0,0,10/1/2017,1/1/2018,Commercial 3 ans,1/1/2015
+1,inconnu,Grégory,VERQUIN,Josette CHAMPAUD,josettechampaud@gmail.com,F,237 RUE  LA CROIX NIVERT,0062,2770,0,0,12/12/2017,12/12/2018,Commercial 3 ans,12/12/2015
+1,LGB,Jean-Luc,ROQUETTE,Josette CHAMPAUD,josettechampaud@gmail.com,F,237 RUE  LA CROIX NIVERT,0050,1370,0,0,10/1/2017,10/1/2017,Commercial 3 ans,10/1/2014
+1,AIRMAX,Thibaut,BARBRY,Nicolas DEVILLE,nicolasdeville@gmail.com,F,239 RUE CROIX NIVERT,0036,2390,0,0,3/1/2018,3/1/2019,Commercial 3 ans,3/1/2016
+1,SA BRUNAUD ET FILS,Gilles,MARCOT,David FAGUIER,davidfaguier@gmail.com,F,"24, rue Duroc",0001,1510,3020,40,4/7/2017,4/7/2018,Commercial 3 ans,4/7/2015
+1,CLOUE SA,Anne,LEVY NOGUERES,Gilbert EL MERINI,gilbertelmerini@gmail.com,F,27 RUE GASSENDI,0003,980,0,0,2/12/2018,11/1/2018,Commercial 3 ans,11/1/2015
+1,JOSEPH MELLOT,Christèle,QUENOUILLE,Gilbert EL MERINI,gilbertelmerini@gmail.com,F,27 RUE GASSENDI,0004,430,0,0,4/27/2017,4/27/2017,Commercial 3 ans,4/27/2014
+1,SECO,Herve,DUCHESNE,Gilbert EL MERINI,gilbertelmerini@gmail.com,F,27 RUE GASSENDI,0007,2890,0,0,8/1/2017,8/1/2017,Commercial 3 ans,8/1/2014
+1,GEST ' HOTEL,Florence,VALOT,Gilbert EL MERINI,gilbertelmerini@gmail.com,F,27 RUE GASSENDI,0009,2760,0,0,1/22/2018,1/22/2020,Commercial 3 ans,1/22/2017
+1,AEB ELECTRICITÉ,Jean-Fabrice,HASSON,Gilbert EL MERINI,gilbertelmerini@gmail.com,F,27 RUE GASSENDI,0010,2510,0,0,2/16/2018,2/16/2019,Commercial 3 ans,2/16/2016
+1,MERRAIN CAMILLE GAUTHIER,Jean Luc,BENARD,Gilbert EL MERINI,gilbertelmerini@gmail.com,F,27 RUE GASSENDI,0011,3980,0,0,3/4/2018,3/4/2019,Commercial 3 ans,3/4/2016
+1,GROUPE GRITCHEN ASSURANCES,Laurent-Pierre,JESKE,Gilbert EL MERINI,gilbertelmerini@gmail.com,F,27 RUE GASSENDI,0012,1730,0,0,9/4/2017,9/4/2018,Commercial 3 ans,9/4/2015
+1,MICHELIN,Jérôme,AIRAULT,Gilbert EL MERINI,gilbertelmerini@gmail.com,F,27 RUE GASSENDI,0013,2170,0,0,6/23/2017,6/23/2018,Commercial 3 ans,6/23/2015
+1,PARKER HANNIFIN MANUFACTURING FRANCE,Dominique,DE BONCOURT,Gilbert EL MERINI,gilbertelmerini@gmail.com,F,27 RUE GASSENDI,0014,330,0,0,12/9/2017,12/9/2017,Commercial 3 ans,12/9/2014
+1,PROUÈS,Jean-Marc,VERLANT,Gilbert EL MERINI,gilbertelmerini@gmail.com,F,27 RUE GASSENDI,0015,1860,0,0,9/26/2017,9/26/2017,Commercial 3 ans,9/26/2014
+1,GEXXIA,Anne Marie,MORISSET,Ronan QUELLEC,ronanquellec@gmail.com,F,28 av de Suffren,0140,2930,0,0,5/13/2017,5/13/2019,Commercial 3 ans,5/13/2016
+1,GROUPE BROCHARD,Jacques,CRIBIER,Mohamed GUTH,mohamedguth@gmail.com,F,28 Rue Bouret,0003,60,0,0,12/7/2017,12/7/2018,Commercial 3 ans,12/7/2015
+1,SARL BISCUITERIE MERCIER,Laurent,VUILLET,Mohamed GUTH,mohamedguth@gmail.com,F,28 Rue Bouret,0004,2590,0,0,7/10/2017,7/10/2018,Commercial 3 ans,7/10/2015
+1,AXEREAL,Gilles,MASSELIN,Mohamed GUTH,mohamedguth@gmail.com,F,28 Rue Bouret,0005,1730,0,0,3/1/2018,2/20/2018,Commercial 3 ans,2/20/2015
+1,GROUPE MONIN SAS,Suzanne,SAUVAGE,Mohamed GUTH,mohamedguth@gmail.com,F,28 Rue Bouret,0006,1090,0,0,11/1/2017,11/1/2018,Commercial 3 ans,11/1/2015
+1,ERIC MORIN ENTREPRISES,Edwin,ORLOWSKI,Mohamed GUTH,mohamedguth@gmail.com,F,28 Rue Bouret,0007,4000,0,0,12/15/2017,12/15/2019,Commercial 3 ans,12/15/2016
+1,FRR - SPY FINANCE,Nicolas,HENRIOT,Mohamed GUTH,mohamedguth@gmail.com,F,28 Rue Bouret,0008,2790,0,0,5/1/2017,5/1/2019,Commercial 3 ans,5/1/2016
+1,UP&CYCLE,Jerome,KNAPIK,Mohamed GUTH,mohamedguth@gmail.com,F,28 Rue Bouret,0009,4740,0,0,8/31/2017,8/31/2019,Commercial 3 ans,8/31/2016
+1,GROUPE SIGNATURE,Frédérique,WATCHI,Mohamed GUTH,mohamedguth@gmail.com,F,28 Rue Bouret,0010,3530,0,0,2/11/2018,2/11/2020,Commercial 3 ans,2/11/2017
+1,SERCPI,Ludovic,Paris,Mohamed GUTH,mohamedguth@gmail.com,F,28 Rue Bouret,0011,280,0,0,12/10/2017,12/10/2018,Commercial 3 ans,12/10/2015
+1,SARL TALBOT,Pascal,MESSAGER,Mohamed GUTH,mohamedguth@gmail.com,F,28 Rue Bouret,0012,2510,0,0,11/7/2017,11/7/2018,Commercial 3 ans,11/7/2015
+1,asfo developpement limousin,Rémy,GERARD,Mohamed GUTH,mohamedguth@gmail.com,F,28 Rue Bouret,0002,1430,0,0,11/9/2016,11/9/2017,Commercial 3 ans,11/9/2015
+1,la paix,Frédéric,GIRAUD,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0001,1220,6100,145,4/1/2017,4/8/2019,Commercial 3 ans,4/8/2016
+1,NCI ENVIRONNEMENT,André,RETHORE,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0002,190,0,0,1/18/2018,1/18/2019,Commercial 3 ans,1/18/2016
+1,ACOM EXPERTISE CENTRE,Emmanuelle,LASSERRE,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0004,3810,0,0,3/20/2018,3/20/2019,Commercial 3 ans,3/20/2016
+1,REVE VOYAGES,Ronan,DEBEAURAIN,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0005,2400,0,0,9/1/2017,9/1/2018,Commercial 3 ans,9/1/2015
+1,SA CRP,Séverine,de GERMAY,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0006,3900,0,0,4/5/2017,4/5/2019,Commercial 3 ans,4/5/2016
+1,SARL LES REMPARTS,Agnès,FALCOTET,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0007,1090,0,0,8/18/2017,8/18/2018,Commercial 3 ans,8/18/2015
+1,SARL ANTAUR,Vincent,PIOTELAT,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0008,3600,0,0,1/18/2018,1/18/2019,Commercial 3 ans,1/18/2016
+1,CENTRE IMPRESSION,Michel,DELAVAL,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0009,2930,0,0,7/1/2017,7/1/2018,Commercial 3 ans,7/1/2015
+1,SAS DUBOIS ET ASSOCIES,Christophe,DE ROMEMONT,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0010,3710,0,0,6/1/2017,6/1/2018,Commercial 3 ans,6/1/2015
+1,FRUISEC,Julien,LE MERLUS,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0011,2460,0,0,11/1/2017,11/1/2019,Commercial 3 ans,11/1/2016
+1,RLCB,Michel,FAGUER,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0012,1920,0,0,7/8/2017,7/8/2017,Commercial 3 ans,7/8/2014
+1,BERNIS GEODIS,Christine,FLEURY,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0013,2260,0,0,10/21/2017,10/21/2019,Commercial 3 ans,10/21/2016
+1,TRM,Rémi,DRUART,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0014,430,0,0,12/29/2017,12/29/2017,Commercial 3 ans,12/29/2014
+1,NOVASSAY,Hervé,KERVRAN,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0015,2510,0,0,5/21/2017,5/21/2019,Commercial 3 ans,5/21/2016
+1,NOTARIAT SERVICES,Thomas,PICQUAERT,Loick DANIEL,loickdaniel@gmail.com,F,28 Rue Duranton,0016,2700,0,0,1/15/2018,1/15/2019,Commercial 3 ans,1/15/2016
+1,SOCOBA,Vincent,DEMA,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0001,3750,7500,45,2/1/2017,2/1/2017,Commercial 3 ans,2/1/2014
+1,SUD OUEST ETALAGES,Philippe,MONESTIER,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0002,2690,0,0,11/22/2017,11/22/2019,Commercial 3 ans,11/22/2016
+1,SARL FINANCIERE FRANCIS OBRY,Laurent,DERUDDER,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0003,2670,0,0,12/15/2017,12/15/2017,Commercial 3 ans,12/15/2014
+1,C2MALU,Géraud,OFFROY,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0003,4640,0,0,3/7/2018,3/7/2020,Commercial 3 ans,3/7/2017
+1,SPF JEAN SAURET,Thierry,RAOUL-DUVAL,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0004,100,0,0,5/2/2017,5/2/2017,Commercial 3 ans,5/2/2014
+1,INOVEOS,Anne-Marie,DE BOISHEBERT,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0004,2940,0,0,8/19/2017,8/19/2019,Commercial 3 ans,8/19/2016
+1,domaine vico,Ronan,MARTIN,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0005,2330,0,0,5/5/2017,5/5/2018,Commercial 3 ans,5/5/2015
+1,inconnu,fanny,VANDEPUTTE,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0006,1690,0,0,12/14/2017,12/14/2019,Commercial 3 ans,12/14/2016
+1,SOFIGEC,Vincent,HERNANDO,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0007,390,0,0,10/5/2017,10/5/2019,Commercial 3 ans,10/5/2016
+1,KALICLEM,Thomas,BRASSEUR,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0009,4260,0,0,6/1/2017,6/1/2017,Commercial 3 ans,6/1/2014
+1,AIR FRANCE,Jean-Stéphane,EBERLE,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0011,70,0,0,1/21/2018,7/8/2019,Commercial 3 ans,7/8/2016
+1,CORSICA TOURS,Caroline,COUTURIER,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0012,120,0,0,6/5/2017,6/5/2018,Commercial 3 ans,6/5/2015
+1,LA CLÉ DU NETTOYAGE,Luc,MULLER,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0026,1690,0,0,10/30/2017,10/30/2018,Commercial 3 ans,10/30/2015
+1,OSCARO,Christophe,VIRTEL,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0027,3980,0,0,10/23/2017,10/23/2018,Commercial 3 ans,10/23/2015
+1,SIAL MENUISERIE,Bruno,VITOUX,Michel GUILLIEC,michelguilliec@gmail.com,F,"29, Avenue de Lowendal",0070,280,0,0,10/27/2017,10/27/2018,Commercial 3 ans,10/27/2015
+1,LOTA MARITIME SA,Pascal,LESUEUR,Daniela KERN,danielakern@gmail.com,F,3 Bis & 5 Rue d'Alembert,0006,2500,0,0,9/1/2017,8/28/2019,Commercial 3 ans,8/28/2016
+1,"MUTUELLE FAMILIALE DE LA CORSE ""MFC""",Jean-Gabriel,ADRIAENSSENS,Thierry SCHELLENBERG,thierryschellenberg@gmail.com,F,3 Rue Fizeau,0003,2470,0,0,7/27/2017,7/27/2018,Commercial 3 ans,7/27/2015
+1,GÉOMÈTRE EXPERT FONCIER DPLG,Frédéric,HUAN-PINCON,Thierry SCHELLENBERG,thierryschellenberg@gmail.com,F,3 Rue Fizeau,0004,2350,0,0,11/1/2017,11/1/2018,Commercial 3 ans,11/1/2015
+1,CR DISTRIBUTION,Frederic,DAUDRUY,Thierry SCHELLENBERG,thierryschellenberg@gmail.com,F,3 Rue Fizeau,0006,3700,0,0,7/1/2017,7/1/2017,Commercial 3 ans,7/1/2014
+1,FERME MARINE DES SANGUINAIRES,Philippe,JARRY,Thierry SCHELLENBERG,thierryschellenberg@gmail.com,F,3 Rue Fizeau,0008,40,0,0,6/10/2017,6/10/2019,Commercial 3 ans,6/10/2016
+1,AXA DIAMANT,Patricia,COUERBE,Thierry SCHELLENBERG,thierryschellenberg@gmail.com,F,3 Rue Fizeau,0009,1260,0,0,6/23/2017,6/23/2019,Commercial 3 ans,6/23/2016
+1,CEPAC - CAISSE D'EPARGNE PROVENCE ALPES CORSE,William,FRECHIN,Thierry SCHELLENBERG,thierryschellenberg@gmail.com,F,3 Rue Fizeau,0010,4180,0,0,8/14/2017,8/14/2017,Commercial 3 ans,8/14/2014
+1,HOLDING ALXION 2,Alexis,LABEILLE,Thierry SCHELLENBERG,thierryschellenberg@gmail.com,F,3 Rue Fizeau,0011,2890,0,0,10/1/2017,10/15/2019,Commercial 3 ans,10/15/2016
+1,SARL VINGT + VINS,David,LAMBOLEY,Thierry SCHELLENBERG,thierryschellenberg@gmail.com,F,3 Rue Fizeau,0012,4980,0,0,9/5/2017,9/5/2019,Commercial 3 ans,9/5/2016
+1,cushman & wakefield,Sabine,CARRE,Thierry SCHELLENBERG,thierryschellenberg@gmail.com,F,3 Rue Fizeau,0014,2370,0,0,12/1/2017,12/1/2019,Commercial 3 ans,12/1/2016
+1,punch - costaudit,Richard,LECOMTE,Thierry SCHELLENBERG,thierryschellenberg@gmail.com,F,3 Rue Fizeau,0025,860,0,0,6/1/2017,6/1/2018,Commercial 3 ans,6/1/2015
+1,SAS CABINET ANDRE,Bruno,DU MESNIL GAILLARD,Michel DANESCHWAR ROUX,micheldaneschwarroux@gmail.com,F,3 RUE LAGARDE,0004,1470,0,0,9/5/2017,9/5/2017,Commercial 3 ans,9/5/2014
+1,FASTRING,Simon,CONFAVREUX,Elena FURLAN,elenafurlan@gmail.com,F,"3, rue Edouard Quenu",0007,4070,0,0,7/1/2017,1/1/2019,Commercial 3 ans,1/1/2016
+1,BANQUE POPULAIRE FRANCHE COMTE,Laurent,NORDON,Stephane LACHAZE,stephanelachaze@gmail.com,F,322 RUE ST JACQUES,0001,2100,6300,78,8/13/2017,8/13/2018,Commercial 3 ans,8/13/2015
+1,LOUIS MAX,Michel,DELABIE,Stephane LACHAZE,stephanelachaze@gmail.com,F,322 RUE ST JACQUES,0005,1630,0,0,7/1/2017,7/1/2017,Commercial 3 ans,7/1/2014
+1,SAS SEB,Dominique,CHAGNET,Stephane LACHAZE,stephanelachaze@gmail.com,F,322 RUE ST JACQUES,0007,70,0,0,3/16/2018,3/16/2018,Commercial 3 ans,3/16/2015
+1,HOLIDAY INN EXPRESS,Christophe,BECKER,Stephane LACHAZE,stephanelachaze@gmail.com,F,322 RUE ST JACQUES,0020,2030,0,0,3/1/2018,3/1/2020,Commercial 3 ans,3/1/2017
+1,SETUREC,Yvan,FEGER,Stephane LACHAZE,stephanelachaze@gmail.com,F,322 RUE ST JACQUES,0022,3030,0,0,1/14/2018,1/14/2020,Commercial 3 ans,1/14/2017
+1,HARMEZ,Aude,BATAILLE,Stephane LACHAZE,stephanelachaze@gmail.com,F,322 RUE ST JACQUES,0037,3700,0,0,11/18/2017,11/18/2019,Commercial 3 ans,11/18/2016
+1,IBIS,Edouard,GAY,Remi DENYS,remidenys@gmail.com,F,33 RUE DE VOUILLE,0020,3870,0,0,11/1/2017,11/1/2018,Commercial 3 ans,11/1/2015
+1,SOFITEL DIJON LA CLOCHE,Sophie,HERY,Thierry FOLTZ,thierryfoltz@gmail.com,F,34 AV.CHARLES FLOQUET,0001,4320,0,0,10/14/2017,10/14/2019,Commercial 3 ans,10/14/2016
+1,GROUPE LEADER,Monique,MUTEL,Frédéric BERTRAND,frédéricbertrand@gmail.com,F,34 Rue du Commerce,0001,1850,0,0,11/1/2017,11/1/2017,Commercial 3 ans,11/1/2014
+1,TEMPS REEL,Eric,ECRAN,Jean Noel VIEL,jeannoelviel@gmail.com,F,34 Rue Pierre Larousse,0001,2580,0,0,10/12/2017,10/12/2018,Commercial 3 ans,10/12/2015
+1,M.D.S.A. BAYARD,Emmanuel,DESCHAMPS,Jean Noel VIEL,jeannoelviel@gmail.com,F,34 Rue Pierre Larousse,0002,3660,0,0,6/1/2017,6/1/2018,Commercial 3 ans,6/1/2015
+1,LES OPTICIENS ASSOCIES,Gelu,JOUTET,Jean Noel VIEL,jeannoelviel@gmail.com,F,34 Rue Pierre Larousse,0004,3260,0,0,11/15/2017,11/15/2017,Commercial 3 ans,11/15/2014
+1,LUMALED,Franck,BRUNET,Jean Noel VIEL,jeannoelviel@gmail.com,F,34 Rue Pierre Larousse,0005,1610,0,0,7/12/2017,7/12/2019,Commercial 3 ans,7/12/2016
+1,CENTRE DE CONVALESCENCE DE FONTAINE LES DIJON,Olivier,REIN,Xavier SIMON,xaviersimon@gmail.com,F,35 Rue Pascal,0001,3070,0,0,12/1/2017,12/1/2019,Commercial 3 ans,12/1/2016
+1,APAVE,Bruno,BERNARD,Xavier SIMON,xaviersimon@gmail.com,F,35 Rue Pascal,0003,4660,0,0,8/25/2017,8/25/2019,Commercial 3 ans,8/25/2016
+1,SODIFALUX,Carole,BOUY,Xavier SIMON,xaviersimon@gmail.com,F,35 Rue Pascal,0039,4380,0,0,6/1/2017,6/1/2017,Commercial 3 ans,6/1/2014
+1,LABORATOIRE DENTAIRE C.ROBERT,Christophe,CAMBIER,Xavier SIMON,xaviersimon@gmail.com,F,35 Rue Pascal,0040,3210,0,0,8/3/2017,8/3/2019,Commercial 3 ans,8/3/2016
+1,EXCO SOCODEC,Philippe,BAUDE-TILLOUS,Isabelle VILLE,isabelleville@gmail.com,F,354 Bis Rue de Vaugirard,0007,3500,0,0,2/1/2018,2/1/2020,Commercial 3 ans,2/1/2017
+1,AMG INFORMATIQUE,Manou,RENAULT,Nicolas GRANDEMANGE,nicolasgrandemange@gmail.com,F,36 rue Cler,0001,2210,22100,271,4/14/2017,4/14/2018,Commercial 3 ans,4/14/2015
+1,cartonnages gourio,Pascal,BEUVIN,Emmanuel ROUX-BANNEVILLE,emmanuelroux-banneville@gmail.com,F,36 Rue de Lourmel,0005,1240,0,0,7/15/2017,7/15/2019,Commercial 3 ans,7/15/2016
+1,inconnu,Olivier,DESJONQUERES,Emmanuel ROUX-BANNEVILLE,emmanuelroux-banneville@gmail.com,F,36 Rue de Lourmel,0005,1810,0,0,11/4/2017,11/4/2019,Commercial 3 ans,11/4/2016
+1,SAS PLEDIS,Agnès,ORY,Emmanuel ROUX-BANNEVILLE,emmanuelroux-banneville@gmail.com,F,36 Rue de Lourmel,0010,1890,0,0,12/2/2017,12/2/2019,Commercial 3 ans,12/2/2016
+1,SYMBIOSE INFORMATIQUE,Amir,RICHARD,Emmanuel ROUX-BANNEVILLE,emmanuelroux-banneville@gmail.com,F,36 Rue de Lourmel,0016,2280,0,0,3/15/2018,3/15/2019,Commercial 3 ans,3/15/2016
+1,CRÉDIT MUTUEL DE BRETAGNE,Fabio,VENDEUVRE,Bernard GUEDON,bernardguedon@gmail.com,F,36/38 RUE VICTOR MASSE,0001,3750,11250,84,5/29/2017,5/29/2018,Commercial 3 ans,5/29/2015
+1,THERECO,Stéphane,GRASSET,Jean Pierre JONVEL,jeanpierrejonvel@gmail.com,F,368 RUE VAUGIRARD,0015,2020,0,0,5/1/2017,5/1/2017,Commercial 3 ans,5/1/2014
+1,CER FRANCE CÔTES D'ARMOR,Catherine,AUBIN,Jean-Marc CANTIN,jean-marccantin@gmail.com,F,370 rue de Vaugirard,0013,1440,0,0,6/26/2017,6/26/2018,Commercial 3 ans,6/26/2015
+1,CABINET YVAN LE BAIL ASSURANCES,Arnaud,VAN RESPAILLE,Guenaël GAGNERE,guenaëlgagnere@gmail.com,F,370 RUE DE VAUGIRARD,0056,390,0,0,10/1/2017,10/1/2018,Commercial 3 ans,10/1/2015
+1,TERRALLIANCE - SDAEC,Christelle,LE DOARE,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0015,2090,0,0,5/27/2017,5/27/2017,Commercial 3 ans,5/27/2014
+1,SCOBAT,Laurent,DELEBARRE,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0027,4600,0,0,4/1/2017,4/1/2019,Commercial 3 ans,4/1/2016
+1,CIBLES ET STRATEGIES,Christophe,VILLECHAISE,Virginie JAMIN,virginiejamin@gmail.com,F,4 Place du Marche,0001,370,3330,253,7/8/2017,7/8/2019,Commercial 3 ans,7/8/2016
+1,COJUMA,Vincent,CAMUS,Patrick GONNET,patrickgonnet@gmail.com,F,4 RUE DE LA CAVALERIE,0016,2570,0,0,5/1/2017,5/1/2019,Commercial 3 ans,5/1/2016
+1,JOSSET-MENGUY,Bertrand,LEFEBVRE,Didier STASSI,didierstassi@gmail.com,F,4 rue Dupont de l'Eure,0015,420,0,0,6/1/2017,5/20/2017,Commercial 3 ans,5/20/2014
+1,AUTOSTAR,Christel,DUBES,Brigitte POULAILLON,brigittepoulaillon@gmail.com,F,41 Av de la Motte-Picquet,0002,4020,0,0,6/17/2017,6/17/2018,Commercial 3 ans,6/17/2015
+1,KPMG ENTREPRISES,Bruno,MALETRAS,Brigitte POULAILLON,brigittepoulaillon@gmail.com,F,41 Av de la Motte-Picquet,0003,2440,0,0,3/1/2018,3/1/2019,Commercial 3 ans,3/1/2016
+1,ALAIN MACÉ,François-Emmanuel,FAYARD,Brigitte POULAILLON,brigittepoulaillon@gmail.com,F,41 Av de la Motte-Picquet,0004,1730,0,0,9/5/2017,9/5/2017,Commercial 3 ans,9/5/2014
+1,SERVAGROUPE,François,LEDUN,Brigitte POULAILLON,brigittepoulaillon@gmail.com,F,41 Av de la Motte-Picquet,0005,1090,0,0,12/1/2017,12/1/2019,Commercial 3 ans,12/1/2016
+1,LE HELLOCO ACCOUVAGE,Philippe,BORE,Guillaume LEPIZZERA,guillaumelepizzera@gmail.com,F,43 AV.CHARLES FLOQUET,0028,3480,0,0,11/1/2017,11/1/2017,Commercial 3 ans,11/1/2016
+1,TY INVESTISSEMENTS,Dan,JULIEN,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0004,4200,0,0,11/16/2017,11/16/2019,Commercial 3 ans,11/16/2016
+1,VITEL MENUISERIES,Kadoan,LHOTELLIER,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0005,3630,0,0,12/22/2017,12/22/2018,Commercial 3 ans,12/22/2015
+1,philippe castay,Loïc,NAIZET,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0006,2070,0,0,9/18/2017,9/18/2018,Commercial 3 ans,9/18/2015
+1,inconnu,Fatima,MONSION,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0007,4490,0,0,2/26/2018,2/26/2020,Commercial 3 ans,2/26/2017
+1,SAS FEDD,Frédéric,NICOLAS,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0008,2610,0,0,9/9/2017,9/9/2018,Commercial 3 ans,9/9/2015
+1,STE FARGEOT,Cedric,FELTESSE,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0009,870,0,0,8/10/2017,8/10/2019,Commercial 3 ans,8/10/2016
+1,KALINNOVA,Xavier,AMMOUIAL,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0015,2990,0,0,12/1/2017,12/1/2019,Commercial 3 ans,12/1/2016
+1,GROUPE HOCHE & ASSOCIES,Xavier,DONATI,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0016,2300,0,0,6/10/2017,6/10/2018,Commercial 3 ans,6/10/2015
+1,HELENE CARDONNE,Drazen,FRADIN,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0018,2020,0,0,1/15/2018,1/15/2019,Commercial 3 ans,1/15/2016
+1,SELP,Olivier,GOURMEL,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0019,4170,0,0,10/9/2017,10/9/2018,Commercial 3 ans,10/9/2015
+1,BARCONNIERE,Patrick,CHAMPAIN,Tom FERNANDEZ,tomfernandez@gmail.com,F,44 RUE PERNETY,0017,780,0,0,3/1/2018,3/7/2018,Commercial 3 ans,3/7/2015
+1,FROMAGERIE CHAUMES,Stephane,MULLIEZ,Jean Paul BARET,jeanpaulbaret@gmail.com,F,45 Bis Rue Folie Regnault,0011,3060,0,0,12/1/2017,12/1/2017,Commercial 3 ans,12/1/2014
+1,FABREGUE SA,Aurelien,LOBERT,Jean-Robert PERROT,jean-robertperrot@gmail.com,F,46-52 RUE PERNETY,0127,4890,0,0,9/1/2017,9/1/2018,Commercial 3 ans,9/1/2015
+1,EARL DAVID FOURTOUT,Sébastien,VIALLE,Didier HUNAUT,didierhunaut@gmail.com,F,47 Rue du Moulin Vert,0001,1270,6350,127,6/11/2017,6/11/2017,Commercial 3 ans,6/11/2014
+1,SAS FAURIE,Gaël,LERRANT,Eric PEILLON,ericpeillon@gmail.com,F,48 rue EUGENE OUDINE,0030,1280,0,0,5/26/2017,5/26/2019,Commercial 3 ans,5/26/2016
+1,CABINET GALANT LARONZE,Gilbert,THIERRY,Rémi MATHIEU,rémimathieu@gmail.com,F,49 AV. DE LA REPUBLIQUE,0003,4160,0,0,4/29/2017,4/29/2017,Commercial 3 ans,4/29/2014
+1,SARL EGAP,Frank,JUMEL,Rémi MATHIEU,rémimathieu@gmail.com,F,49 AV. DE LA REPUBLIQUE,0004,4780,0,0,11/24/2017,11/24/2018,Commercial 3 ans,11/24/2015
+1,TENDANCES EDITIONS,Christophe,THIBAULT,Rémi MATHIEU,rémimathieu@gmail.com,F,49 AV. DE LA REPUBLIQUE,0005,2710,0,0,6/12/2017,6/12/2018,Commercial 3 ans,6/12/2015
+1,SICA MEYLIM,Stephane,VALENTIN,Rémi MATHIEU,rémimathieu@gmail.com,F,49 AV. DE LA REPUBLIQUE,0006,4350,0,0,4/1/2017,4/1/2019,Commercial 3 ans,4/1/2016
+1,JEAN LAGARDE SAS,Pierre,PIERUCCI,Rémi MATHIEU,rémimathieu@gmail.com,F,49 AV. DE LA REPUBLIQUE,0008,2140,0,0,1/1/2018,1/1/2018,Commercial 3 ans,1/1/2015
+1,PARINET INFORMATIQUE,François,QUERE,Jérémie GARNIER,jérémiegarnier@gmail.com,F,5 ALLEE DE MEUDON,0004,330,0,0,5/1/2017,5/1/2017,Commercial 3 ans,5/1/2014
+1,GUYENNE PAPIER SAS,Nadia,CHIVOT,Jérémie GARNIER,jérémiegarnier@gmail.com,F,5 ALLEE DE MEUDON,0005,1120,0,0,8/1/2017,8/1/2018,Commercial 3 ans,8/1/2015
+1,OZEA,Olivier,MORGAND,Hervé LACAMBRE,hervélacambre@gmail.com,F,5 RUE DE LA CAVALERIE,0011,1040,0,0,12/1/2017,12/1/2017,Commercial 3 ans,12/1/2014
+1,ACTIVA-COOPERE,Philippe,GRANDJEAN,Laurent BASTIN,laurentbastin@gmail.com,F,5 RUE DU SOMMERARD,0023,2460,0,0,11/1/2017,11/1/2017,Commercial 3 ans,11/1/2014
+1,PROFIL INTERIM,Pascal,DEJARDIN,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0002,1750,0,0,4/19/2017,4/19/2019,Commercial 3 ans,4/19/2016
+1,AES,Marylène,LHERONDEL,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0003,4760,0,0,6/21/2017,6/21/2019,Commercial 3 ans,6/21/2016
+1,IMPRIMERIE DE L'EPERON,Jérémy,BELLET,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0004,390,0,0,7/20/2017,7/20/2018,Commercial 3 ans,7/20/2015
+1,SCP BOURGEOIS VIGIER,Ludovic,LEGRAND,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0005,1740,0,0,5/1/2017,5/1/2017,Commercial 3 ans,5/1/2014
+1,GROUPE VIGIER ENTREPRISES,Olivier,LERAILLER,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0006,3510,0,0,9/1/2017,9/10/2018,Commercial 3 ans,9/10/2015
+1,peb & agrodoubs,Sebastien,COJAN,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0007,3950,0,0,7/1/2017,7/1/2018,Commercial 3 ans,7/1/2015
+1,ressources2,Mathieu,JOURDAIN,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0008,870,0,0,7/1/2017,7/1/2018,Commercial 3 ans,7/1/2015
+1,ENVIRONNEMENT PROPRETE SERVICES (EPS),Philippe,LESAGE,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0009,700,0,0,9/1/2017,9/1/2017,Commercial 3 ans,9/1/2014
+1,ESTIMPRIM,Guillaume,OBALA,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0010,1550,0,0,12/1/2017,12/15/2019,Commercial 3 ans,12/15/2016
+1,SOBEMAB,Magali,CADET,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0011,470,0,0,4/17/2017,4/17/2019,Commercial 3 ans,4/17/2016
+1,SIFCO,Raphael,BRIZIOU,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0012,1560,0,0,4/14/2017,4/14/2018,Commercial 3 ans,4/14/2015
+1,MCI-CONSEIL,José,POUDEVIGNE,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0014,3270,0,0,8/23/2017,8/23/2019,Commercial 3 ans,8/23/2016
+1,DUCHESNE ESPACES VERTS SARL,Benoit,VINZANT,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0015,2620,0,0,10/19/2017,10/19/2018,Commercial 3 ans,10/19/2015
+1,METALIS GROUP,Isabelle,FRIDRICI,Pierre MAIREL,pierremairel@gmail.com,F,51 Rue Claude Decaen,0016,0,0,0,7/23/2017,7/23/2018,Commercial 3 ans,7/23/2015
+1,FIDAL DR BOURGOGNE FC,Didier,MULLIEZ,Helene LE VEN,heleneleven@gmail.com,F,51 RUE DE BABYLONE,0045,2200,0,0,11/10/2017,11/10/2018,Commercial 3 ans,11/10/2015
+1,BERTO GARNACHE,Marc,LEPICARD,Michel BENMOUSSA,michelbenmoussa@gmail.com,F,51 RUE FRANCS BOURGEOIS,0002,4350,0,0,9/1/2017,1/1/2019,Commercial 3 ans,1/1/2016
+1,MICRO EROSION,Didier,CAPITAINE,Hervé PINARD,hervépinard@gmail.com,F,52 RUE BLOMET,0003,1900,0,0,9/15/2017,9/15/2019,Commercial 3 ans,9/15/2016
+1,CREDIT AGRICOLE DE FRANCHE COMTE,Barbara,RICHE,Lara BERGE,laraberge@gmail.com,F,55 rue de la Convention,0006,10,0,0,4/1/2017,4/1/2017,Commercial 3 ans,4/1/2014
+1,PAPETERIE ZUBER RIEDER,Philippe,PETIT,Lara BERGE,laraberge@gmail.com,F,55 Rue de la Convention,0012,1190,0,0,3/1/2018,3/1/2019,Commercial 3 ans,3/1/2016
+1,DIGITAL SURF SARL,Thierry,SAUREL,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0003,1570,0,0,4/8/2017,4/8/2019,Commercial 3 ans,4/8/2016
+1,SIDEO,Christian,VALANCE,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0004,170,0,0,5/21/2017,5/21/2017,Commercial 3 ans,5/21/2014
+1,GROUPE ARCADO (JL AMIOTTE/MORTEAU SAUCISSE/CLAVIERE),Alain,OZANNE,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0005,130,0,0,6/4/2017,6/4/2019,Commercial 3 ans,6/4/2016
+1,METALIS HOLDING SAS,Manuel,SHEIKHALISHAHI,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0008,1400,0,0,2/1/2018,2/1/2020,Commercial 3 ans,2/1/2017
+1,BEC INDUSTRIE,Mathieu,LEVIEUX,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0009,2110,0,0,9/19/2017,9/19/2019,Commercial 3 ans,9/19/2016
+1,revol porcelaine,Régis,GRANVEAU,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0010,460,0,0,8/21/2017,8/21/2017,Commercial 3 ans,8/21/2014
+1,vivo conseil,Camille,D'ANGLEJAN,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0012,2700,0,0,6/10/2017,6/10/2019,Commercial 3 ans,6/10/2016
+1,2MS NETTOYAGE,Moustapha,JOUBERT,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0013,4810,0,0,3/6/2018,3/6/2018,Commercial 3 ans,3/6/2015
+1,B CORP,Didier,PRUVOT,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0015,2000,0,0,8/4/2017,8/4/2018,Commercial 3 ans,8/4/2015
+1,C' PRO,Loetitia,VINCENT,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0017,2480,0,0,6/20/2017,6/20/2019,Commercial 3 ans,6/20/2016
+1,MODEC,Gregoire,MASSIOT,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0019,1610,0,0,11/1/2017,11/1/2017,Commercial 3 ans,11/1/2014
+1,GROUPE COURBIS,Carole,CATRY,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0018,2930,0,0,10/10/2017,10/10/2018,Commercial 3 ans,10/10/2015
+1,VALOTEL,Jean-François,RICOEUR,Philippe KERN,philippekern@gmail.com,F,58 Quai Le Gallo,0002,870,0,0,3/1/2018,3/1/2019,Commercial 3 ans,3/1/2016
+1,CHARLES & ALICE,Francis,LABRUNYE,Philippe KERN,philippekern@gmail.com,F,58 Quai Le Gallo,0004,620,0,0,3/18/2018,3/18/2019,Commercial 3 ans,3/18/2016
+1,VALRHONA,Nicolas,MARESCOT,Philippe KERN,philippekern@gmail.com,F,58 Quai Le Gallo,0005,3810,0,0,2/20/2018,2/20/2018,Commercial 3 ans,2/20/2015
+1,AMPLITUDE SURGICAL,Philippe-Hervé,RUELLAN,Philippe KERN,philippekern@gmail.com,F,58 Quai Le Gallo,0006,760,0,0,4/1/2017,4/1/2018,Commercial 3 ans,4/1/2015
+1,SKIPPER DEVELOPPEMENT,Marie-Pierre,AIME,Philippe KERN,philippekern@gmail.com,F,58 Quai Le Gallo,0007,1870,0,0,4/1/2017,4/1/2019,Commercial 3 ans,4/1/2016
+1,TOPTECH FRANCE,Alain,GUICHERD CALLIN,Philippe KERN,philippekern@gmail.com,F,58 Quai Le Gallo,0002,2740,0,0,5/1/2017,5/1/2019,Commercial 3 ans,5/1/2016
+1,BLANCHARD SA,Patrice,QUERAT-HEMENT,Philippe CARTEAULT,philippecarteault@gmail.com,F,6 Rue Corbon,0001,2350,0,0,11/28/2017,11/28/2017,Commercial 3 ans,11/28/2014
+1,AXXAIR,Yves,D'HARCOURT,Sandrine TRI,sandrinetri@gmail.com,F,6 RUE DESAIX,0004,3120,0,0,8/1/2017,8/1/2017,Commercial 3 ans,8/1/2014
+1,SFS INTEC,Vincent,RAOUL DUVAL,Laurence MONCEAU,laurencemonceau@gmail.com,F,6 Rue du Gal Lambert,0006,3920,0,0,10/1/2017,10/1/2019,Commercial 3 ans,10/1/2016
+1,SA SOLS,Daniel,MARTY,Laurence MONCEAU,laurencemonceau@gmail.com,F,6 Rue du Gal Lambert,0009,2490,0,0,10/1/2017,10/1/2017,Commercial 3 ans,10/1/2014
+1,HUILERIE RICHARD,Marc,CHEREAU,Laurence MONCEAU,laurencemonceau@gmail.com,F,6 Rue du Gal Lambert,0010,2490,0,0,3/1/2018,3/29/2019,Commercial 3 ans,3/29/2016
+1,EOVI SERVICES ET SOINS,Didier,BERTHIER,Laurence MONCEAU,laurencemonceau@gmail.com,F,6 Rue du Gal Lambert,0013,1270,0,0,7/1/2017,7/9/2017,Commercial 3 ans,7/9/2014
+1,SMI,Emmanuel,VENIERE,Laurence MONCEAU,laurencemonceau@gmail.com,F,6 Rue du Gal Lambert,0060,3650,0,0,10/15/2017,10/15/2017,Commercial 3 ans,10/15/2014
+1,STRUCTA,Raphaël,DANIEL,Sandra REIMERINGER,sandrareimeringer@gmail.com,F,60 Av Jean Jaures,0014,3620,0,0,6/1/2017,6/1/2017,Commercial 3 ans,6/1/2014
+1,PIC SAS,Frederic,DELECOUR,Sandra REIMERINGER,sandrareimeringer@gmail.com,F,60 Av Jean Jaures,0027,4240,0,0,10/1/2017,10/16/2017,Commercial 3 ans,10/16/2014
+1,AQUILUS GROUPE,Nicolas,DENYS,Sandra REIMERINGER,sandrareimeringer@gmail.com,F,60 Av Jean Jaures,0028,3830,0,0,11/1/2017,10/20/2019,Commercial 3 ans,10/20/2016
+1,coté restauration,Olivier,JAUBERT,Laurent PARIENTE,laurentpariente@gmail.com,F,62 RUE DU COMMERCE,0007,1810,0,0,10/10/2017,10/10/2019,Commercial 3 ans,10/10/2016
+1,apm,Isabelle,SCHNAPPER,Jean Luc JUVANTENY,jeanlucjuvanteny@gmail.com,F,66 Av. du Général LECLERC,0010,580,0,0,2/1/2018,2/1/2019,Commercial 3 ans,2/1/2016
+1,SECO S.A.,Gérald,CHAUVIN,Jean Luc JUVANTENY,jeanlucjuvanteny@gmail.com,F,66 Av. du Général LECLERC,0018,3640,0,0,8/31/2017,8/31/2019,Commercial 3 ans,8/31/2016
+1,BOLMIN PROFILS,Emmanuelle,LE PIVERT,Jean Luc JUVANTENY,jeanlucjuvanteny@gmail.com,F,66 Av. du Général LECLERC,0019,4630,0,0,10/17/2017,10/17/2017,Commercial 3 ans,10/17/2014
+1,SOS INTÉRIM,François,REBIFFE,Thierry CHATEL,thierrychatel@gmail.com,F,66 Rue Lecourbe,0001,4350,0,0,12/1/2017,12/1/2017,Commercial 3 ans,12/1/2014
+1,ROWENTA FRANCE SAS,Murielle,DEKEYSER,Christine JEGAT,christinejegat@gmail.com,F,66/68 AV. DE SUFFREN,0074,3690,0,0,9/1/2017,9/1/2018,Commercial 3 ans,9/1/2015
+1,TGE FRANCE,Rémi,LALAIN,Christine JEGAT,christinejegat@gmail.com,F,66/68 AV. DE SUFFREN,0120,2290,0,0,10/28/2017,10/28/2017,Commercial 3 ans,10/28/2014
+1,AGENCE COMBE,Frédéric,THOMAS,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0006,550,0,0,4/1/2017,4/1/2017,Commercial 3 ans,4/1/2014
+1,GROUPE CANDOR,Patrice,BENOIT,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0007,620,0,0,5/1/2017,5/1/2019,Commercial 3 ans,5/1/2016
+1,SOCIÉTÉ GÉNÉRALE,Marie-Hélène,ZERATES,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0008,3710,0,0,3/18/2018,3/18/2018,Commercial 3 ans,3/18/2015
+1,BENNING,Sophie,LANOY,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0009,400,0,0,4/10/2017,4/10/2018,Commercial 3 ans,4/10/2015
+1,LOGEMENT FAMILIAL DE L'EURE,Sylvain,MOREL,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0010,470,0,0,12/1/2017,12/1/2017,Commercial 3 ans,12/1/2014
+1,DUHAMEL LOGISTIQUE,Robin,BAILLY,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0011,380,0,0,1/25/2018,1/25/2020,Commercial 3 ans,1/25/2017
+1,LEGOUEZ,Laure,MOREL,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0012,4020,0,0,12/28/2017,12/28/2019,Commercial 3 ans,12/28/2016
+1,SCP JUSTINIEN ET ASSOCIES,Ghazal,BAUDET,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0013,710,0,0,4/10/2017,4/10/2018,Commercial 3 ans,4/10/2015
+1,HEBUS,Patrice,RUIN,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0015,1140,0,0,8/19/2017,8/19/2018,Commercial 3 ans,8/19/2015
+1,IDEA INFORMATIQUE,David,HERN,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0016,4130,0,0,10/20/2017,10/20/2017,Commercial 3 ans,10/20/2014
+1,UIMM (UNION DES INDUSTRIES ET MÉTIER DE LA MÉTALLU,Christophe,COURGEON,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0017,3650,0,0,8/7/2017,8/7/2017,Commercial 3 ans,8/7/2014
+1,LEMONNIER TRANSPORTS,Stéphane,MORIOU,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0030,3100,0,0,9/1/2017,9/1/2019,Commercial 3 ans,9/1/2016
+1,CFAI / AFPI  DE L'EURE,Guy,BUREAU,Miguel BRETON,miguelbreton@gmail.com,F,"67, rue de la Fédération",0001,960,6720,193,7/1/2015,7/1/2018,Commercial 3 ans,7/1/2015
+1,EPH GROUPE CTCI,Carole,DECONIHOUT,Jean François CUNY,jeanfrançoiscuny@gmail.com,F,68 RUE GAY LUSSAC,0006,610,0,0,7/1/2017,7/1/2017,Commercial 3 ans,7/1/2014
+1,EUROCIBUS,Stéphanie,DEBAILLEUL,Bernard RICHARD,bernardrichard@gmail.com,F,68 Rue Jean Bonal,0001,2820,0,0,10/5/2017,10/5/2019,Commercial 3 ans,10/5/2016
+1,CALIFIL,Loic,COUPPEY,Bernard RICHARD,bernardrichard@gmail.com,F,68 Rue Jean Bonal,0003,2490,0,0,11/1/2017,11/1/2017,Commercial 3 ans,11/1/2014
+1,HOPITAL LA MUSSE,Fabrice,SARTORIS,Bernard RICHARD,bernardrichard@gmail.com,F,68 Rue Jean Bonal,0005,4970,0,0,6/9/2017,6/9/2018,Commercial 3 ans,6/9/2015
+1,SCP PERRAY-JOSSE & ASSOCIÉS,Emmanuel,LE BLANC,Bernard RICHARD,bernardrichard@gmail.com,F,68 Rue Jean Bonal,0007,3890,0,0,11/1/2017,11/1/2017,Commercial 3 ans,11/1/2014
+1,JOLY ETANCHEITE,Monette,DUVAUX,Bernard RICHARD,bernardrichard@gmail.com,F,68 Rue Jean Bonal,0009,3790,0,0,4/11/2017,4/11/2017,Commercial 3 ans,4/11/2014
+1,brette immobilier,Christophe,VRIGNON,Bernard RICHARD,bernardrichard@gmail.com,F,68 Rue Jean Bonal,0034,2490,0,0,5/1/2017,5/1/2019,Commercial 3 ans,5/1/2016
+1,christine perrot,Pascal,LARDIERE,Jean-Pierre CABOUAT,jean-pierrecabouat@gmail.com,F,68 RUE VAUVENARGUES,0017,1020,0,0,7/30/2017,7/30/2018,Commercial 3 ans,7/30/2015
+1,PONT EQUIPEMENT,Claire,RENARD,Christophe DESASSIS,christophedesassis@gmail.com,F,7 Rue de Metz,0001,4090,0,0,12/1/2017,12/1/2019,Commercial 3 ans,12/1/2016
+1,GROUPE LECOQ & DURET SA,Nicolas,CIRETTE,Christophe DESASSIS,christophedesassis@gmail.com,F,7 Rue de Metz,0002,2230,0,0,12/22/2016,12/22/2018,Commercial 3 ans,12/22/2015
+1,DANISCO FRANCE SAS - GROUPE DUPONT,Catalin Adrian,BRASSEUR,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0004,2080,0,0,7/21/2017,7/21/2018,Commercial 3 ans,7/21/2015
+1,ASSOCIATION NATIONALE CENTAURE,Nathalie,RAYE,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0006,810,0,0,10/1/2017,9/22/2019,Commercial 3 ans,9/22/2016
+1,ADH EXPERTS,Julie,MALLET,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0008,4960,0,0,7/18/2017,7/18/2019,Commercial 3 ans,7/18/2016
+1,SMTG,Sebastien,CARRUS,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0009,2090,0,0,6/1/2017,6/1/2018,Commercial 3 ans,6/1/2015
+1,CHROME,Maryline,MORCANT,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0010,2130,0,0,11/20/2017,11/20/2017,Commercial 3 ans,11/20/2014
+1,SIGÉBÈNE,Gilles,CAMMAS,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0011,220,0,0,12/28/2017,12/28/2019,Commercial 3 ans,12/28/2016
+1,DARMIGNY EMBALLAGE,Jean-François,LASSERRE,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0012,2460,0,0,9/15/2017,9/15/2017,Commercial 3 ans,9/15/2014
+1,SAPHYMO,Bernard,LATREUILLE,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0013,4160,0,0,3/15/2018,3/15/2018,Commercial 3 ans,3/15/2015
+1,INTERMARCHÉ,Brigitte,MAHE,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0014,1070,0,0,8/1/2017,8/1/2018,Commercial 3 ans,8/1/2015
+1,MINOTERIES VIRON,William,BRENAC,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0015,3530,0,0,12/30/2017,12/30/2019,Commercial 3 ans,12/30/2016
+1,bouchara - op,Olivier,FORNIER,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0016,2580,0,0,7/10/2017,7/10/2018,Commercial 3 ans,7/10/2015
+1,inconnu,François,CHARRIER,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0017,390,0,0,3/4/2018,3/4/2019,Commercial 3 ans,3/4/2016
+1,SA SOFIBRA,Bertrand,GUILLEMIER,Bernard MIGRAINE,bernardmigraine@gmail.com,F,7 ter rue du Gle Larminat,0011,1740,0,0,9/4/2017,9/4/2017,Commercial 3 ans,9/4/2014
+1,SYNERGIE FINANCE GESTION,Françoise,LESCANNE,Luc FRENE,lucfrene@gmail.com,F,74 Rue d'Alleray,0002,4490,0,0,9/14/2017,9/14/2019,Commercial 3 ans,9/14/2016
+1,CAPIC,Michaela,GUERIN,Luc FRENE,lucfrene@gmail.com,F,74 Rue d'Alleray,0003,4310,0,0,1/1/2018,1/1/2020,Commercial 3 ans,1/1/2017
+1,FACET INGENIERIE,Valérie,DAVID,Luc FRENE,lucfrene@gmail.com,F,74 Rue d'Alleray,0005,1530,0,0,9/1/2017,9/1/2019,Commercial 3 ans,9/1/2016
+1,FURIC,Stephane,MASSON,Luc FRENE,lucfrene@gmail.com,F,74 Rue d'Alleray,0007,2050,0,0,11/1/2017,11/1/2018,Commercial 3 ans,11/1/2015
+1,SCP GESTIN LE GALL ET ASSOCIÉS,Philippe,THIBAUT DE MENONVILLE,Luc FRENE,lucfrene@gmail.com,F,74 Rue d'Alleray,0009,4630,0,0,1/1/2018,1/1/2018,Commercial 3 ans,1/1/2015
+1,SAS LAGADEC,Christian,LEMAIRE,Luc FRENE,lucfrene@gmail.com,F,74 Rue d'Alleray,0004,4820,0,0,7/1/2017,6/23/2019,Commercial 3 ans,6/23/2016
+1,SARL SOCOGEC QUIMPER,Antoine,FLOC'H,Philippe GENTIL,philippegentil@gmail.com,F,8 rue Auguste Barthodli,0006,1350,0,0,8/15/2017,8/15/2019,Commercial 3 ans,8/15/2016
+1,CRÉDIT MUTUEL ARKEA,Guylaine,GAIN,Jacques MORVAN,jacquesmorvan@gmail.com,F,80 AVENUE PHILIPPE AUGUSTE,0099,2490,0,0,11/26/2017,11/26/2017,Commercial 3 ans,11/26/2014
+1,BL FINANCE,Jean-François,BONTEMPS,Veronique JEGOU GALLARDON,veroniquejegougallardon@gmail.com,F,80 rue Bonaparte,0074,3210,0,0,2/18/2018,2/18/2019,Commercial 3 ans,2/18/2016
+1,SECOBA,Xavier,RENOUF,Béatrice KOEDINGER,béatricekoedinger@gmail.com,F,82 RUE DAMREMONT,0006,170,0,0,10/26/2017,10/26/2019,Commercial 3 ans,10/26/2016
+1,SARL HUITRES DE PRAT-AR-COUM,Cyrille,RASQUINET,Béatrice KOEDINGER,béatricekoedinger@gmail.com,F,82 RUE DAMREMONT,0007,840,0,0,12/18/2017,12/18/2019,Commercial 3 ans,12/18/2016
+1,HOLDING SIMON,Valérie,PRENOM,Béatrice KOEDINGER,béatricekoedinger@gmail.com,F,82 RUE DAMREMONT,0008,2490,0,0,1/23/2018,1/23/2018,Commercial 3 ans,1/23/2015
+1,COBREDIA,Ludovic,ROUSSEAU,Béatrice KOEDINGER,béatricekoedinger@gmail.com,F,82 RUE DAMREMONT,0009,20,0,0,12/11/2017,12/11/2018,Commercial 3 ans,12/11/2015
+1,PODER SARL,Stéphane,GALLAIS,Béatrice KOEDINGER,béatricekoedinger@gmail.com,F,82 RUE DAMREMONT,0044,4640,0,0,11/14/2017,11/14/2019,Commercial 3 ans,11/14/2016
+1,TANGUY CONSEIL INVESTISSEMENT,Sabine,PICK,Béatrice KOEDINGER,béatricekoedinger@gmail.com,F,82 RUE DAMREMONT,0045,290,0,0,12/18/2017,12/18/2019,Commercial 3 ans,12/18/2016
+1,TH2,Amaury,COUTURIER,Christine VILLEBRUN,christinevillebrun@gmail.com,F,84 Av Gambetta,0010,420,0,0,6/1/2017,6/1/2019,Commercial 3 ans,6/1/2016
+1,SAS BLECON ET ASSOCIES,Emilie,MARCONOT,Valérie VIDAL DE LA BLACHE,valérievidaldelablache@gmail.com,F,84 Av Gambetta,0025,3850,0,0,7/8/2017,7/8/2017,Commercial 3 ans,7/8/2014
+1,urbanis,Daniel,GUIGUEN,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0002,10,0,0,9/1/2017,9/1/2019,Commercial 3 ans,9/1/2016
+1,inconnu,Nicolas,CHALUS,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0003,4160,0,0,9/24/2017,9/24/2017,Commercial 3 ans,9/24/2014
+1,OBESINOV,Rodica,BOURDON,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0004,2950,0,0,6/12/2017,6/12/2018,Commercial 3 ans,6/12/2015
+1,GRDF,Eric,LE GRAND,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0005,3620,0,0,11/24/2017,11/24/2018,Commercial 3 ans,11/24/2015
+1,ERGO SANTE,Benoît,GAUTHEY,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0006,3000,0,0,8/27/2017,8/27/2019,Commercial 3 ans,8/27/2016
+1,BAMBOO DEVELOPPEMENT,Paul,ROHDE,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0007,1280,0,0,12/22/2017,12/22/2017,Commercial 3 ans,12/22/2014
+1,GAXIEU INGENIERIE,Franck,RENAUDIE,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0009,1030,0,0,10/21/2017,10/21/2018,Commercial 3 ans,10/21/2015
+1,GRAP'SUD UNION,Eric,HARTI,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0010,3620,0,0,10/11/2017,10/11/2019,Commercial 3 ans,10/11/2016
+1,SP2L,Franck,GRESLE,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0011,3370,0,0,7/1/2017,7/1/2017,Commercial 3 ans,7/1/2014
+1,AD OC,Alain,GIREAU,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0013,4070,0,0,11/1/2017,11/1/2018,Commercial 3 ans,11/1/2015
+1,CCI NIMES,Bettina,BELLENGER,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0014,4790,0,0,11/20/2017,11/20/2018,Commercial 3 ans,11/20/2015
+1,LOCAVERT,Christophe,THUILLIER,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0015,4340,0,0,9/13/2017,9/13/2019,Commercial 3 ans,9/13/2016
+1,TRAITEUR GRAND - MAS DE BAUMES,Christian,GHIGOU,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0016,1600,0,0,8/12/2017,8/12/2019,Commercial 3 ans,8/12/2016
+1,PHARMACIE DE L'UZEGE,Francois,RINGEARD,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0019,10,0,0,2/22/2018,2/22/2019,Commercial 3 ans,2/22/2016
+1,LA BAMBOUSERAIE,Sylvie,SIMON,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0020,4350,0,0,4/22/2017,4/22/2017,Commercial 3 ans,4/22/2014
+1,FIC,Udo,PARAIN,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0002,4510,0,0,11/25/2017,11/25/2019,Commercial 3 ans,11/25/2016
+1,ELB,Alain,ZACHARIE,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0003,270,0,0,6/1/2017,6/1/2018,Commercial 3 ans,6/1/2015
+1,NIMOTEL,Paul-Henri,FOLIARD,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0004,3050,0,0,9/7/2017,9/7/2019,Commercial 3 ans,9/7/2016
+1,BOXER HOLDING,Daniel,LUMEAU,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0005,4600,0,0,2/15/2018,2/15/2019,Commercial 3 ans,2/15/2016
+1,SC METHOD SARL -TRF RETAIL,Edouard,BRASSE,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0006,3410,0,0,6/10/2017,7/1/2019,Commercial 3 ans,7/1/2016
+1,LOTUS D'OR,Daniel,BIZOT,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0007,2630,0,0,6/25/2017,6/25/2018,Commercial 3 ans,6/25/2015
+1,SARL FABREGA - THOMAS ET ASSOCIES,Timothée,BEAUMONT,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0009,3040,0,0,3/1/2018,3/1/2020,Commercial 3 ans,3/1/2017
+1,PRO-ARCHIVES,Nicolas,FAGUER,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0010,1730,0,0,7/15/2017,7/15/2019,Commercial 3 ans,7/15/2016
+1,syntony,Virginie,SAUVAGE,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0011,2630,0,0,12/28/2017,12/28/2019,Commercial 3 ans,12/28/2016
+1,sillage,Xavier,BOREA,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0012,410,0,0,4/10/2017,4/10/2019,Commercial 3 ans,4/10/2016
+1,EXCO TOULOUSE,Marielle,GRAVIGNY ,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0013,1330,0,0,12/14/2017,12/14/2017,Commercial 3 ans,12/14/2014
+1,NAVOCAP,Jean-Christophe,LOUGE,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0014,2320,0,0,6/15/2017,6/15/2017,Commercial 3 ans,6/15/2014
+1,IGREC,Hervé,GUERIN,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0016,3970,0,0,10/1/2017,10/1/2019,Commercial 3 ans,10/1/2016
+1,SOCIÉTÉ GÉNÉRALE,Maurice,OORREEL,Delphine DEMANGE,delphinedemange@gmail.com,F,87 Rue Leblanc,0008,1390,0,0,7/1/2017,7/1/2018,Commercial 3 ans,7/1/2015
+1,SLR,Audrey,DEMONDION,Ludovic METAYER,ludovicmetayer@gmail.com,F,9 Rue Bardinet,0002,3340,0,0,4/20/2017,4/20/2018,Commercial 3 ans,4/20/2015
+1,RTE - SUD OUEST,Wilfried,LE CERF,Ludovic METAYER,ludovicmetayer@gmail.com,F,9 Rue Bardinet,0003,3580,0,0,1/4/2018,1/4/2019,Commercial 3 ans,1/4/2016
+1,COMAT AEROSPACE,Hubert,FOURNIER,Ludovic METAYER,ludovicmetayer@gmail.com,F,9 Rue Bardinet,0004,1600,0,0,10/1/2017,10/1/2019,Commercial 3 ans,10/1/2016
+1,KPMG,Marc,MASSON,Ludovic METAYER,ludovicmetayer@gmail.com,F,9 Rue Bardinet,0006,100,0,0,9/4/2017,7/1/2019,Commercial 3 ans,7/1/2016
+1,8888 (DOUBLE DOUBLE 8),Matthieu,JOZON,Ludovic METAYER,ludovicmetayer@gmail.com,F,9 Rue Bardinet,0008,1090,0,0,7/10/2017,1/1/2019,Commercial 3 ans,1/1/2016
+1,COIFFIDIS,Frédéric,DUPONCHEL,Ludovic METAYER,ludovicmetayer@gmail.com,F,9 Rue Bardinet,0010,4540,0,0,7/15/2017,7/15/2019,Commercial 3 ans,7/15/2016
+1,GROUPAMA D'OC,Francois,DORTU,Ludovic METAYER,ludovicmetayer@gmail.com,F,9 Rue Bardinet,0011,2500,0,0,6/23/2017,6/23/2018,Commercial 3 ans,6/23/2015
+1,CONTINENTAL FRANCE,Frédéric,DECRON LAFAYE,Ludovic METAYER,ludovicmetayer@gmail.com,F,9 Rue Bardinet,0013,4060,0,0,8/17/2017,8/17/2019,Commercial 3 ans,8/17/2016
+1,CERFACS,Guillaume,MONNIER,Ludovic METAYER,ludovicmetayer@gmail.com,F,9 Rue Bardinet,0005,4280,0,0,1/1/2018,1/1/2019,Commercial 3 ans,1/1/2016
+1,EMCI,Antoine,TOULEMONDE,Françoise FRERE,françoisefrere@gmail.com,F,9 RUE DE MEZIERES,0052,660,0,0,6/15/2017,6/15/2017,Commercial 3 ans,6/15/2014
+1,MANPOWER DIRECTION RÉGIONALE SUD,Denis,DELEMAZURE,Françoise FRERE,françoisefrere@gmail.com,F,9 RUE DE MEZIERES,0001,4660,0,0,10/10/2017,10/10/2017,Commercial 3 ans,10/10/2014
+1,CORUDO,Christophe,BALLOFFET,Françoise FRERE,françoisefrere@gmail.com,F,9 RUE DE MEZIERES,0028,3800,0,0,8/18/2017,8/18/2019,Commercial 3 ans,8/18/2016
+1,SCP VINCENT BAUDOIN / GENEVIEVE SAEZ,Martine,IACOMELLI,Marie-Cécile NICOLAS,marie-cécilenicolas@gmail.com,F,9 RUE PHILIBERT DELORME,0100,2370,0,0,9/1/2017,9/1/2017,Commercial 3 ans,9/1/2014
+1,VAXAN,Jean-Paul,SALEUR,Alexandre GAUFILLET,alexandregaufillet@gmail.com,F,9/11 Rue Dupleix,0001,2630,5260,58,5/26/2017,5/26/2020,Commercial 3 ans,5/26/2016
+1,EDF COMMERCE SUD-OUEST,Claude,NOURRY,Marco TORRIGLIA,marcotorriglia@gmail.com,F,92 rue du Dessous des Berges,0015,4430,0,0,6/23/2017,6/23/2017,Commercial 3 ans,6/23/2014
+1,rh partners,Romain,PRINS,Alain LOCH,alainloch@gmail.com,F,94 Rue Bobillot,0002,2410,0,0,12/1/2017,12/1/2017,Commercial 3 ans,12/1/2014
+1,inconnu,Eric,CHASSAGNON,Alain LOCH,alainloch@gmail.com,F,94 Rue Bobillot,0029,3850,0,0,9/3/2017,9/3/2019,Commercial 3 ans,9/3/2016
+1,AUSCHITZKY SAS,François,PAIX,Alain LOCH,alainloch@gmail.com,F,94 Rue Bobillot,0030,4940,0,0,12/17/2017,12/17/2018,Commercial 3 ans,12/17/2015
+1,ENEDIS-GRDF,Marc,ROLAND,Alain LOCH,alainloch@gmail.com,F,94 Rue Bobillot,0032,4370,0,0,7/27/2017,7/27/2017,Commercial 3 ans,7/27/2014
+1,TRICOIRE GESTION ET ASSOCIÉS,Agnès,ROUX,Alain LOCH,alainloch@gmail.com,F,94 Rue Bobillot,0033,410,0,0,5/30/2017,5/30/2019,Commercial 3 ans,5/30/2016
+1,PYRAMIS CONSULTING,Michel,WILLAME,Alain LOCH,alainloch@gmail.com,F,94 Rue Bobillot,0034,30,0,0,2/1/2018,2/1/2020,Commercial 3 ans,2/1/2017
+1,CABINET D'HENNEZEL DE FRANCOGNEY,Bertrand,COUE,Alain LOCH,alainloch@gmail.com,F,94 Rue Bobillot,0040,520,0,0,8/7/2017,8/7/2018,Commercial 3 ans,8/7/2015
+1,OMNIPLAST SARL,Antoine,DHELLEMMES,Alain LOCH,alainloch@gmail.com,F,94 Rue Bobillot,0038,2960,0,0,2/1/2018,2/16/2020,Commercial 3 ans,2/16/2017
+1,APAVE SUDEUROPE,Régis,DAUPHIN,Marielle ROYER,marielleroyer@gmail.com,F,GOMINOT,0001,2580,0,0,10/1/2017,9/15/2018,Commercial 3 ans,9/15/2015
+1,CAISSE D'EPARGNE AQUITAINE POITOU-CHARENTES,Sylvain,REPELIN,Ghalia LEVEQUE,ghalialeveque@gmail.com,M,1 BD JEAN JAURES,0001,4690,0,0,9/1/2017,9/1/2017,Commercial 9 ans,9/1/2008
+1,SCP SANCHEZ-ORTIZ JORDANA-GOUMARD GARRAU-MOUNET,Frédéric,EYRAUD,Olivier WISNIEWSKI,olivierwisniewski@gmail.com,M,1 Rue Frederic Mistral,0001,890,0,0,10/1/2014,10/1/2020,Commercial 9 ans,10/1/2011
+1,JPA-ACTUS,Betty,LAUBIE,Jean-Pierre SAMMAN,jean-pierresamman@gmail.com,F,103 RUE DU THEATRE,0067,3940,0,0,11/1/2016,11/1/2016,Commercial 9 ans,11/1/2007
+1,EXCO ECAF,Jean,BOISSON,Oumnia MONTANT,oumniamontant@gmail.com,M,104 Rue Ordener,0001,4540,0,0,7/13/2016,7/13/2016,Commercial 9 ans,7/13/2007
+1,TRATEL AFFRETEMENT,Sébastien,DELABRE,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0002,640,0,0,8/1/2015,8/1/2018,Commercial 9 ans,8/1/2009
+1,MENEAU,Jean-Paul,LE BLANC,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0036,2750,0,0,4/1/2017,4/1/2019,Commercial 9 ans,4/1/2010
+1,OI MANUFACTURING FRANCE,Karin,DELCOUR,Oumnia MONTANT,oumniamontant@gmail.com,F,104 Rue Ordener,0037,1200,0,0,6/22/2016,6/22/2021,Commercial 9 ans,6/22/2012
+1,HOLDING IRIS,Stanislas,PLEPLE,Driss LATHOUD,drisslathoud@gmail.com,M,106 BD DE COURCELLES,0001,630,0,0,7/1/2017,7/1/2017,Commercial 9 ans,7/1/2008
+1,EUROFINS ANALYSES POUR LE BATIMENT SUD-OUEST,Pierre,PETER,François Xavier COHEN,françoisxaviercohen@gmail.com,M,108 Avenue MOZART,0001,1160,0,0,1/1/2016,1/1/2022,Commercial 9 ans,1/1/2013
+1,FINANCIÈRE MONCEAU & CO,Gilles,CHARLOT,Karim RHAFES,karimrhafes@gmail.com,M,110 Rue Saint-Charles,0001,3410,0,0,10/1/2016,10/1/2019,Commercial 9 ans,10/1/2010
+1,ST JOHN'S,Patrick,MERCIER,Karim RHAFES,karimrhafes@gmail.com,F,110 Rue Saint-Charles,0002,280,0,0,1/1/2017,1/1/2020,Commercial 9 ans,1/1/2011
+1,SAS CHATEAU HAUT-BAILLY,Alexis,LEFEBVRE,Veronique CABOT,veroniquecabot@gmail.com,M,111 bis rue KARMAN,0010,1960,0,0,11/10/2017,11/10/2017,Commercial 9 ans,11/10/2011
+1,orange,Yves,DE FOUCHIER,Veronique CABOT,veroniquecabot@gmail.com,M,111 bis rue KARMAN,0001,2880,0,0,9/1/2013,9/1/2016,Commercial 9 ans,9/1/2007
+1,pro forma,Shahram,MOAL,Veronique CABOT,veroniquecabot@gmail.com,F,111 bis rue KARMAN,0013,2760,0,0,9/1/2016,9/1/2018,Commercial 9 ans,9/1/2009
+1,SOCIETE GENERALE,Michel,GALERA,Mohamed MAZEAU,mohamedmazeau@gmail.com,M,115 Rue Raymond Losserand,0003,770,0,0,4/1/2017,3/26/2022,Commercial 9 ans,3/26/2016
+1,IMPACT IMPRIMERIE,Andrés,GRIFFON,Mohamed MAZEAU,mohamedmazeau@gmail.com,M,115 Rue Raymond Losserand,0005,1490,0,0,8/25/2017,8/25/2018,Commercial 9 ans,8/25/2012
+1,MONTPELLIER ASSURANCES,Cathy,BENICHOU,Mohamed MAZEAU,mohamedmazeau@gmail.com,M,115 Rue Raymond Losserand,0006,630,0,0,1/26/2018,1/26/2019,Commercial 9 ans,1/26/2013
+1,RD SERVICES,Clara,DURIEUX,Mohamed MAZEAU,mohamedmazeau@gmail.com,M,115 Rue Raymond Losserand,0007,2270,0,0,1/1/2018,12/19/2021,Commercial 9 ans,12/19/2015
+1,NET-ACHETEUR.COM,Evelyne,LAMBERT,Mohamed MAZEAU,mohamedmazeau@gmail.com,M,115 Rue Raymond Losserand,0008,3610,0,0,7/18/2017,7/18/2022,Commercial 9 ans,7/18/2016
+1,DECATHLON,Hervé,AZNAR,Mohamed MAZEAU,mohamedmazeau@gmail.com,M,115 Rue Raymond Losserand,0009,3510,0,0,5/28/2017,5/28/2020,Commercial 9 ans,5/28/2014
+1,JEAN TRIAL ET CIE,Aurélie,CASSIER,Mohamed MAZEAU,mohamedmazeau@gmail.com,M,115 Rue Raymond Losserand,0011,4410,0,0,11/26/2017,11/26/2021,Commercial 9 ans,11/26/2015
+1,MAJI SAS,Francis,TERZAKOU,Mohamed MAZEAU,mohamedmazeau@gmail.com,M,115 Rue Raymond Losserand,0030,530,0,0,9/14/2017,9/14/2022,Commercial 9 ans,9/14/2016
+1,MUTUALITE FRANCAISE GRAND SUD - MFGS,Claude,THISSEN,Mohamed MAZEAU,mohamedmazeau@gmail.com,M,115 Rue Raymond Losserand,0001,960,0,0,3/5/2016,3/5/2019,Commercial 9 ans,3/5/2010
+1,SCP VIALLA ET DOSSA,Laurent,LEPRINCE,Frédéric ETTER,frédéricetter@gmail.com,M,117 BD DU MONTPARNASSE,0001,1480,0,0,7/1/2017,7/1/2017,Commercial 9 ans,7/1/2008
+1,APAVE SUDEUROPE SAS,Philippe,LE FLOCH,Laurent CHEVILLARD,laurentchevillard@gmail.com,M,12 AVENUE RENE COTY,0001,790,0,0,4/1/2017,4/1/2023,Commercial 9 ans,4/1/2014
+1,S'ANTONI IMMOBILIER,Alexandra,SINZ,Laurent CHEVILLARD,laurentchevillard@gmail.com,F,12 AVENUE RENE COTY,0002,3930,0,0,3/1/2019,3/1/2019,Commercial 9 ans,3/1/2010
+1,INFINE TRANSACTIONS,Sophie,LEDRU,Laurent CHEVILLARD,laurentchevillard@gmail.com,F,12 AVENUE RENE COTY,0007,1740,0,0,7/1/2017,6/23/2019,Commercial 9 ans,6/23/2013
+1,HOLDING JLH,Jean-Daniel,MIROUX,Herve MIKOLAJCZAK,hervemikolajczak@gmail.com,F,14 RUE EUGENE GIBEZ,0008,2060,0,0,7/1/2017,6/23/2019,Commercial 9 ans,6/23/2013
+1,HUSSER TRAITEUR,Jean-Yves,PINOT,Yann HERZ,yannherz@gmail.com,F,147 AVENUE PARMENTIER,0002,960,0,0,3/1/2017,3/1/2020,Commercial 9 ans,3/1/2011
+1,ETS IGUAL - MA & VA,Michel,PICARD,Roger EL BIED,rogerelbied@gmail.com,M,15 Rue Lagrange,0001,930,0,0,1/1/2016,1/1/2016,Commercial 9 ans,1/1/2007
+1,YVELIN SA,Jérôme,FRANCK DE PREAUMONT,Laurent BENHIDA-AIOUCH,laurentbenhida-aiouch@gmail.com,M,15 RUE M. BOKANOWSKI,0001,580,0,0,7/1/2015,7/1/2021,Commercial 9 ans,7/1/2012
+1,CREATIMMO,Michel,ADJEDJE,Bernard VUYLSTEKE,bernardvuylsteke@gmail.com,F,16 RUE D'ALESIA,0105,680,0,0,5/1/2023,5/1/2023,Commercial 9 ans,5/1/2014
+1,SERVANT,Eric,DUSSOGE,Laurent WALLYN,laurentwallyn@gmail.com,M,16 rue des martyrs,0001,270,0,0,10/1/2014,10/1/2020,Commercial 9 ans,10/1/2011
+1,DIADOM CARE,Isabelle,FAURE,Mathieu TOUHLALI,mathieutouhlali@gmail.com,M,16 RUE DU CHAMP DE MARS,0001,870,0,0,3/1/2015,3/1/2015,Commercial 9 ans,3/1/2006
+1,5 SANTE,Nelly,BLIGNIERES,Mathieu TOUHLALI,mathieutouhlali@gmail.com,F,16 RUE DU CHAMP DE MARS,0002,3510,0,0,4/1/2015,4/1/2018,Commercial 9 ans,4/1/2009
+1,SOCIÉTÉ FINANCIÈRE DE LA RAMADE,Bruno,DE BAGNEUX,Anne MOREL,annemorel@gmail.com,M,16 Rue du Colisee,0007,4240,0,0,7/1/2017,7/1/2025,Commercial 9 ans,7/1/2016
+1,MUTAC,Jean-Louis,GACHOT,Anne MOREL,annemorel@gmail.com,M,16 Rue du Colisee,0001,3750,0,0,7/1/2015,7/1/2021,Commercial 9 ans,7/1/2012
+1,EAOS / HERA - (HOTRAVAIL GROUP),Alexandre,DECHIN,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0002,1700,0,0,1/1/2014,1/1/2017,Commercial 9 ans,1/1/2008
+1,SARL FRANCE INVESTISSEMENT TRANSACTION,Jean-Baptiste,ACAT-VERGNET,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0003,3560,0,0,1/1/2017,1/1/2020,Commercial 9 ans,1/1/2011
+1,cabinet carcreff,Christophe,DEPRET,Anne MOREL,annemorel@gmail.com,F,16 Rue du Colisee,0005,2150,0,0,10/1/2016,10/1/2022,Commercial 9 ans,10/1/2013
+1,cabinet evolis - coaching entreprises et sportifs,Frédéric,CYMBERKEWITCH,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0001,230,0,0,3/16/2018,3/16/2018,Commercial 9 ans,3/16/2012
+1,JOSSET MENGUY,Stéphane,BEAU,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0002,2470,0,0,5/1/2017,5/1/2019,Commercial 9 ans,5/1/2013
+1,CENTIGON SECURITY GROUP,Suzy,COGNY,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0004,1080,0,0,6/24/2017,6/24/2022,Commercial 9 ans,6/24/2016
+1,ATELIERS AGIS,Marie-Laure,JOACHIM,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0005,3380,0,0,11/1/2017,11/1/2021,Commercial 9 ans,11/1/2015
+1,BRETAGNE TELECOM,Frantz,CHABANNE,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0006,2270,0,0,12/1/2017,12/15/2021,Commercial 9 ans,12/15/2015
+1,BPO,Oliver,COGEZ,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0007,1790,0,0,5/24/2017,5/24/2017,Commercial 9 ans,5/24/2011
+1,ABERA,Alexandre,PILLOT,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0008,10,0,0,2/1/2018,2/1/2023,Commercial 9 ans,2/1/2017
+1,OUEST ASSURANCES,Sebastien,CONTENT,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0009,980,0,0,9/18/2017,9/18/2018,Commercial 9 ans,9/18/2012
+1,DENIS MATERIAUX,James,RINGUE,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0010,1720,0,0,2/5/2018,2/5/2022,Commercial 9 ans,2/5/2016
+1,PELTIER BOIS,Jean-Vincent,GIRARDOT,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0012,4890,0,0,8/21/2017,7/1/2022,Commercial 9 ans,7/1/2016
+1,B2F,Cédric,ANCRENAZ,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0013,4190,0,0,3/1/2018,3/1/2020,Commercial 9 ans,3/1/2014
+1,CHAMBRE DE COMMERCE ET D'INDUSTRIE,Pierre Yves,BRUNO,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0014,3810,0,0,9/4/2017,9/4/2021,Commercial 9 ans,9/4/2015
+1,TOP CAMPUS,Michel,LAPELLEGERIE,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0015,4260,0,0,2/17/2018,2/17/2022,Commercial 9 ans,2/17/2016
+1,SOPRAL,Benjamin,NICOLLIN,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0016,3130,0,0,10/10/2017,10/10/2019,Commercial 9 ans,10/10/2013
+1,AXXEL,Ludovic,VAUDAUX,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0017,3160,0,0,6/1/2017,6/1/2022,Commercial 9 ans,6/1/2016
+1,GOSSELIN,Anne,DE FONTENAY,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0018,4870,0,0,4/1/2017,4/20/2022,Commercial 9 ans,4/20/2016
+1,OPTHES,Magda,VAN HEEMS,Roland MIALON,rolandmialon@gmail.com,M,16 Rue Jonquoy,0021,2860,0,0,5/7/2017,5/7/2021,Commercial 9 ans,5/7/2015
+1,GROUPE CONDATE,Paul-Albert,FLIPO,Roland MIALON,rolandmialon@gmail.com,F,16 Rue Jonquoy,0003,2820,0,0,7/1/2017,6/23/2019,Commercial 9 ans,6/23/2013
+1,TRANSPORTS LAHAYE,Michelle,CHASSERIO,Roland MIALON,rolandmialon@gmail.com,F,16 Rue Jonquoy,0011,1870,0,0,7/1/2017,6/23/2019,Commercial 9 ans,6/23/2013
+1,ARCADE EXPERTISE ET AUDIT,Gilles,CANNARD,Roland MIALON,rolandmialon@gmail.com,F,16 Rue Jonquoy,0019,3260,0,0,7/1/2017,6/23/2019,Commercial 9 ans,6/23/2013
+1,TERCY-LEVILLAIN,Henri,COUSIN,Roland MIALON,rolandmialon@gmail.com,F,16 Rue Jonquoy,0020,2670,0,0,7/1/2017,6/23/2019,Commercial 9 ans,6/23/2013
+1,SACIB,Lionel,FINE,David BENOMAR,davidbenomar@gmail.com,M,17 AV. DU Gal DE GAULLE,0001,4260,0,0,6/15/2015,6/15/2015,Commercial 9 ans,6/15/2006
+1,ETOILE BRETAGNE ATLANTIQUE,Pierre,PELIER,David BENOMAR,davidbenomar@gmail.com,F,17 AV. DU Gal DE GAULLE,0002,770,0,0,1/1/2017,1/1/2020,Commercial 9 ans,1/1/2011
+1,GRUEL FAYER,Denis,SOUSSIN,David BENOMAR,davidbenomar@gmail.com,F,17 AV. DU Gal DE GAULLE,0003,710,0,0,1/1/2017,1/1/2020,Commercial 9 ans,1/1/2011
+1,ASSISTANCE AUTO 24,Sophie,CHEVENEMENT,David BENOMAR,davidbenomar@gmail.com,F,17 AV. DU Gal DE GAULLE,0004,3680,0,0,1/6/2018,12/23/2019,Commercial 9 ans,12/23/2010
+1,castell eurl,Yves,LENNE,Soheil DURAND,soheildurand@gmail.com,F,17 Rue d'Auteuil,0007,1710,0,0,6/25/2016,6/25/2022,Commercial 9 ans,6/25/2013
+1,apm,Jacques,SELOSSE,Jean Baptiste MEYER,jeanbaptistemeyer@gmail.com,M,170 Rue Saint-Maur,0001,440,0,0,1/1/2018,1/1/2021,Commercial 9 ans,1/1/2012
+1,CLAIRE SAS,Eva,GIRAL,Mohamed BOTHIER,mohamedbothier@gmail.com,M,176 rue du Château,0001,480,0,0,2/15/2017,2/15/2024,Commercial 9 ans,2/15/2015
+1,LAVOX - BLN,Carole,LOUVET,Patrick JACOB,patrickjacob@gmail.com,M,18 Rue Duvivier,0001,740,740,10,1/1/2016,1/1/2017,Commercial 9 ans,1/1/2002
+1,D.B.ORGANISATION,Laurent,ODDON,Patrick JACOB,patrickjacob@gmail.com,M,18 Rue Duvivier,0001,570,0,0,4/1/2016,4/1/2016,Commercial 9 ans,4/1/2007
+1,SETEC,Jean Francois,VANNIER,Xavier BOURDIN,xavierbourdin@gmail.com,M,2 Rue des Halles,0013,1770,0,0,7/1/2017,7/1/2019,Commercial 9 ans,7/1/2013
+1,SARL BSR & ASSOCIES,Eric,COURBE,Xavier BOURDIN,xavierbourdin@gmail.com,M,2 Rue des Halles,0009,3060,0,0,1/1/2020,1/1/2026,Commercial 9 ans,1/1/2017
+1,BODIN JOYEUX,Jacques,DIEZINGER,Xavier BOURDIN,xavierbourdin@gmail.com,M,2 Rue des Halles,0001,70,0,0,10/1/2013,10/1/2013,Commercial 9 ans,10/1/2004
+1,SODFI,Serge,BRUN,Xavier BOURDIN,xavierbourdin@gmail.com,F,2 Rue des Halles,0004,2040,0,0,7/1/2015,7/1/2021,Commercial 9 ans,7/1/2012
+1,PHARMACIE CAZALA,Stéphanie,BAILLENX,Rafiq DELANNOY,rafiqdelannoy@gmail.com,M,20 rue de Chambery,0031,150,0,0,11/8/2017,11/8/2022,Commercial 9 ans,11/8/2016
+1,PARFUMS MARILYNE BEAUTE,Stéphanie,BEUVADEN,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0002,170,0,0,8/1/2014,8/1/2020,Commercial 9 ans,8/1/2011
+1,HD2E,Olivier,CAZENAVE,Rafiq DELANNOY,rafiqdelannoy@gmail.com,F,20 rue de Chambery,0004,2290,0,0,12/20/2016,12/20/2022,Commercial 9 ans,12/20/2013
+1,LABRUX SAS,Ericka,MERLE,Michel CALVAR MADEC,michelcalvarmadec@gmail.com,M,21 RUE CUJAS,0001,4070,0,0,8/1/2017,8/1/2021,Commercial 9 ans,8/1/2015
+1,INTER METAL SAS,Andrew,DEJUANE,Florian POMMIER,florianpommier@gmail.com,M,21 RUE DE L'ABBE GROULT,0012,990,0,0,8/5/2017,8/5/2022,Commercial 9 ans,8/5/2016
+1,MECA PRECIS,Olivier,OSMONT,Florian POMMIER,florianpommier@gmail.com,M,21 RUE DE L'ABBE GROULT,0001,3890,0,0,7/1/2017,7/1/2017,Commercial 9 ans,7/1/2008
+1,KSB SAS,Eric,GOSSET-GRAINVILLE,Florian POMMIER,florianpommier@gmail.com,F,21 RUE DE L'ABBE GROULT,0002,1120,0,0,1/1/2016,1/1/2016,Commercial 9 ans,1/1/2007
+1,BERRY VIANDES,Mathieu,BALAS,Florian POMMIER,florianpommier@gmail.com,F,21 RUE DE L'ABBE GROULT,0003,2960,0,0,12/1/2017,12/1/2017,Commercial 9 ans,12/1/2008
+1,SFM,Geoffrey,ZZZ - ADHERENT TEST,Florian POMMIER,florianpommier@gmail.com,F,21 RUE DE L'ABBE GROULT,0026,330,0,0,10/1/2015,10/1/2015,Commercial 9 ans,10/1/2006
+1,SAINTE LIZAIGNE,Michel,DE KERSAUSON,Patrick BALD,patrickbald@gmail.com,M,22 Rue de l'Odeon,0001,3610,0,0,1/1/2017,1/1/2017,Commercial 9 ans,1/1/2008
+1,SAS HUILERIE VIGEAN,Christine,DUCATILLION,Josette CHAMPAUD,josettechampaud@gmail.com,F,237 RUE  LA CROIX NIVERT,0001,4710,0,0,8/1/2017,7/6/2022,Commercial 9 ans,7/6/2016
+1,cathay capital / stonest,Olivier,BULTEAU,Bertrand SCHOTT,bertrandschott@gmail.com,M,25 Avenue de Ségur,0002,530,0,0,5/21/2017,5/21/2020,Commercial 9 ans,5/21/2014
+1,ellipse co,Bertrand,SEBAUX,Brigitte MARIENNE,brigittemarienne@gmail.com,M,27 Rue des Bluets,0001,4700,0,0,10/1/2017,10/1/2023,Commercial 9 ans,10/1/2014
+1,GAULT ET FREMONT,Sandrine,PEYTAVIN,Gilbert EL MERINI,gilbertelmerini@gmail.com,M,27 RUE GASSENDI,0008,430,0,0,1/16/2018,1/16/2021,Commercial 9 ans,1/16/2015
+1,JHD,Dimitri,DELANNE,Gilbert EL MERINI,gilbertelmerini@gmail.com,M,27 RUE GASSENDI,0001,3330,0,0,1/1/2017,1/1/2017,Commercial 9 ans,1/1/2008
+1,RCP DESIGN GLOBAL,Alain,PRADIER ,Gilbert EL MERINI,gilbertelmerini@gmail.com,F,27 RUE GASSENDI,0002,1370,0,0,7/1/2017,7/1/2023,Commercial 9 ans,7/1/2014
+1,WESER,Laure,BERTETTO,Mohamed GUTH,mohamedguth@gmail.com,M,28 Rue Bouret,0001,4280,0,0,4/1/2016,4/1/2016,Commercial 9 ans,4/1/2007
+1,SERVI DORYL,Roland,WAMBEKE,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0010,4240,0,0,10/1/2017,10/1/2019,Commercial 9 ans,10/1/2013
+1,OREP PACKAGING,Sylvain,VALENT,Daniela KERN,danielakern@gmail.com,M,3 Bis & 5 Rue d'Alembert,0001,720,0,0,10/3/2017,10/3/2022,Commercial 9 ans,10/3/2016
+1,COLLES CLEOPATRE,Steven,MOINE,Daniela KERN,danielakern@gmail.com,M,3 Bis & 5 Rue d'Alembert,0003,3950,0,0,3/12/2018,3/12/2021,Commercial 9 ans,3/12/2015
+1,VALANTUR,Jean-Michel,BARONE,Daniela KERN,danielakern@gmail.com,M,3 Bis & 5 Rue d'Alembert,0004,4430,0,0,9/7/2017,9/7/2021,Commercial 9 ans,9/7/2015
+1,GESEC,Philippe,POMMIER,Daniela KERN,danielakern@gmail.com,M,3 Bis & 5 Rue d'Alembert,0005,1980,0,0,1/10/2018,1/10/2020,Commercial 9 ans,1/10/2014
+1,SAVEBAG,Patrick,DE SAINT LOUVENT,Daniela KERN,danielakern@gmail.com,M,3 Bis & 5 Rue d'Alembert,0007,4060,0,0,7/1/2017,7/25/2020,Commercial 9 ans,7/25/2014
+1,VINCI ENERGIES CENTRE OUEST,Régine,GONZALES,Daniela KERN,danielakern@gmail.com,M,3 Bis & 5 Rue d'Alembert,0008,420,0,0,5/14/2017,5/14/2018,Commercial 9 ans,5/14/2012
+1,SETIPP / SUIVIDEFLOTTE.NET,Patrick,CHAVRIER,Daniela KERN,danielakern@gmail.com,M,3 Bis & 5 Rue d'Alembert,0009,3010,0,0,9/15/2017,9/15/2021,Commercial 9 ans,9/15/2015
+1,PHILOCOLOR PEINTURES,Benoit,DUTRUC,Daniela KERN,danielakern@gmail.com,M,3 Bis & 5 Rue d'Alembert,0010,3670,0,0,6/23/2017,6/23/2021,Commercial 9 ans,6/23/2015
+1,GEODIS,Christine,BIGEARD,Daniela KERN,danielakern@gmail.com,M,3 Bis & 5 Rue d'Alembert,0011,4190,0,0,7/16/2017,7/16/2019,Commercial 9 ans,7/16/2013
+1,SARL SODRECO - RESTAURANT DEL ARTE,Tim,GUINOT,Daniela KERN,danielakern@gmail.com,M,3 Bis & 5 Rue d'Alembert,0012,1840,0,0,8/24/2017,8/24/2022,Commercial 9 ans,8/24/2016
+1,GROUPE MONASSIER JOUE LES TOURS,Julie,HOLZINGER,Daniela KERN,danielakern@gmail.com,F,3 Bis & 5 Rue d'Alembert,0002,590,0,0,1/1/2016,1/1/2019,Commercial 9 ans,1/1/2010
+1,partner's drouault,Patrick,ZIMER,Thierry SCHELLENBERG,thierryschellenberg@gmail.com,F,3 Rue Fizeau,0002,3090,0,0,1/1/2014,1/1/2017,Commercial 9 ans,1/1/2008
+1,inconnu,Didier,TIBERGHIEN,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0001,910,0,0,10/1/2017,10/15/2020,Commercial 9 ans,10/15/2014
+1,LEVAIN ET DEVELOPPEMENT,Thibault,BESSON,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0002,110,0,0,5/6/2017,5/6/2022,Commercial 9 ans,5/6/2016
+1,KASSBOHRER E.S.E.,Raymond,JUVIGNARD,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0003,1720,0,0,8/4/2017,8/4/2022,Commercial 9 ans,8/4/2016
+1,STMICROELECTRONICS INTERNATIONAL NV,Olivier,ALTAZIN,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0004,4010,0,0,8/10/2017,8/10/2021,Commercial 9 ans,8/10/2015
+1,MANUFACTURE D HISTOIRES DEUX-PONTS,"
+									En attente d'élection
+								",NICOLAS,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0005,4330,0,0,12/1/2017,12/1/2019,Commercial 9 ans,12/1/2013
+1,PHOTOWEB,Maurice,APPRIEUX,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0006,2080,0,0,1/19/2018,1/19/2023,Commercial 9 ans,1/19/2017
+1,ALAIN ETIEVENT,Lilian,BESANCON,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0007,180,0,0,5/18/2017,5/18/2017,Commercial 9 ans,5/18/2011
+1,ABSISKEY CP,Joelle,MICHAL,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0008,4960,0,0,9/19/2017,9/19/2017,Commercial 9 ans,9/19/2011
+1,AHLSTROM,Christine,DE VARAX,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0009,1640,0,0,11/7/2017,11/7/2022,Commercial 9 ans,11/7/2016
+1,TEMPLUM SARL,Arnaud,RAVE,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0011,2100,0,0,6/1/2017,6/1/2018,Commercial 9 ans,6/1/2012
+1,R F I INFORMATIQUE,Jean-Marc,DANJEAN,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0012,600,0,0,7/20/2017,7/20/2021,Commercial 9 ans,7/20/2015
+1,G.MOREY,Manoj,TABOURET,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0013,580,0,0,5/13/2017,5/13/2022,Commercial 9 ans,5/13/2016
+1,ECM TECHNOLOGIES,Rocky,BOTTOLLIER,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0014,160,0,0,7/1/2017,7/3/2021,Commercial 9 ans,7/3/2015
+1,BIG BANG S.A.S.,Dick,GENEVE,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0015,4280,0,0,5/6/2017,5/6/2022,Commercial 9 ans,5/6/2016
+1,BASTILLE CAPITAL,Olivier,PIOT,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0016,1380,0,0,10/15/2017,10/15/2019,Commercial 9 ans,10/15/2013
+1,CIC ORIO,Alfredo,CAHINGT,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0017,460,0,0,10/8/2017,10/8/2022,Commercial 9 ans,10/8/2016
+1,POMA SAS,Jean-François,GHATTAS,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0019,3490,0,0,6/1/2017,6/1/2017,Commercial 9 ans,6/1/2011
+1,STREIFF SAS,Bruno,MARIGLIANO,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0020,650,0,0,10/16/2017,10/16/2020,Commercial 9 ans,10/16/2014
+1,SOCIÉTÉ DES 3 VALLÉES,Thierry,TOMMASINI,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0021,3860,0,0,5/4/2017,5/4/2021,Commercial 9 ans,5/4/2015
+1,thevenin & ducrot sa,Reza,MOINARD,Ludovic GENESTE,ludovicgeneste@gmail.com,M,3 Rue Robert Fleury,0025,1110,0,0,10/15/2017,10/15/2017,Commercial 9 ans,10/15/2011
+1,soreco,Jerome,BOUTRY,Ludovic GENESTE,ludovicgeneste@gmail.com,F,3 Rue Robert Fleury,0018,3030,0,0,5/1/2017,5/1/2022,Commercial 9 ans,5/1/2016
+1,MANPOWER,Christian,LOLIVIER,Hubert FARGEIX,hubertfargeix@gmail.com,F,30 RUE FABERT,0009,2750,0,0,5/1/2016,4/15/2019,Commercial 9 ans,4/15/2010
+1,FIDAL,Denotte,BLANCHART,Hubert FARGEIX,hubertfargeix@gmail.com,F,30 RUE FABERT,1011,280,0,0,10/1/2014,10/1/2013,Commercial 9 ans,10/1/2004
+1,P.E.B.,Ludovic,HOORELBEKE,Xavier SIMON,xaviersimon@gmail.com,M,35 Rue Pascal,0005,4070,0,0,9/11/2017,9/11/2021,Commercial 9 ans,9/11/2015
+1,FAIVELEY PLAST,David,COESTER,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0002,2480,0,0,3/16/2018,3/16/2022,Commercial 9 ans,3/16/2016
+1,"CHOPARD ""GROUPE AUTOMOBILE""",Déborah,MALGOUYRES,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0003,220,0,0,1/6/2018,9/15/2021,Commercial 9 ans,9/15/2015
+1,CERFRANCE ALLIANCE COMTOISE,Pierre,PERRIN,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0004,4860,0,0,4/29/2017,4/29/2022,Commercial 9 ans,4/29/2016
+1,DIAGER,Françoise,JEANPETIT,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0005,4070,0,0,10/26/2017,10/26/2022,Commercial 9 ans,10/26/2016
+1,CABINET DEPEYRE,Marilyn,BESANCON,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0006,3200,0,0,2/24/2018,2/24/2019,Commercial 9 ans,2/24/2013
+1,GROUPE DUCHESNE JARDINS,Denis,LUTHRINGER,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0008,4150,0,0,9/1/2017,9/1/2022,Commercial 9 ans,9/1/2016
+1,SIGNAUX GIROD,Marie-Andrée,CHEVALLIER,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0009,190,0,0,4/8/2017,4/8/2017,Commercial 9 ans,4/8/2011
+1,ESAT ET EA - ETP SYNERGIE,James,BOILLOD,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0011,2320,0,0,10/1/2017,10/1/2020,Commercial 9 ans,10/1/2014
+1,FRAMBOURG,Lily,LAFEUILLE,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0012,2270,0,0,9/4/2017,9/4/2018,Commercial 9 ans,9/4/2012
+1,RESCASET CONCEPT,Eric,BLANCHET,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0014,4930,0,0,5/10/2017,5/10/2022,Commercial 9 ans,5/10/2016
+1,FABRIQUE DES GAVOTTES,Xavier,DEMAEL,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0015,60,0,0,4/1/2017,4/1/2020,Commercial 9 ans,4/1/2014
+1,IMASONIC,Dominique,REDOULEZ,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0016,1500,0,0,10/19/2017,10/19/2022,Commercial 9 ans,10/19/2016
+1,MILLET DOLE,Jean-Marc,DAVIGO,Isabelle VILLE,isabelleville@gmail.com,M,354 Bis Rue de Vaugirard,0001,560,0,0,1/1/2017,1/1/2020,Commercial 9 ans,1/1/2011
+1,CLAVIERE SAS,Jean-Christophe,GONNORD,Nathalie DUBOIS,nathaliedubois@gmail.com,F,36 Av. BOSQUET,0006,4980,0,0,11/6/2010,11/6/2010,Commercial 9 ans,11/6/2001
+1,GMA,Jean-François,COLLOC,Emmanuel ROUX-BANNEVILLE,emmanuelroux-banneville@gmail.com,M,36 Rue de Lourmel,0014,1460,0,0,11/8/2017,11/8/2019,Commercial 9 ans,11/8/2013
+1,s.a.s. thiolat,Francois,SANI,Emmanuel ROUX-BANNEVILLE,emmanuelroux-banneville@gmail.com,M,36 Rue de Lourmel,0001,3620,0,0,10/1/2017,10/1/2023,Commercial 9 ans,10/1/2014
+1,inconnu,Floriane,LORNE,Emmanuel ROUX-BANNEVILLE,emmanuelroux-banneville@gmail.com,F,36 Rue de Lourmel,0002,1980,0,0,8/1/2016,8/1/2019,Commercial 9 ans,8/1/2010
+1,ECOFIT,Carina,BENATTAR,Fred FORT,fredfort@gmail.com,F,36 RUE KELLER,0132,1450,0,0,1/1/2016,1/1/2022,Commercial 9 ans,1/1/2013
+1,DEC,Xavier,MASSE,Michel BASCH,michelbasch@gmail.com,M,368 RUE DE VAUGIRARD,0001,4380,8760,39,1/1/2017,1/1/2024,Commercial 9 ans,1/1/2009
+1,COSEEF / CAIRE,Laurent,ACCOS,Assia LOUAT,assialouat@gmail.com,M,37 Rue du Fbg St Denis,0001,2470,0,0,6/16/2016,6/16/2019,Commercial 9 ans,6/16/2010
+1,ERMETO,Eliam,CLAMENS,Guenaël GAGNERE,guenaëlgagnere@gmail.com,F,370 RUE DE VAUGIRARD,0004,10,0,0,1/1/2024,1/1/2025,Commercial 9 ans,1/1/2016
+1,COVIALTO,Reggie,PELESZEZAK,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0001,2860,0,0,8/24/2017,8/24/2021,Commercial 9 ans,8/24/2015
+1,DAUDIN SERVICES,Nathalie,JULLIEN,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0003,4950,0,0,5/14/2017,5/14/2020,Commercial 9 ans,5/14/2014
+1,CREDIT AGRICOLE VAL DE FRANCE,Philippe,DELEPOULLE,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0004,3780,0,0,11/1/2017,11/1/2020,Commercial 9 ans,11/1/2014
+1,TRANSMANUT,Elsa,RHOUMY,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0005,590,0,0,3/18/2018,3/18/2023,Commercial 9 ans,3/18/2017
+1,GAREYTE,Joseph,ROSTAING,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0006,760,0,0,4/1/2017,4/1/2017,Commercial 9 ans,4/1/2011
+1,CREDIT AGRICOLE TITRES,Alain,DUPRE,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0007,700,0,0,8/1/2017,8/1/2020,Commercial 9 ans,8/1/2014
+1,ELIZABETH EUROPE,Julienne,MORALES,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0008,1980,0,0,12/1/2017,12/1/2018,Commercial 9 ans,12/1/2012
+1,REVISION ET CONTROLE,Hervé,LEQUIN,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0010,1460,0,0,12/15/2017,12/15/2018,Commercial 9 ans,12/15/2012
+1,SONOPOL,Didier,ROZIER,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0012,1180,0,0,12/29/2017,12/29/2020,Commercial 9 ans,12/29/2014
+1,SAINT MICHEL BISCUITS,Vincent,MORVANT,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0013,2050,0,0,2/20/2018,2/20/2021,Commercial 9 ans,2/20/2015
+1,A2V MECATRONIQUE,Xavier,RODA,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0016,790,0,0,12/22/2017,12/22/2020,Commercial 9 ans,12/22/2014
+1,PRECICAST,Gilles,KLITTING,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0017,2510,0,0,9/15/2017,9/15/2022,Commercial 9 ans,9/15/2016
+1,DERICHEBOURG,Eric,DURAIN,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0018,2950,0,0,12/5/2017,12/5/2018,Commercial 9 ans,12/5/2012
+1,FRANCOS,Yann,LABILLOY,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0019,4810,0,0,9/8/2017,9/8/2022,Commercial 9 ans,9/8/2016
+1,PRO ACTIF RH,Olivier,NEGREL,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0020,4800,0,0,2/1/2018,2/1/2023,Commercial 9 ans,2/1/2017
+1,COGETIQ,Alain,CARDON,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0022,1430,0,0,9/25/2017,9/25/2021,Commercial 9 ans,9/25/2015
+1,micel,Damien,DEHOUCK,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0023,1890,0,0,8/21/2017,8/21/2021,Commercial 9 ans,8/21/2015
+1,inconnu,Bertrand,LACOSTE,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0025,3950,0,0,7/1/2017,7/1/2017,Commercial 9 ans,7/1/2011
+1,KPMG SA,Christian,SALOMON,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0028,3740,0,0,8/22/2017,8/22/2022,Commercial 9 ans,8/22/2016
+1,BATIM'ALU,Benoît,TAPIERO,Herve FARESS,hervefaress@gmail.com,M,38 Rue des Cevennes,0029,1570,0,0,3/1/2018,3/22/2020,Commercial 9 ans,3/22/2014
+1,METALIS HPS,Grégoire,TORCK,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0009,3650,0,0,7/1/2017,6/23/2019,Commercial 9 ans,6/23/2013
+1,A.M.I,Yvan,BECQUART,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0014,5000,0,0,9/1/2017,9/1/2019,Commercial 9 ans,9/1/2013
+1,GROUPE DESPI,Mickaël,DEPAEUW,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0024,490,0,0,7/1/2017,6/23/2019,Commercial 9 ans,6/23/2013
+1,SA FAURE,Eric,DUIQUET,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0026,1650,0,0,7/1/2017,7/1/2020,Commercial 9 ans,7/1/2014
+1,AXLETECH,Nicolas,BUSSIERE,Jacques NAVARRO,jacquesnavarro@gmail.com,F,38 RUE KELLER,0004,2260,0,0,1/1/2016,1/1/2019,Commercial 9 ans,1/1/2010
+1,JOINTS FOURNEL ET GARNIER,Xavier,DEDEYAN,Jacques NAVARRO,jacquesnavarro@gmail.com,F,38 RUE KELLER,0005,1380,0,0,7/1/2015,7/1/2018,Commercial 9 ans,7/1/2009
+1,SAGRA,Frank,VELAY,Florence LENOIR,florencelenoir@gmail.com,F,40 Rue de Gergovie,0003,1810,0,0,1/1/2016,1/1/2016,Commercial 9 ans,1/1/2007
+1,LEROY-MERLIN,Loïc,TORCK,Brigitte POULAILLON,brigittepoulaillon@gmail.com,F,41 Av de la Motte-Picquet,0001,2310,0,0,7/1/2018,7/1/2024,Commercial 9 ans,7/1/2015
+1,SCAELEC,Laurent,HOUOT,Odile BENNIS,odilebennis@gmail.com,M,41 Rue Solferino,0001,990,0,0,10/1/2015,10/1/2018,Commercial 9 ans,10/1/2009
+1,MOB MONDELIN SAS,Vinciane,BOHER,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0001,2710,0,0,5/1/2017,5/1/2025,Commercial 9 ans,5/1/2016
+1,OUTILLAGE NOURRISSON CLAUDE,Marc,BOUCHE,Yves AMBROISE,yvesambroise@gmail.com,F,44 RUE DE GASSENDI,0002,4130,0,0,5/1/2017,5/1/2025,Commercial 9 ans,5/1/2016
+1,THOMAS SA,Marco,MACIEIRA,Tom FERNANDEZ,tomfernandez@gmail.com,F,44 RUE PERNETY,0010,2470,0,0,12/13/2016,12/13/2022,Commercial 9 ans,12/13/2013
+1,NOVARESSORT,Patrick,HARTMANN,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0003,2020,0,0,5/12/2017,5/12/2021,Commercial 9 ans,5/12/2015
+1,LE BATISTOU S.A.,Michel,BAZUS,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0004,4910,0,0,9/25/2017,9/25/2018,Commercial 9 ans,9/25/2012
+1,SECMI-ADDAX SAS,Meïssa,FONTAINE,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0005,440,0,0,4/29/2017,4/29/2019,Commercial 9 ans,4/29/2013
+1,TRANSPORTS VIAL,Mario,ALBRIEUX-VUARCHEX,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0006,580,0,0,12/28/2017,12/28/2017,Commercial 9 ans,12/28/2011
+1,cat-amania,François-Guillaume,DUPRET,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0007,210,0,0,11/27/2017,11/27/2021,Commercial 9 ans,11/27/2015
+1,circus consulting,Pierre-Yves,BENET,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0008,150,0,0,2/10/2018,2/10/2018,Commercial 9 ans,2/10/2012
+1,DSO DEVELOPPEMENT,Francis,AVALLET,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0009,3350,0,0,4/29/2017,4/29/2021,Commercial 9 ans,4/29/2015
+1,ARTIS,Yannis,JUGE,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0010,950,0,0,11/4/2017,11/4/2019,Commercial 9 ans,11/4/2013
+1,HORIZON SA,Jean-Luc,PERCHE,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0012,3390,0,0,11/6/2017,11/6/2021,Commercial 9 ans,11/6/2015
+1,GROUPE DURET IMMOBILIER,Gérard Louis,ALBRIEUX,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0013,250,0,0,11/1/2017,11/1/2018,Commercial 9 ans,11/1/2012
+1,GRAPHIBUS,Jean Raymond,BRICIER,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0014,2840,0,0,8/22/2017,8/22/2022,Commercial 9 ans,8/22/2016
+1,SAS ALAIN FRANCOIS,Pravesh,LALLIARD,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0015,3970,0,0,1/13/2018,1/13/2022,Commercial 9 ans,1/13/2016
+1,SCE,Hervé,LE HEC,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0016,1160,0,0,8/17/2017,8/17/2021,Commercial 9 ans,8/17/2015
+1,TIPIAK,Benito,CAZORLA,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0017,1140,0,0,10/23/2017,10/23/2020,Commercial 9 ans,10/23/2014
+1,RIVADIS HOLDING,Anne-Marie,DE RIEDMATTEN,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0018,2320,0,0,8/6/2017,8/6/2020,Commercial 9 ans,8/6/2014
+1,SOFIA,Baudouin,FONT-REAULX,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0019,2960,0,0,4/28/2017,4/28/2022,Commercial 9 ans,4/28/2016
+1,ETPO NANTES,David,MORIZOT,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0020,1090,0,0,10/20/2017,10/20/2021,Commercial 9 ans,10/20/2015
+1,LOIRE OCEAN MANUTENTION,Benoît,SOURISSEAU,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0021,140,0,0,4/1/2017,4/1/2022,Commercial 9 ans,4/1/2016
+1,FONDERIE LEMER,Edward,CHERPIN,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0022,4530,0,0,11/25/2017,11/25/2017,Commercial 9 ans,11/25/2011
+1,RSM FRANCE,Paul-Emmanuel,DE LARRARD,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0023,4440,0,0,5/2/2017,5/2/2020,Commercial 9 ans,5/2/2014
+1,CALIPLAST,Xavier,HUERTAS,Jean Paul BARET,jeanpaulbaret@gmail.com,M,45 Bis Rue Folie Regnault,0001,4770,0,0,3/1/2017,3/1/2017,Commercial 9 ans,3/1/2008
+1,CM-CIC INVESTISSEMENT SCR,Jean-Marc,GONAY,Rémi MATHIEU,rémimathieu@gmail.com,M,49 AV. DE LA REPUBLIQUE,0007,1320,0,0,2/18/2018,2/18/2022,Commercial 9 ans,2/18/2016
+1,OUEST COUVERTURE ENERGIE,Matthieu,LEBOUIN,Rémi MATHIEU,rémimathieu@gmail.com,M,49 AV. DE LA REPUBLIQUE,0001,1020,0,0,5/3/2017,5/3/2023,Commercial 9 ans,5/3/2014
+1,TIBCO,Sébastien,FLAMENT MORGAND,Laurent BASTIN,laurentbastin@gmail.com,F,5 RUE DU SOMMERARD,0002,4900,0,0,8/1/2015,8/1/2021,Commercial 9 ans,8/1/2012
+1,demeco,Guillaume,COTT,Helene LE VEN,heleneleven@gmail.com,M,51 RUE DE BABYLONE,0221,4090,0,0,4/1/2017,4/1/2020,Commercial 9 ans,4/1/2014
+1,epta coaching,Jean-Michel,GAUCHER,Michel BENMOUSSA,michelbenmoussa@gmail.com,M,51 RUE FRANCS BOURGEOIS,0001,3930,0,0,7/4/2015,7/4/2021,Commercial 9 ans,7/4/2012
+1,FESTINS DE SOLOGNE,David,MAUDUY,Lara BERGE,laraberge@gmail.com,M,55 rue de la Convention,0001,4390,0,0,5/1/2015,5/1/2021,Commercial 9 ans,5/1/2015
+1,M-LOC,Christian,HAESEBROUCK,Olivier GOUDAL,oliviergoudal@gmail.com,M,55 Rue des Cevennes,0006,2170,0,0,8/1/2017,8/1/2022,Commercial 9 ans,8/1/2016
+1,GAMAF,Sébastien,DE FONTENAY,Olivier GOUDAL,oliviergoudal@gmail.com,M,55 Rue des Cevennes,0001,4040,0,0,1/1/2011,1/1/2017,Commercial 9 ans,1/1/2008
+1,COMMUNAUTE D'AGGLOMERATION ORLEANS- VAL DE LOIRE,Alexandre,BASTIEN,Olivier GOUDAL,oliviergoudal@gmail.com,F,55 Rue des Cevennes,0002,3750,0,0,4/1/2014,4/1/2020,Commercial 9 ans,4/1/2011
+1,BAUDIN CHATEAUNEUF,Agnès,HERRENSCHMIDT,Tom DUDONNE,tomdudonne@gmail.com,F,"57, Avenue de Breteuil",0006,2060,0,0,7/1/2012,7/1/2012,Commercial 9 ans,7/1/2003
+1,GC3G,Luc,DELSAUT,Tom DUDONNE,tomdudonne@gmail.com,F,"57, Avenue de Breteuil",0005,2320,0,0,7/1/2016,7/1/2018,Commercial 9 ans,7/1/2009
+1,PANIBOIS,Sebastien,LUZIN,Philippe KERN,philippekern@gmail.com,M,58 Quai Le Gallo,0001,460,0,0,7/1/2017,7/1/2017,Commercial 9 ans,7/1/2008
+1,MOLLIERE,Thierry,FICHET,Philippe KERN,philippekern@gmail.com,F,58 Quai Le Gallo,0003,3710,0,0,5/1/2017,5/1/2021,Commercial 9 ans,5/1/2016
+1,FORMA MANAGEMENT,Jean-Marc,LOHEAC,Hugues FLAUNET,huguesflaunet@gmail.com,F,6 RUE CHAMPFLEURY,0002,3880,0,0,5/1/2016,5/1/2016,Commercial 9 ans,5/1/2007
+1,SARL FMD CHEZ SAS GAUTHIER,Rosario,HERNOUT,Laurence MONCEAU,laurencemonceau@gmail.com,F,6 Rue du Gal Lambert,0003,1790,0,0,2/1/2018,2/1/2018,Commercial 9 ans,2/1/2012
+1,AXEREAL MÉTIERS DU GRAIN,David,BLANC,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0002,2970,0,0,5/11/2017,5/11/2018,Commercial 9 ans,5/11/2012
+1,PARTNAIRE,Céline,MILTON,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0003,3660,0,0,3/1/2018,3/19/2022,Commercial 9 ans,3/19/2016
+1,IT&M RÉGIONS,Pascal,LEBON,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0004,0,0,0,8/1/2017,8/8/2019,Commercial 9 ans,8/8/2013
+1,BEBLOOM,Jean-Louis,HAOUR,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0005,2970,0,0,9/5/2017,9/5/2020,Commercial 9 ans,9/5/2014
+1,QUICK,Karine,DE CALONNE,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0007,3760,0,0,7/1/2017,7/1/2020,Commercial 9 ans,7/1/2014
+1,JUMALEC,Yann,RAVEL,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0008,1190,0,0,2/1/2018,2/1/2020,Commercial 9 ans,2/1/2014
+1,RASSINOUX SAS / ATECMAA-PACKAGING,Jean-Michel,BONNET,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0009,4650,0,0,8/21/2017,10/1/2021,Commercial 9 ans,10/1/2015
+1,NORMACADRE INTERNATIONAL,Sunil Dutt,FAUGIER,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0010,3660,0,0,10/1/2017,10/1/2021,Commercial 9 ans,10/1/2015
+1,SARL PÉPINIÈRES TRAVERS,Jean-Pierre,PIFFAUT,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0011,830,0,0,7/1/2017,7/1/2018,Commercial 9 ans,7/1/2012
+1,CV INVESTISSEMENT GROUPE VILLEMAIN,Jacqueline,DE MARGON,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0012,1020,0,0,8/1/2017,12/1/2020,Commercial 9 ans,12/1/2014
+1,sas g. pivaudran,Eric L J,THISSELIN,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0013,370,0,0,7/1/2017,2/1/2022,Commercial 9 ans,2/1/2016
+1,bg conseil,Alain,PAULUS-DUBOIS,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0017,40,0,0,10/5/2017,10/5/2017,Commercial 9 ans,10/5/2011
+1,ENGELIBERT RENOVATION CONSTRUCTION,Samuel,DEZE,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0018,1840,0,0,11/5/2017,11/5/2021,Commercial 9 ans,11/5/2015
+1,ENEDIS,Alexander,LEFEVRE,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0020,1930,0,0,5/30/2017,5/30/2018,Commercial 9 ans,5/30/2012
+1,SARL LESTRADE,Gabriele,GEVIN,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0021,150,0,0,6/1/2017,6/1/2022,Commercial 9 ans,6/1/2016
+1,SAS ITHPP - ALCEN,Cédric,ABECASSIS,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0022,1080,0,0,8/19/2017,8/19/2021,Commercial 9 ans,8/19/2015
+1,FIDOM,Fabrice,DE BARBENTANE,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0023,1150,0,0,4/22/2017,5/1/2021,Commercial 9 ans,5/1/2015
+1,BROWN EUROPE,Didier,HUMBERT-DROZ,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0024,2190,0,0,11/12/2017,11/12/2019,Commercial 9 ans,11/12/2013
+1,APR - ASSISTANCE PROGRAMMATION RÉALISATION,Frédéric,KRON,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0025,1150,0,0,4/10/2017,2/16/2022,Commercial 9 ans,2/16/2016
+1,CMPC,Martine,PLANTIER,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0026,1190,0,0,4/1/2017,4/1/2022,Commercial 9 ans,4/1/2016
+1,IG FORMATION,Gaëtan,TABONI,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0029,570,0,0,6/22/2017,6/22/2018,Commercial 9 ans,6/22/2012
+1,LOMACO SAS,Xavier,ZIMMER,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0030,4020,0,0,12/8/2017,12/8/2021,Commercial 9 ans,12/8/2015
+1,AEROFONCTIONS,Olivier,GRANA,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0032,2520,0,0,10/7/2017,10/7/2020,Commercial 9 ans,10/7/2014
+1,ANL FRANCE,Laurent,ALTMAYER,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0033,340,0,0,11/4/2017,11/4/2022,Commercial 9 ans,11/4/2016
+1,MANPOWER FRANCE,Jean-Philippe,BARBIER,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0036,2610,0,0,3/29/2018,3/29/2019,Commercial 9 ans,3/29/2013
+1,PEINTURES S.O.B,Véronique,BILLAN,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0037,360,0,0,5/5/2017,5/5/2020,Commercial 9 ans,5/5/2014
+1,ACOM EXPERTISE,Isabelle,CAMPOS,Sandra REIMERINGER,sandrareimeringer@gmail.com,M,60 Av Jean Jaures,0001,2720,0,0,8/1/2016,8/1/2019,Commercial 9 ans,8/1/2010
+1,PRADEL,Laure,LAHSINI,Sandra REIMERINGER,sandrareimeringer@gmail.com,F,60 Av Jean Jaures,0006,3000,0,0,7/1/2017,6/23/2019,Commercial 9 ans,6/23/2013
+1,WHYLOT,Jean-Luc,CHARLET,Sandra REIMERINGER,sandrareimeringer@gmail.com,F,60 Av Jean Jaures,0019,3240,0,0,8/1/2017,8/1/2019,Commercial 9 ans,8/1/2013
+1,DIACE SAS,Camille ,PINARD,Géraldine ESSAYEGH,géraldineessayegh@gmail.com,M,60 rue de Tocqueville,0001,2640,0,0,1/11/2016,1/11/2019,Commercial 9 ans,1/11/2010
+1,CIB INGENIERIE,Steve,BERARD,Jean Luc JUVANTENY,jeanlucjuvanteny@gmail.com,M,66 Av. du Général LECLERC,0009,2810,0,0,7/1/2017,7/1/2022,Commercial 9 ans,7/1/2016
+1,LACAZE ÉNERGIES,Dominique,LEROY,Jean Luc JUVANTENY,jeanlucjuvanteny@gmail.com,F,66 Av. du Général LECLERC,0002,2930,0,0,4/1/2016,4/1/2010,Commercial 9 ans,4/1/2001
+1,NETTOYAGE LEBRE SELLEN,Serge,SECHER LEONELLI,Stéphane ETTALALI,stéphaneettalali@gmail.com,M,67 Rue Rennequin,0001,4110,0,0,2/1/2016,2/1/2022,Commercial 9 ans,2/1/2013
+1,THIOT INGENIERIE,Yannick,LEBLOND,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0002,450,0,0,2/1/2016,2/1/2022,Commercial 9 ans,2/1/2013
+1,SAS HOLDING GEORGES VIGOUROUX,Pascal,BARDON,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0003,2350,0,0,4/1/2018,4/1/2024,Commercial 9 ans,4/1/2015
+1,les vignerons de buzet,Xavier,BEAUDOIN,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0004,4530,0,0,7/1/2015,7/1/2015,Commercial 9 ans,7/1/2006
+1,bernard plantey,David,FAVIER,Stéphane ETTALALI,stéphaneettalali@gmail.com,F,67 Rue Rennequin,0005,480,0,0,10/1/2016,10/1/2019,Commercial 9 ans,10/1/2010
+1,SARL ADM DRIVE,Olivier ,DEVANNE,Bernard RICHARD,bernardrichard@gmail.com,M,68 Rue Jean Bonal,0004,2290,0,0,11/1/2017,11/1/2021,Commercial 9 ans,11/1/2015
+1,SCP VINCENT BAUDOIN,Herve,KLEIN,Bernard RICHARD,bernardrichard@gmail.com,F,68 Rue Jean Bonal,0002,3520,0,0,3/1/2017,1/1/2020,Commercial 9 ans,1/1/2012
+1,BDM EXPERTISE & CONSEILS,Sophie,VU,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0001,790,0,0,7/1/2018,7/1/2024,Commercial 9 ans,7/1/2015
+1,BROUILLON PROCESS,Alain,LEVEQUE,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0002,4350,0,0,4/1/2014,4/1/2017,Commercial 9 ans,4/1/2008
+1,GGA PEUGEOT,Jocelyne,WEISMAN,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0003,1130,0,0,7/1/2016,7/1/2023,Commercial 9 ans,7/1/2014
+1,MERICQ SA,Frank,ROUSSEAU,Philippe SARWATKA,philippesarwatka@gmail.com,F,7 RUE GASSENDI,0018,3600,0,0,1/15/2019,1/15/2019,Commercial 9 ans,1/15/2016
+1,TRANSPORTS CAVALLIN,Francois,TORRES,Luc FRENE,lucfrene@gmail.com,M,74 Rue d'Alleray,0006,2810,0,0,4/1/2017,4/1/2017,Commercial 9 ans,4/1/2011
+1,DE NADAI SA,Arnaud,DUPONT-DAGUET,Luc FRENE,lucfrene@gmail.com,M,74 Rue d'Alleray,0001,4780,0,0,1/1/2017,1/1/2020,Commercial 9 ans,1/1/2011
+1,DOUMENC THILLARD SERVICES,Jean-Luc De,MONNERET,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0001,680,0,0,8/3/2017,8/3/2021,Commercial 9 ans,8/3/2015
+1,SACBA,Ludovic,CARON,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0002,760,0,0,9/4/2017,9/4/2020,Commercial 9 ans,9/4/2014
+1,ACEP,Nicolas,COUNET,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0003,3020,0,0,4/1/2017,4/1/2022,Commercial 9 ans,4/1/2016
+1,ST DALFOUR,Alain,BOBBIA,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0004,3420,0,0,10/19/2017,10/19/2022,Commercial 9 ans,10/19/2016
+1,BRISTOL MYERS SQUIBB,Julien,GIACOMINI,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0005,3540,0,0,8/1/2017,8/1/2022,Commercial 9 ans,8/1/2016
+1,METAL MOBIL SA,Bernard,MAGNAT,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0008,160,0,0,9/2/2017,9/2/2022,Commercial 9 ans,9/2/2016
+1,COAXIS ASP,Vanessa,DELLAC,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0009,2530,0,0,1/10/2018,1/10/2020,Commercial 9 ans,1/10/2014
+1,RIGHINI SA,Shakeel,FERRARI,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0010,780,0,0,11/1/2017,11/1/2022,Commercial 9 ans,11/1/2016
+1,L'ARCHE SARL,Michel,VILLEZ,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0011,1970,0,0,5/1/2017,5/1/2019,Commercial 9 ans,5/1/2013
+1,ACTION TELECOM,Céline,COTHENET,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0012,2780,0,0,6/1/2017,5/21/2022,Commercial 9 ans,5/21/2016
+1,CABINET BAROUH ET ASSOCIES,Emmanuel,WALCKER,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0013,3760,0,0,9/1/2017,9/1/2020,Commercial 9 ans,9/1/2014
+1,LES CRESSONNIÈRES D'AQUITAINE,Vanessa,COFFINET,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0014,2800,0,0,9/16/2017,9/16/2021,Commercial 9 ans,9/16/2015
+1,SAS WECK,Sanjiv,GUIGNARD,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0015,3930,0,0,10/1/2017,9/22/2017,Commercial 9 ans,9/22/2011
+1,WENDEL SAS,Marc,LATHUILLE,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0016,4470,0,0,5/1/2017,5/1/2019,Commercial 9 ans,5/1/2013
+1,igreca,Hugues,TOURNIER,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0017,2970,0,0,4/1/2017,4/1/2019,Commercial 9 ans,4/1/2013
+1,idld (institut du leadership durable),Sébastien,FERRERE,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0018,650,0,0,2/7/2018,2/7/2023,Commercial 9 ans,2/7/2017
+1,ATMOS PROPRETE,Pawel,LAVANDIER,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0019,190,0,0,2/1/2018,2/1/2022,Commercial 9 ans,2/1/2016
+1,LEROY-MERLIN,Pascal,REBUFFIE,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0021,3820,0,0,4/1/2017,4/1/2017,Commercial 9 ans,4/1/2011
+1,CABINET DEGEZ-KERJEAN,Ignace,GANEM,Stephane DECAVELE,stephanedecavele@gmail.com,M,8 RUE DE PARIS,0023,4890,0,0,9/1/2017,9/1/2020,Commercial 9 ans,9/1/2014
+1,GEVES,Rene,KIRSTETTER,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0006,4880,0,0,7/1/2017,6/23/2019,Commercial 9 ans,6/23/2013
+1,RAVEM,Marc,LIPPI,Laurence PIERRET,laurencepierret@gmail.com,F,80 RUE L'AMIRAL MOUCHEZ,0003,600,0,0,10/1/2016,10/1/2016,Commercial 9 ans,10/1/2007
+1,LDC,Sylvain,RIGHENZI DE VILLERS,Béatrice KOEDINGER,béatricekoedinger@gmail.com,F,82 RUE DAMREMONT,0002,1900,0,0,1/1/2019,1/1/2022,Commercial 9 ans,1/1/2013
+1,ETABLISSEMENTS SOGAL,Stéphane,VEIRMAN,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,M,85 Rue Brancion,0017,3550,0,0,7/1/2017,7/5/2021,Commercial 9 ans,7/5/2015
+1,CPAM DE MAINE ET LOIRE,Emmanuel,JACQUILLAT,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,M,85 Rue Brancion,0001,2530,0,0,1/1/2016,1/1/2019,Commercial 9 ans,1/1/2010
+1,LOGISSEO,Anne-Marie,RICHARD,Jean-François MARCHYLLIE,jean-françoismarchyllie@gmail.com,F,85 Rue Brancion,0008,1240,0,0,11/1/2017,10/8/2019,Commercial 9 ans,10/8/2013
+1,MUTUALITÉ FRANÇAISE ANJOU-MAYENNE,Shahriar,ROOS,Marc MICHAUD,marcmichaud@gmail.com,F,86 RUE DE L'ABBE GROULT,0017,1100,0,0,1/1/2018,1/1/2018,Commercial 9 ans,1/1/2009
+1,EGDC,Corinne,PETERS,Delphine DEMANGE,delphinedemange@gmail.com,M,87 Rue Leblanc,0001,2920,0,0,1/1/2016,1/1/2016,Commercial 9 ans,1/1/2007
+1,O.E.M. DEVELOPMENT,Grégory,DUCROT,Kenza ALLONCLE,kenzaalloncle@gmail.com,M,9 RUE ROY,0001,160,0,0,1/1/2017,1/1/2022,Commercial 9 ans,1/1/2013
+1,ACKERMAN,Alexandre,D'HARCOURT,Augustin MARTIN,augustinmartin@gmail.com,F,9 RUE ROY,0002,1070,0,0,7/1/2015,7/1/2018,Commercial 9 ans,7/1/2009
+1,EURO-SYMBIOSE,Remy,PROT,Alexandre GAUFILLET,alexandregaufillet@gmail.com,M,9/11 Rue Dupleix,0001,2710,0,0,8/30/2017,8/30/2022,Commercial 9 ans,8/30/2016
+1,FLEURY MICHON CHARCUTERIE,Anne-Laurence,YVON,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0001,390,0,0,2/15/2018,2/15/2023,Commercial 9 ans,2/15/2017
+1,ERDF,Michel,LECOQ,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0003,4580,0,0,10/26/2017,10/26/2019,Commercial 9 ans,10/26/2013
+1,CHAMBRE DE COMMERCE ET D'INDUSTRIE DU MAINE -ET-LOIRE,Benjamin,SIX,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0004,3500,0,0,6/1/2017,6/1/2019,Commercial 9 ans,6/1/2013
+1,SAS DALIVAL HOLDING,Joëlle,RAY,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0005,3790,0,0,2/18/2018,2/18/2021,Commercial 9 ans,2/18/2015
+1,CAA-AGENCEMENT,Gilbert,FOURNET,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0007,1390,0,0,1/1/2018,12/27/2017,Commercial 9 ans,12/27/2011
+1,KELCIBLE,René Raymond Robert,DE SEYSSEL,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0009,3720,0,0,10/1/2017,10/1/2017,Commercial 9 ans,10/1/2011
+1,VILMORIN SA,Javed,DEVELLE,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0010,2710,0,0,6/1/2017,6/9/2022,Commercial 9 ans,6/9/2016
+1,SADEL,Thierry,BERT,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0013,2850,0,0,3/8/2018,3/8/2022,Commercial 9 ans,3/8/2016
+1,MARTINEAU,Cédric,DECHAVANNE,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0014,4780,0,0,12/9/2017,12/9/2019,Commercial 9 ans,12/9/2013
+1,IP FOCUS,Michel,SALERNO,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0016,4030,0,0,12/30/2017,12/30/2019,Commercial 9 ans,12/30/2013
+1,SELAS FREDERIC ROLLAND,Christian,CHARLES,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0017,4330,0,0,3/23/2018,3/23/2021,Commercial 9 ans,3/23/2015
+1,ROSSIGNOL & ASSOCIES,Arnaud,DUSSART,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0018,3510,0,0,2/1/2018,2/4/2023,Commercial 9 ans,2/4/2017
+1,cobeval,Federico,CLARAC,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0021,3180,0,0,12/6/2017,12/6/2020,Commercial 9 ans,12/6/2014
+1,onesime,Etienne,GRANGE,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0023,3840,0,0,3/24/2018,3/24/2021,Commercial 9 ans,3/24/2015
+1,KPMG ENTREPRISES,Yves,JAIS,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0024,4120,0,0,1/1/2018,1/1/2018,Commercial 9 ans,1/1/2012
+1,TP BOUTTE,Johan,LECOMTE,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0025,2540,0,0,9/16/2017,9/16/2020,Commercial 9 ans,9/16/2014
+1,GENEFAR HOLDING,Damien,RICHARD,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0027,3350,0,0,5/20/2017,5/20/2020,Commercial 9 ans,5/20/2014
+1,LIS FRANCE,Eric,SANDOZ,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0028,4730,0,0,12/1/2017,12/1/2019,Commercial 9 ans,12/1/2013
+1,CHANTREUIL MÉCANIQUE,Philippe,CALVET,Alain LOCH,alainloch@gmail.com,M,94 Rue Bobillot,0042,630,0,0,8/2/2017,8/2/2019,Commercial 9 ans,8/2/2013
+1,N/A,Michel,GIRAUD,Maxime VANAVERBECK,maximevanaverbeck@gmail.com,F,105 RUE DE LA CONVENTION,0064,750,0,0,8/1/2017,8/1/2017,Habitation meublé,8/1/2016
+1,N/A,David,REBELLE,Charles ULCOQ,charlesulcoq@gmail.com,F,11 BIS RUE AMELIE,0027,4730,0,0,5/1/2017,5/1/2017,Habitation meublé,5/1/2016
+1,N/A,Xavier,NEVEU,Pierre SPONAR,pierresponar@gmail.com,F,12 rue d'Armaillé,0037,1680,0,0,8/1/2017,8/1/2017,Habitation meublé,8/1/2016
+1,N/A,Pierre,KIEFER,Erwan MERIENNE,erwanmerienne@gmail.com,F,13 rue Robert Fleury,0017,1530,0,0,8/1/2017,8/1/2017,Habitation meublé,8/1/2016
+1,N/A,Dominique,DELETREZ,Frédéric D'UNIENVILLE,frédéricd'unienville@gmail.com,F,13 RUE VERNIQUET,0001,130,0,0,2/3/2018,2/3/2018,Habitation meublé,2/3/2017
+1,N/A,Patrick,DELAGRANDA,Eric MAIGNAN,ericmaignan@gmail.com,F,140 RUE SAINT CHARLES,0001,20,0,0,5/1/2017,5/1/2017,Habitation meublé,5/1/2016
+1,N/A,Hughes,MONNIER,Stéphane PAUCHET,stéphanepauchet@gmail.com,F,152 RUE DAMREMONT,0013,4110,0,0,3/5/2017,3/5/2017,Habitation meublé,3/5/2016
+1,N/A,Philippe,NARASSIGUIN,Eddy ANFRAY,eddyanfray@gmail.com,F,20 rue Du Terrage,0604,1290,0,0,5/23/2017,5/23/2017,Habitation meublé,5/23/2016
+1,N/A,Christophe,LEROUX,Jean-Francois PATEL,jean-francoispatel@gmail.com,F,22 rue Tournefort,0017,3140,0,0,3/1/2018,3/1/2018,Habitation meublé,3/1/2017
+1,N/A,Philippe,PAVARD,Julien RAULT,julienrault@gmail.com,F,241 CROIX NIVERT,0021,950,0,0,5/1/2017,5/1/2017,Habitation meublé,5/1/2016
+1,N/A,Christophe,LEJEUNE,Françoise LE CORRE,françoiselecorre@gmail.com,F,289 RUE LECOURBE,0001,1300,0,0,8/4/2017,8/4/2017,Habitation meublé,8/4/2016
+1,N/A,Evelyne,DUPONT,Pierre BUCHARD,pierrebuchard@gmail.com,F,29 Av de Lowendal,0006,2990,0,0,5/27/2017,11/27/2017,Habitation meublé,2/27/2017
+1,N/A,Laurent,MILLOT,Pamela PILOT,pamelapilot@gmail.com,F,29 AV. DE SUFFREN,0019,4470,0,0,10/14/2017,10/14/2017,Habitation meublé,10/14/2016
+1,N/A,Fabien,LEBLANC,Hubert FARGEIX,hubertfargeix@gmail.com,F,30 RUE FABERT,0017,2240,0,0,1/6/2018,1/6/2018,Habitation meublé,1/6/2017
+1,N/A,Laurent,SITA,Stephane LACHAZE,stephanelachaze@gmail.com,F,322 RUE ST JACQUES,0034,1470,0,0,2/1/2018,5/1/2017,Habitation meublé,2/1/2017
+1,N/A,Benoit,FABULET,Emmanuel ROUX-BANNEVILLE,emmanuelroux-banneville@gmail.com,F,36 Rue de Lourmel,0009,1440,0,0,8/10/2017,8/10/2017,Habitation meublé,8/10/2016
+1,N/A,Arnaud,DUPUIS,Egbert JOLICOEUR,egbertjolicoeur@gmail.com,F,40 avenue Charles Floquet,0006,650,0,0,8/1/2017,8/1/2017,Habitation meublé,8/1/2016
+1,N/A,Xavier,MULLIEZ,Helene LE VEN,heleneleven@gmail.com,F,51 RUE DE BABYLONE,0032,1990,0,0,1/1/2018,1/1/2018,Habitation meublé,1/1/2017
+1,N/A,Rebecka,USUNIER,Vincent DACQUET,vincentdacquet@gmail.com,F,62/68 AV. DE SUFFREN,0077,1960,0,0,8/1/2017,8/1/2017,Habitation meublé,8/1/2016
+1,N/A,Serge,MAYAUD,Séverine MAAGD,séverinemaagd@gmail.com,F,66 rue Raymond Barbet,0001,3290,0,0,1/11/2018,1/11/2018,Habitation meublé,1/11/2017
+1,N/A,Roland,MICUCCI,Jean-Luc MICOL,jean-lucmicol@gmail.com,F,66 rue Raymond Barbet,0003,4140,0,0,8/1/2017,8/1/2017,Habitation meublé,8/1/2016
+1,N/A,Patrick,WIEN,Edouard VEYRET,edouardveyret@gmail.com,F,83/87 AVENUE D'ITALIE,0044,3900,0,0,11/5/2017,11/5/2017,Habitation meublé,11/5/2016
+1,N/A,Eric,BOIREAU,Edouard VEYRET,edouardveyret@gmail.com,F,83/87 AVENUE D'ITALIE,0057,4350,0,0,10/1/2017,10/1/2017,Habitation meublé,10/1/2016
+1,N/A,Thierry,CATAPOULE,Edouard VEYRET,edouardveyret@gmail.com,F,83/87 AVENUE D'ITALIE,0069,1890,0,0,4/1/2017,4/1/2017,Habitation meublé,4/1/2016
+1,N/A,Dominique,GIRAUD-CASTAING,Ludovic METAYER,ludovicmetayer@gmail.com,F,9 Rue Bardinet,0009,4670,0,0,1/15/2018,1/15/2018,Habitation meublé,1/15/2017
+1,N/A,Elisabeth,GUERIN,Ludovic METAYER,ludovicmetayer@gmail.com,F,9 Rue Bardinet,0012,1880,0,0,2/10/2018,2/10/2018,Habitation meublé,2/10/2017
+1,N/A,Renaud,THEODOLY LANNES,Françoise FRERE,françoisefrere@gmail.com,F,9 RUE DE MEZIERES,0046,600,0,0,9/1/2017,9/1/2017,Habitation meublé,9/1/2016
+1,N/A,Claire,CHATEL,Virginie CARTIER,virginiecartier@gmail.com,F,94/94BIS BOULEVARD PEREIRE,0317,2150,0,0,5/30/2017,5/30/2017,Habitation meublé,5/30/2016
+1,N/A,Jean Luc,DENEVE,Alexandra LEFFLOT,alexandralefflot@gmail.com,F,14-16 RUE DE REIMS,0224,2550,0,0,1/1/2018,1/1/2018,Habitation non meublé,1/1/2017
+1,N/A,Pascal,DELEPOULLE,Benoit HELAINE,benoithelaine@gmail.com,F,14/16 Rue de Reims,0002,2500,0,0,11/14/2017,11/14/2017,Habitation non meublé,11/14/2016
+1,N/A,François,DELANNOY,Benoit HELAINE,benoithelaine@gmail.com,F,14/16 Rue de Reims,0219,80,0,0,5/17/2017,5/17/2017,Habitation non meublé,5/17/2016
+1,N/A,Phillipe,DUHAMEL,Eric MAIGNAN,ericmaignan@gmail.com,F,140 RUE SAINT CHARLES,0076,3810,0,0,2/1/2018,2/1/2018,Habitation non meublé,2/1/2017
+1,N/A,Olivier,FERRANTELLI,Frank RISOUL,frankrisoul@gmail.com,F,16/26 Avenue de Suffren,0394,600,0,0,1/13/2018,1/13/2018,Habitation non meublé,1/13/2017
+1,N/A,François,BLANCHER,Pascal LANGOUET-PRIGENT,pascallangouet-prigent@gmail.com,F,2/8 RUE DU GENERAL HENRYS,0044,240,0,0,7/1/2017,8/2/2017,Habitation non meublé,8/2/2016
+1,N/A,Stéphane,RICOUART-MAILLET,Josette CHAMPAUD,josettechampaud@gmail.com,F,237 RUE  LA CROIX NIVERT,0127,2850,0,0,1/1/2018,1/1/2018,Habitation non meublé,1/1/2017
+1,N/A,Tony,DE PASSEMAR,Jean-Hervé DESTAMPES,jean-hervédestampes@gmail.com,F,3/5 RUE PAUL LAURENT,0001,3570,0,0,7/1/2017,7/1/2017,Habitation non meublé,7/1/2016
+1,N/A,Nicolas,COCHEZ,Laurence DEBAIN,laurencedebain@gmail.com,F,3/7 BIS RUE LACAILLE,0168,1830,0,0,3/9/2018,3/9/2018,Habitation non meublé,3/9/2017
+1,N/A,Denis,BENOIST,Laurence DEBAIN,laurencedebain@gmail.com,F,3/7 BIS RUE LACAILLE,0169,3370,0,0,11/1/2017,11/1/2017,Habitation non meublé,11/1/2016
+1,N/A,Nicolas,BLANCKAERT,Laurence DEBAIN,laurencedebain@gmail.com,F,3/7 BIS RUE LACAILLE,0170,1510,0,0,2/7/2018,2/7/2018,Habitation non meublé,2/7/2017
+1,N/A,Marie,FOURNIER,Maud GAERTNER,maudgaertner@gmail.com,F,30 Rue des Favorites,0002,1670,0,0,3/13/2018,3/13/2018,Habitation non meublé,3/13/2017
+1,N/A,Nicolas,FERMAUT,Eric EPAILLARD,ericepaillard@gmail.com,F,32 RUE DE LOURMEL,0002,2430,0,0,2/19/2018,2/19/2018,Habitation non meublé,2/19/2017
+1,N/A,Laurent,PINTO,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0031,1810,0,0,10/1/2017,10/1/2017,Habitation non meublé,10/1/2016
+1,N/A,Sylvine,TOSTAIN,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0032,970,0,0,12/5/2017,12/5/2017,Habitation non meublé,12/5/2016
+1,N/A,Patrice,TOULEMONDE,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0033,1730,0,0,2/4/2018,2/4/2018,Habitation non meublé,2/4/2017
+1,N/A,Cyrille,VANDEWOESTYNE,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0035,570,0,0,11/1/2017,11/1/2017,Habitation non meublé,11/1/2016
+1,N/A,Bruno,WATRELOT,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0037,4040,0,0,10/20/2017,10/20/2017,Habitation non meublé,10/20/2016
+1,N/A,Sophie,CANNESSON,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0045,180,0,0,11/1/2017,11/1/2017,Habitation non meublé,11/1/2016
+1,N/A,Matthieu,CLAEYS,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0048,490,0,0,10/5/2017,10/5/2017,Habitation non meublé,10/5/2016
+1,N/A,Alexandre,D'HEYGERE,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0053,3830,0,0,11/1/2017,11/15/2017,Habitation non meublé,11/15/2016
+1,N/A,Marion,DELESALLE,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0055,3000,0,0,1/11/2018,1/11/2018,Habitation non meublé,1/11/2017
+1,N/A,Pierre,FARRUGIA,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0102,4790,0,0,4/4/2017,4/4/2017,Habitation non meublé,4/4/2016
+1,N/A,Philippe,DECLERCK,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0200,1190,0,0,3/1/2018,3/5/2018,Habitation non meublé,3/5/2017
+1,N/A,Géraldine,DELANNAY,Herve FARESS,hervefaress@gmail.com,F,38 Rue des Cevennes,0216,4770,0,0,2/21/2018,2/21/2018,Habitation non meublé,2/21/2017
+1,N/A,Vincent,DUBOUT,Jean-Robert PERROT,jean-robertperrot@gmail.com,F,46-52 RUE PERNETY,0295,2620,0,0,6/1/2017,6/1/2017,Habitation non meublé,6/1/2016
+1,N/A,Jean-Sébastien,EVRARD,Jean-Robert PERROT,jean-robertperrot@gmail.com,F,46-52 RUE PERNETY,0363,3070,0,0,3/1/2018,3/1/2018,Habitation non meublé,3/1/2017
+1,N/A,Christelle,FAVIEZ,Jean-Robert PERROT,jean-robertperrot@gmail.com,F,46-52 RUE PERNETY,0364,960,0,0,4/1/2017,4/1/2017,Habitation non meublé,4/1/2016
+1,N/A,Jean-Luc,PARIS,Helene LE VEN,heleneleven@gmail.com,F,51 RUE DE BABYLONE,0015,1140,0,0,1/1/2018,1/1/2018,Habitation non meublé,1/1/2017
+1,N/A,Pascal,JONCQUEZ,Claude JOLIVET,claudejolivet@gmail.com,F,7 RUE CART,0006,2550,0,0,11/1/2017,11/1/2017,Habitation non meublé,11/1/2016
+1,N/A,Sophie,LANZA,Claude JOLIVET,claudejolivet@gmail.com,F,7 RUE CART,0009,4210,0,0,1/1/2018,1/1/2018,Habitation non meublé,1/1/2017
+1,N/A,Pascale,LE MARHADOUR,Claude JOLIVET,claudejolivet@gmail.com,F,7 RUE CART,0010,2970,0,0,3/3/2018,3/3/2018,Habitation non meublé,3/3/2017
+1,N/A,Boris,LEQUINT,Claude JOLIVET,claudejolivet@gmail.com,F,7 RUE CART,0013,880,0,0,2/1/2018,2/1/2018,Habitation non meublé,2/1/2017
+1,N/A,Dominique,LESCAILLET,Claude JOLIVET,claudejolivet@gmail.com,F,7 RUE CART,0014,1160,0,0,6/1/2017,6/1/2017,Habitation non meublé,6/1/2016
+1,N/A,Bertrand,MACAREZ,Claude JOLIVET,claudejolivet@gmail.com,F,7 RUE CART,0017,2520,0,0,11/18/2017,11/18/2017,Habitation non meublé,11/18/2016
+1,N/A,Mathieu,MIELLET,Claude JOLIVET,claudejolivet@gmail.com,F,7 RUE CART,0021,4860,0,0,11/21/2017,11/21/2017,Habitation non meublé,11/21/2016
+1,N/A,Emmanuel,MOTTE,Claude JOLIVET,claudejolivet@gmail.com,F,7 RUE CART,0022,2950,0,0,11/1/2017,11/1/2017,Habitation non meublé,11/1/2016
+1,N/A,Caroline,DEPASSE,Claude JOLIVET,claudejolivet@gmail.com,F,7 RUE CART,0073,500,0,0,11/1/2017,11/1/2017,Habitation non meublé,11/1/2014
+1,N/A,Frédéric,BUFFIN,David DONADEY,daviddonadey@gmail.com,F,7/7 BIS PLACE DU COMMERCE,0175,1380,0,0,6/1/2017,6/1/2017,Habitation non meublé,6/1/2016
+1,N/A,Guillaume,DANEL,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0030,3330,0,0,11/10/2017,11/10/2017,Habitation non meublé,11/10/2016
+1,N/A,Jean-Baptiste,VANCAUWENBERGHE,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0034,1310,0,0,5/1/2017,5/1/2017,Habitation non meublé,5/1/2016
+1,N/A,Fabrice,VANDERSCHOOTEN,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0035,4290,0,0,4/1/2017,4/1/2017,Habitation non meublé,4/1/2016
+1,N/A,Patrick,CAHON,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0037,2510,0,0,1/1/2018,1/1/2018,Habitation non meublé,1/1/2017
+1,N/A,Gilles,DE SAINT-AFFRIQUE,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0039,2450,0,0,3/1/2018,3/1/2018,Habitation non meublé,3/1/2017
+1,N/A,Christophe,GEFFROY,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0113,1250,0,0,4/18/2017,4/18/2017,Habitation non meublé,4/18/2016
+1,N/A,Julien,LOCTIN,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0114,1660,0,0,10/12/2017,10/12/2017,Habitation non meublé,10/12/2016
+1,N/A,Jimmy,MAY,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0115,1410,0,0,6/1/2017,6/1/2017,Habitation non meublé,6/1/2016
+1,N/A,Roland,MOTTE,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0116,30,0,0,2/1/2018,2/1/2018,Habitation non meublé,2/1/2017
+1,N/A,Pascal,MULLIEZ,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0117,400,0,0,11/1/2017,11/1/2017,Habitation non meublé,11/1/2016
+1,N/A,Pierre,NOYON,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0118,4420,0,0,3/1/2018,3/1/2018,Habitation non meublé,3/1/2017
+1,N/A,Eric,PEYRELONGUE,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0120,4420,0,0,4/1/2017,4/1/2017,Habitation non meublé,4/1/2016
+1,N/A,Olivier,RIBAULT,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0125,3030,0,0,12/10/2017,12/10/2017,Habitation non meublé,12/10/2016
+1,N/A,Christophe,VERLY,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0127,4680,0,0,1/17/2018,1/17/2018,Habitation non meublé,1/17/2017
+1,N/A,Mickael,VERSTRAETE,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0131,840,0,0,10/1/2017,10/1/2017,Habitation non meublé,10/1/2016
+1,N/A,Kamel,DENIZART,Stephane DECAVELE,stephanedecavele@gmail.com,F,8 RUE DE PARIS,0281,710,0,0,6/15/2017,6/16/2017,Habitation non meublé,6/16/2016
+1,N/A,Christophe,BROUILLARD,Jacques MORVAN,jacquesmorvan@gmail.com,F,80 AVENUE PHILIPPE AUGUSTE,0010,2610,0,0,7/1/2017,6/1/2017,Habitation non meublé,6/1/2016
