@@ -81,28 +81,67 @@ Lease.all.each do |lease|
   # Fin de bail
   if now > lease.end_date - 8.months
     e = Event.new()
+    e.description = 'fin de bail'
     e.lease = lease
     e.start_date = lease.end_date - 7.months
     e.end_date = lease.end_date - 6.months
     e.urgent_date = e.end_date - 1.weeks
     e.status = 'demande bailleur à envoyer'
+    # emergency level
+    if now >= e.end_date
+      e.emergency_level = 'overdue'
+    elsif now >= e.urgent_date
+      e.emergency_level = 'urgent'
+    elsif now >= e.start_date
+      e.emergency_level = 'due'
+    else
+      e.emergency_level = 'non-due'
+    end
+    e.to_do = false
     e.save
   # Revision de loyer
   elsif now > lease.next_revision - 2.months
     e = Event.new()
+    e.description = 'révision de loyer'
     e.lease = lease
     e.start_date = lease.next_revision - 1.month
     e.end_date = lease.end_date - 7.months
     e.urgent_date = lease.next_revision
     e.status = 'demande bailleur à envoyer'
+    # emergency level
+    if now >= e.end_date
+      e.emergency_level = 'overdue'
+    elsif now >= e.urgent_date
+      e.emergency_level = 'urgent'
+    elsif now >= e.start_date
+      e.emergency_level = 'due'
+    else
+      e.emergency_level = 'non-due'
+    end
+    e.to_do = false
     e.save
   end
 
   # loyer
   if lease.rent_balance > 0
     e = Event.new()
+    e.description = 'retard loyer'
     e.lease = lease
+    e.start_date = now
+    e.end_date = now
+    e.urgent_date = now
     e.status = 'notification locataire envoyée'
+    # emergency level
+    if now >= e.end_date
+      e.emergency_level = 'overdue'
+    elsif now >= e.urgent_date
+      e.emergency_level = 'urgent'
+    elsif now >= e.start_date
+      e.emergency_level = 'due'
+    else
+      e.emergency_level = 'non-due'
+    end
+    e.to_do = false
     e.save
   end
 
