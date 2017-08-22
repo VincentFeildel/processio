@@ -1,2 +1,58 @@
-<h1>Events#show</h1>
-<p>Find me in app/views/events/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="stakeholders col-xs-12 col-sm-5 col-md-4">
+      <div class="stakeholder">
+        <p id = "event-title"><strong>Locataire :</strong></p>
+        <p><strong>Nom :</strong> Jean-Paul Dupond</p>
+        <p><strong>Adresse :</strong> 70, rue de Rivop 75004 Paris</p>
+      </p>
+    </div>
+    <div class="stakeholder">
+      <p id = "event-title"><strong>Propriétaire :</strong></p>
+      <p><strong>Nom :</strong> Jean-Paul Dupond</p>
+      <p><strong>Adresse :</strong> 70, rue de Rivop 75004 Paris</p>
+      <p><strong>Email : </strong>charles@dubois.com</p>
+    </div>
+    <div class="stakeholder">
+      <p id = "event-title"><strong>Bien :</strong></p>
+      <p><strong>Adresse :</strong> 70, rue de Rivop 75004 Paris</p>
+    </div>
+  </div>
+  <div class="lease-informations col-xs-12 col-sm-5 col-md-7">
+    <p id = "type_event">Fin de Bail</p>
+    <div class="event-element">
+      <p id = "event-title"><strong>Date d'échéance :</strong></p>
+      <p>20/07/2018</p>
+    </div>
+    <div class="event-element">
+      <p id = "event-title"> <strong>Statut :</strong>
+      </div>
+      <div class="form-check has-danger">
+        <label class="form-check-label nature-event" id = "first-step">
+          <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
+          Envoi de la demande au bailleur <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        </label>
+      </div>
+      <div class="form-check has-danger">
+        <label class="form-check-label nature-event" id = "second-step">
+          <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
+          Réponse du bailleur
+        </label>
+      </div>
+<div class="form-check has-warning nature-event" id ="third-step">
+<label class="form-check-label">
+  <input type="checkbox" class="form-check-input" id="checkboxWarning" value="option1">
+  <%= render '/shared/accordion' %>
+</label>
+</div>
+  <div class="col-xs-10 col-sm-10 col-md-10">
+    <div class="form-group">
+      <textarea class="form-control post-message" rows="5" id="comment" placeholder="Poster un message"></textarea>
+      <button type="submit" class="btn btn-primary">Poster</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Demande bailleur à envoyer', 'En attente réponse bailleur', 'Notification locataire à envoyer', 'notification locataire envoyée' -->
