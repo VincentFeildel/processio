@@ -1,7 +1,4 @@
-let eventsClass = document.getElementsByClassName("events")
-
-eventsClass.innerHTML = <%= j render "events", events: @events %>
-
+document.getElementById("events-container").innerHTML = '<%= j render "events", events: @events %>';
 
 // selectionner la div .events
 // innerHTML(<%= j render "events", events: @events %>)
