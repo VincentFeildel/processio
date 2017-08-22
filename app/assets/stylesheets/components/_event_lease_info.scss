@@ -1,0 +1,57 @@
+.lease-informations {
+  background: white;
+  margin: 30px;
+  padding: 40px;
+  border-radius: 3px;
+  border-color: rgb(240, 240, 240);
+  border-style: solid;
+  border-width: 1px;
+}
+.stakeholders {
+  margin: 0;
+  padding: 0;
+}
+.stakeholder {
+  background: white;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 3px;
+  border-color: rgb(240, 240, 240);
+  border-style: solid;
+  border-width: 1px;
+
+}
+#type_event {
+  color: rgb(130, 130, 130);
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+  border-width: 1px;
+  border-color: lightgray
+}
+.event-element {
+  margin: 20px 0px;
+}
+#event-title {
+    color: black;
+}
+.nature-event {
+  margin-left: 40px;
+  margin-top: 15px;
+  color: grey;
+}
+.post-message {
+  margin: 30px;
+}
+#first-step {
+  color: #EE4657;
+}
+#second-step {
+  color: #00BF9C;
+}
+#third-step {
+  color: #FDBD01;
+}
+#accordion-decoration a{
+  text-decoration: none;
+    color: #FDBD01;
+}
