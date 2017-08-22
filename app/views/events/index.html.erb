@@ -1,12 +1,11 @@
-<%= form_tag events_path, method: :get, remote: true do %>
-  <%= check_box_tag :late_rent, nil, params[:late_rent] %>
+<%= form_tag events_path, method: :get, remote: true, id: "filter-form" do %>
+  <%= check_box_tag :late_rent, nil, params[:late_rent], class: "checkbox-input" %>
   <%= label_tag :late_rent, "Retard de loyer" %>
-  <%= check_box_tag :end_of_lease, nil, params[:end_of_lease] %>
+  <%= check_box_tag :end_of_lease, nil, params[:end_of_lease], class: "checkbox-input" %>
   <%= label_tag :end_of_lease, "Fin de bail" %>
-  <%= check_box_tag :rent_revision, nil, params[:rent_revision] %>
+  <%= check_box_tag :rent_revision, nil, params[:rent_revision], class: "checkbox-input" %>
   <%= label_tag :rent_revision, "Révision de loyer" %>
 
-  <%= submit_tag "Filter", class: "form-inline btn btn-primary" %>
 <% end %>
 
 <div id="events-container">
