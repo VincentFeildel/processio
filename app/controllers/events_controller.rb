@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-   before_action :set_event, only: [:show]
+   before_action :set_event, only: [:show, :owner_contacted]
   def index
     new_hash = {"late_rent" => "retard loyer", "end_of_lease" => "fin de bail", "rent_revision" => "révision de loyer"}
     @events=[]
@@ -19,6 +19,10 @@ class EventsController < ApplicationController
   end
 
   def show
+  end
+
+  def owner_contacted
+    @event.status = "owner-contacted"
   end
 
   def home
