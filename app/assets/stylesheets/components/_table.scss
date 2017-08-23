@@ -1,11 +1,22 @@
-.table-row-event-index {
-  border-bottom: 2px dotted $green ;
-}
+
 
 .table-head-event-index {
-  border-bottom: 2px solid $blue !important ;
+  border-bottom: 2px solid $leasyblue !important ;
 }
 
 .container-white {
-  background-color: white;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.background-transparent {
+  background-color: transparent !important;
+}
+
+.table-row-event-index {
+  border-bottom: 2px dotted $leasyturquoise !important ;
+}
+
+tbody tr:hover {
+  background-color: $leasyyellow !important;
 }

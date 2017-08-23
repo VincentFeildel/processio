@@ -1,14 +1,14 @@
 <div class="container container-white">
-<table class="table table-hover" style = "background-color: white;">
+<table class="table table-hover background-transparent" style = "background-color: white;">
   <thead class = "table-head-event-index">
     <tr class = "table-head-event-index">
       <th style = "width: 139px;" class = "table-head-event-index">Description</th>
-      <th style = "width: 102px;" class = "table-head-event-index">Deadline (j)</th>
-      <th style = "width: 223px;" class = "table-head-event-index">Locataire</th>
-      <th style = "width: 266px;" class = "table-head-event-index">Adresse</th>
-      <th style = "width: 188px;" class = "table-head-event-index">Nature</th>
-      <th style = "width: 102px;" class = "table-head-event-index">Loyer (€/m)</th>
-      <th style = "width: 258px;" class = "table-head-event-index">Propriétaire</th>
+      <th style = "width: 50px;" class = "table-head-event-index">Deadline</th>
+      <th style = "width: 200px;" class = "table-head-event-index">Locataire</th>
+      <th style = "width: 240px;" class = "table-head-event-index">Adresse</th>
+      <th class = "table-head-event-index" style = "width: 240px;">Nature</th>
+      <th class = "table-head-event-index">Loyer (€/m)</th>
+      <th style = "width: 230px;" class = "table-head-event-index">Propriétaire</th>
     </tr>
   </thead>
   <tbody>
@@ -17,7 +17,7 @@
     <tr class = "table-row-event-index">
       <td><%= event.description %></td>
       <% date = event.end_date.to_date - Date.today%>
-      <td><%= event.description == "retard loyer" ? "ns" : date.to_i %></td>
+      <td><%= event.description == "retard loyer" ? "ns" : date.to_i.to_s + "j" %></td>
       <td><%= event.lease.tenant_name %></td>
       <td><%= event.lease.tenant_address %></td>
       <td><%= event.lease.nature %></td>
