@@ -48,9 +48,9 @@
   zone.querySelectorAll("a").forEach((a) => {
     // a.addEventListener("click", (event) => {
     let url = window.location.href;
-    if (url === 'http://localhost:3000/events') {
+    if (url.match(/\/event/) !== null) {
       document.getElementById('events').classList.add("navbar-active");
-    } else if (url === 'http://localhost:3000/leases') {
+    } else if (url.match(/\/lease/) !== null) {
         document.getElementById('leases').classList.add("navbar-active");
     } else {
         document.getElementById('home').classList.add("navbar-active");
