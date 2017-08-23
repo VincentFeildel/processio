@@ -13,7 +13,7 @@ $speed: 5s;
   // background: linear-gradient(135deg, #f6f8f9 0%, #e5ebee 27%, #e5ebee 27%, #d7dee3 44%, #d7dee3 57%, #f5f7f9 100%);
   // min-height: 100vh;
   // background-size: cover;
-  $map: (#load-line1: $brand-primary, #load-line2: #2196f3, #load-line3: #e91e63, #load-line4: #9c27b0);
+  $map: (#load-line1: $brand-primary, #load-line2: $leasyblue, #load-line3: #e91e63, #load-line4: #9c27b0);
   @each $key,
   $value in $map {
     #{$key} {
@@ -27,7 +27,7 @@ $speed: 5s;
     height: 100%;
     @each $id,
     $color in (1, $brand-primary),
-    (2, #2196f3),
+    (2, $leasyblue),
     (3, #e91e63),
     (4, #9c27b0) {
       .svg:nth-of-type(#{$id}) {
