@@ -28,6 +28,9 @@ users.each { |u| u.destroy }
 u = User.new()
 u.email = 'vincent.feildel@gmail.com'
 u.password = 'azerty'
+u.first_name = 'Stéphane'
+u.last_name = 'Plazza'
+u.position = 'Gérant'
 u.save
 
 # -------------------DB CONTRATS---------------
@@ -97,7 +100,7 @@ Lease.all.each do |lease|
     else
       e.emergency_level = 'non-due'
     end
-    e.to_do = false
+    e.to_do = true
     e.save
   # Revision de loyer
   elsif now > lease.next_revision - 2.months
@@ -118,7 +121,7 @@ Lease.all.each do |lease|
     else
       e.emergency_level = 'non-due'
     end
-    e.to_do = false
+    e.to_do = true
     e.save
   end
 
@@ -130,7 +133,7 @@ Lease.all.each do |lease|
     e.start_date = now
     e.end_date = now
     e.urgent_date = now
-    e.status = 'notification locataire envoyée'
+    e.status = 'notification locataire à envoyer'
     # emergency level
     if now >= e.end_date
       e.emergency_level = 'overdue'
@@ -141,8 +144,15 @@ Lease.all.each do |lease|
     else
       e.emergency_level = 'non-due'
     end
-    e.to_do = false
+    e.to_do = true
     e.save
   end
 
 end
+
+# Indiquer 10 tâches comme réalisées:
+Event.last(50).each do |e|
+  e.update(to_do: false)
+end
+
+
