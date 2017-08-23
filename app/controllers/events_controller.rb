@@ -21,6 +21,13 @@ class EventsController < ApplicationController
   def show
   end
 
+  def owner_contacted
+    raise
+    @event = Event.find(params[:event_id])
+    @event.status == "owner-contacted"
+    redirect_to event_path(@event)
+  end
+
   def home
   end
 
