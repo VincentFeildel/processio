@@ -130,7 +130,7 @@ Lease.all.each do |lease|
     e.start_date = now
     e.end_date = now
     e.urgent_date = now
-    e.status = 'notification locataire envoyée'
+    e.status = 'notification locataire à envoyer'
     # emergency level
     if now >= e.end_date
       e.emergency_level = 'overdue'
