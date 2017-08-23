@@ -1,8 +1,9 @@
+
 <%= form_tag events_path, method: :get, remote: true, id: "filter-form" do %>
 <div class="flexbox-checkbox col-xs-12">
   <div class="flexbox-checkbox-item">
     <div class="col-xs-12">
-      <div class = "flexbox-checkbox">
+      <div class = "flexbox-subcheckbox">
         <div>
           <%= check_box_tag :late_rent, nil, params[:late_rent], class: "checkbox-input fancy-checkbox" %>
           <%= label_tag :late_rent%>
@@ -14,7 +15,7 @@
 
   <div class="flexbox-checkbox-item">
     <div class="col-xs-12">
-      <div class = "flexbox-checkbox">
+      <div class = "flexbox-subcheckbox">
         <div>
           <%= check_box_tag :end_of_lease, nil, params[:end_of_lease], class: "checkbox-input fancy-checkbox" %>
           <%= label_tag :end_of_lease%>
@@ -26,7 +27,7 @@
 
   <div class="flexbox-checkbox-item">
     <div class="col-xs-12">
-      <div class = "flexbox-checkbox">
+      <div class = "flexbox-subcheckbox">
         <div>
           <%= check_box_tag :rent_revision, nil, params[:rent_revision], class: "checkbox-input fancy-checkbox" %>
           <%= label_tag :rent_revision %>

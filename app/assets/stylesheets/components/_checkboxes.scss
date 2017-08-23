@@ -57,6 +57,10 @@
   flex: 0 0 33%;
 }
 
-.flexbox-content{
-  display: inline-block;
+.flexbox-subcheckbox{
+  display: flex;
+  flex-direction: row;
+  p{
+    margin-left: 15px
+  }
 }

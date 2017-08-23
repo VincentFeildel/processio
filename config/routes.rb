@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :events, only: [:index, :show]
+  resources :events, only: [:index, :show] do
+    get 'owner_contacted', to: "events#owner_contacted"
+  end
   resources :leases, only: [:new, :index]
 
   devise_for :users

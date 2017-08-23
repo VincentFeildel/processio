@@ -1,0 +1,14 @@
+<%= render '/shared/step_1_modal' %>
+<div class = "status-update col-xs-12 col-md-8 col-md-offset-2">
+  <% if (@event.status == "demande bailleur à envoyer")%>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Contacter le bailleur
+  </button>
+  <% else %>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Notifier le locataire
+  </button>
+  <% end %>
+</div>
