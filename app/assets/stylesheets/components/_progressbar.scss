@@ -1,0 +1,106 @@
+$green: #0dbf2d;
+$colors:#0dbf2d #2196f3 #e91e63 #9c27b0;
+// variables below can be used without all javascript but only for one circular bar until now! if you want to use it comment js code + un comment the styles below!
+$svgValue: 75; // write wanted value
+$totalLength: 192; //total length from javascript
+$offsetvalue:$totalLength - (($svgValue/100) *$totalLength);
+$speed: 5s;
+.progressbar {
+
+  // background: #f6f8f9;
+  // background: -moz-linear-gradient(-45deg, #f6f8f9 0%, #e5ebee 27%, #e5ebee 27%, #d7dee3 44%, #d7dee3 57%, #f5f7f9 100%);
+  // background: -webkit-linear-gradient(-45deg, #f6f8f9 0%, #e5ebee 27%, #e5ebee 27%, #d7dee3 44%, #d7dee3 57%, #f5f7f9 100%);
+  // background: linear-gradient(135deg, #f6f8f9 0%, #e5ebee 27%, #e5ebee 27%, #d7dee3 44%, #d7dee3 57%, #f5f7f9 100%);
+  // min-height: 100vh;
+  // background-size: cover;
+  $map: (#load-line1: $brand-primary, #load-line2: #2196f3, #load-line3: #e91e63, #load-line4: #9c27b0);
+  @each $key,
+  $value in $map {
+    #{$key} {
+      stroke: $value
+    }
+  }
+  .circle-wrapper {
+    display: block;
+    text-align: center;
+    margin: auto auto;
+    height: 100%;
+    @each $id,
+    $color in (1, $brand-primary),
+    (2, #2196f3),
+    (3, #e91e63),
+    (4, #9c27b0) {
+      .svg:nth-of-type(#{$id}) {
+        color: $color
+      }
+    }
+    .svg {
+      border-radius: 5px;
+      // box-shadow: 1px -29px 20px -24px #999;
+      // background: linear-gradient( to left, rgba(255,255,255,.9), rgba(255,255,255,.8) 95%, transparent 95%),linear-gradient(-65deg,#ddd, #ccc 50%, transparent 50%);
+      padding: 5px;
+      margin: 10px 0;
+      position: relative;
+      &:hover svg{
+        cursor: pointer;
+        transition:all .35s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+        transform-origin: center center;
+        transform-type: preserve-3d;
+        transform: scale(1.2)
+      }
+      &:after {
+        content: attr(data-lang);
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        font-weight: bold;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 1px #fff
+      }
+      &:before {
+        content: ''attr(data-value)'%';
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-weight: bold;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        color: #999;
+        text-shadow: 1px 1px 1px #eee
+      }
+    }
+    svg {
+
+      path {
+        fill: none;
+      }
+      .load-circle {
+        stroke-width: 5px;
+        stroke-linecap: round;
+        transition: stroke-dashoffset 3s ease-in-out;
+        position: relative;
+      }
+    }
+    .load-bg {
+      stroke: #ddd;
+      stroke-width: 5px
+    }
+    /* style="stroke-dashoffset: 192.6168975830078px; stroke-dasharray: 192.6168975830078px;"*/
+    /*&#load-line1 {
+      stroke-dashoffset : 192px;
+      stroke-dasharray : 192px;
+      stroke: #0dbf2d;
+      stroke-width: 5px;
+      animation: load #{$speed} ease-in-out forwards
+    }*/
+  }
+
+  @keyframes load {
+    to {
+      stroke-dashoffset: $offsetvalue;
+    }
+  }
+}
