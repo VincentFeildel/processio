@@ -3,6 +3,25 @@
 <div class="container">
   <h1>Bienvenue <%= @user.first_name %></h1>
   <%= render 'progressbar' %>
+  <div class="actioncards">
+    <div class="row">
+      <div class="col-xs-12-sm-6">
+        <div class="actioncard">
+          <h2><%= @nbr_urgent %></h2>
+          <p>Evènements urgents</p>
+          <%= link_to 'Voir', events_path(emergency_level: "urgent") %>
+        </div>
+      </div>
+      <div class="col-xs-12-sm-6">
+        <div class="actioncard">
+          <h2><%= @nbr_attente %></h2>
+          <p>Evènements urgents</p>
+          <%= link_to 'Voir', events_path(emergency_level: "urgent") %>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 <!-- Chart -->
 
