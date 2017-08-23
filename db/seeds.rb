@@ -89,7 +89,7 @@ Lease.all.each do |lease|
     e.start_date = lease.end_date - 7.months
     e.end_date = lease.end_date - 6.months
     e.urgent_date = e.end_date - 1.weeks
-    e.status = 'demande bailleur à envoyer'
+    e.status = 'owner_to_contact'
     # emergency level
     if now >= e.end_date
       e.emergency_level = 'overdue'
@@ -110,7 +110,7 @@ Lease.all.each do |lease|
     e.start_date = lease.next_revision - 1.month
     e.end_date = lease.end_date - 7.months
     e.urgent_date = lease.next_revision
-    e.status = 'demande bailleur à envoyer'
+    e.status = 'owner_to_contact'
     # emergency level
     if now >= e.end_date
       e.emergency_level = 'overdue'
@@ -133,7 +133,7 @@ Lease.all.each do |lease|
     e.start_date = now
     e.end_date = now
     e.urgent_date = now
-    e.status = 'notification locataire à envoyer'
+    e.status = 'tenant_to_notify'
     # emergency level
     if now >= e.end_date
       e.emergency_level = 'overdue'
