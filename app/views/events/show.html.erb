@@ -1,58 +1,81 @@
 <div class="container">
   <div class="row">
-    <div class="stakeholders col-xs-12 col-sm-5 col-md-4">
+    <div class="stakeholders col-xs-12 col-md-4">
+    <!-- PROPRIETAIRE -->
       <div class="stakeholder">
-        <p id = "event-title"><strong>Locataire :</strong></p>
-        <p><strong>Nom :</strong> Jean-Paul Dupond</p>
-        <p><strong>Adresse :</strong> 70, rue de Rivop 75004 Paris</p>
-      </p>
+        <p id = "left-event-title"><strong>Propriétaire</strong></p>
+        <p><strong>Nom :</strong> <%= @event.lease.owner_name %></p>
+        <p><strong>Adresse :</strong> <%= @event.lease.owner_address %></p>
+        <p><strong>Email : </strong><%= @event.lease.owner_email %></p>
+      </div>
+
+      <!-- BIEN -->
+      <div class="stakeholder">
+        <p id = "left-event-title"><strong>Bien</strong></p>
+        <p><strong>Adresse :</strong> <%= @event.lease.tenant_address %></p>
+        <p><strong>Nature du bail :</strong> <%= @event.lease.nature %></p>
+        <p><strong>N° du lot :</strong> <%= @event.lease.num_lot %></p>
+      </div>
+      <!-- END BIEN -->
+
+      <!-- LOCATAIRE -->
+      <div class="stakeholder">
+        <p id = "left-event-title"><strong>Locataire</strong></p>
+        <% if (@event.lease.nature == "Commercial 3 ans") || (@event.lease.nature == "Commercial 9 ans")%>
+        <p>Société : <%= @event.lease.tenant_name %> </p>
+        <% else %>
+        <p>Nom : <%= @event.lease.tenant_name %> </p>
+        <p>Prénom : <%= @event.lease.tenant_first_name %></p>
+        <% end %>
+      </div>
     </div>
-    <div class="stakeholder">
-      <p id = "event-title"><strong>Propriétaire :</strong></p>
-      <p><strong>Nom :</strong> Jean-Paul Dupond</p>
-      <p><strong>Adresse :</strong> 70, rue de Rivop 75004 Paris</p>
-      <p><strong>Email : </strong>charles@dubois.com</p>
-    </div>
-    <div class="stakeholder">
-      <p id = "event-title"><strong>Bien :</strong></p>
-      <p><strong>Adresse :</strong> 70, rue de Rivop 75004 Paris</p>
+    <!-- END LEFT DIV -->
+    <div class="lease-informations col-xs-12 col-md-7">
+        <!-- EVENT DESCRIPTION -->
+        <div>
+        <% if (@event.description == "fin de bail")%>
+        <p id = "type_event_bail"><%= @event.description.capitalize %> </p>
+        <% elsif (@event.description == "révision de loyer")%>
+        <p id = "type_event_loyer"><%= @event.description.capitalize %> </p>
+        <% else %>
+        <p id = "type_event_paiement"><%= @event.description.capitalize %> </p>
+        <% end %>
+        </div>
+
+          <!-- END DATE -->
+      <div class="event-element col-xs-12">
+        <p id = "event-title"><strong>Date d'échéance</strong></p>
+        <p><%= @event.end_date.strftime("%d/%m/%Y") %></p>
+      </div>
+      <div class="event-element col-xs-12">
+        <p id = "event-title"> <strong>Statut</strong>
+          <div class="form-check has-danger">
+            <label class="form-check-label nature-event">
+              <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
+              Envoi de la demande au bailleur <i class="fa fa-envelope" aria-hidden="true"></i>
+            </label>
+          </div>
+          <div class="form-check has-danger">
+            <label class="form-check-label nature-event">
+              <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
+              Réponse du bailleur
+            </label>
+          </div>
+          <div class="form-check has-warning nature-event">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" id="checkboxWarning" value="option1">
+              <%= render '/shared/accordion' %>
+            </label>
+          </div>
+          <%= render '/shared/status' %>
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="form-group">
+            <textarea class="form-control post-message" rows="5" id="comment" placeholder="Poster un message"></textarea>
+            <button type="submit" class="btn btn-primary">Poster</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="lease-informations col-xs-12 col-sm-5 col-md-7">
-    <p id = "type_event">Fin de Bail</p>
-    <div class="event-element">
-      <p id = "event-title"><strong>Date d'échéance :</strong></p>
-      <p>20/07/2018</p>
-    </div>
-    <div class="event-element">
-      <p id = "event-title"> <strong>Statut :</strong>
-      </div>
-      <div class="form-check has-danger">
-        <label class="form-check-label nature-event" id = "first-step">
-          <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
-          Envoi de la demande au bailleur <i class="fa fa-paper-plane" aria-hidden="true"></i>
-        </label>
-      </div>
-      <div class="form-check has-danger">
-        <label class="form-check-label nature-event" id = "second-step">
-          <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
-          Réponse du bailleur
-        </label>
-      </div>
-<div class="form-check has-warning nature-event" id ="third-step">
-<label class="form-check-label">
-  <input type="checkbox" class="form-check-input" id="checkboxWarning" value="option1">
-  <%= render '/shared/accordion' %>
-</label>
 </div>
-  <div class="col-xs-10 col-sm-10 col-md-10">
-    <div class="form-group">
-      <textarea class="form-control post-message" rows="5" id="comment" placeholder="Poster un message"></textarea>
-      <button type="submit" class="btn btn-primary">Poster</button>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-<!-- Demande bailleur à envoyer', 'En attente réponse bailleur', 'Notification locataire à envoyer', 'notification locataire envoyée' -->
