@@ -1,0 +1,78 @@
+<div class="progressbar">
+  <div class="circle-wrapper">
+    <!--
+    put the progress value You want
+  in (data-value) attribute
+
+  -->
+    <div class="svg svg1 col-md-6 col-sm-6" data-value=<%= @percentage_done %> data-lang='terminées'>
+      <svg width="150px" height="150px" viewBox="0 0 80 80">
+
+           <path class="load-bg cir1" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"></path>
+
+          <path id="load-line1" class="load-circle" style="stroke-dashoffset: 192.6168975830078px; stroke-dasharray: 192.6168975830078px;"  d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" ></path>
+
+        </svg>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('load', function() {
+    var h, i;
+    var dataValues = [];
+    var svgs = document.querySelectorAll('.svg');
+    var play = document.getElementById('playAnimation');
+    var replay = document.getElementById('replayAnimation');
+    // get data values
+    for (i = 0; i < svgs.length; i++) {
+    dataValues.push(svgs[i].dataset["value"]);
+    }
+    // build the progress bar
+    function drawcircles(duration = '5s') {
+
+      var circlelines = document.querySelectorAll('.load-circle');
+
+      for (h = 0; h < circlelines.length; h++) {
+        var totalLength = circlelines[h].getTotalLength();
+        var offset = totalLength - ((dataValues[h] / 100) * totalLength);
+        circlelines[h].style.transitionDuration = duration;
+        circlelines[h].style.strokeDashoffset = offset + "px";
+      }
+    }
+
+    // release the progressbar to 0%
+
+    function releaseCircles() {
+      var circlelines = document.querySelectorAll('.load-circle');
+
+      for (h = 0; h < circlelines.length; h++) {
+        var totalLength = circlelines[h].getTotalLength();
+
+        circlelines[h].style.transitionDuration = '.3s';
+        circlelines[h].style.strokeDashoffset = totalLength + "px";
+
+      }
+    }
+
+    function updateValue() {
+      var svgs = document.querySelectorAll('.svg');
+
+      var circlelines = document.querySelectorAll('.load-circle');
+
+      for (h = 0; h < circlelines.length; h++) {
+        var totalLength = circlelines[h].getTotalLength();
+        var offset = totalLength - ((dataValues[h] / 100) * totalLength);
+        if (svgs[h].dataset["value"] !== offset) {
+          svgs[h].dataset["value"] = parseInt((offset / totalLength) * 100);
+        }
+
+      }
+    }
+    // initializing
+    drawcircles();
+    play.addEventListener('click', drawcircles);
+    replay.addEventListener('click', releaseCircles);
+
+  })
+</script>
