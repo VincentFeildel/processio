@@ -17,6 +17,8 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'chartjs-ror'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 
 group :development, :test do
   gem 'pry-byebug'
