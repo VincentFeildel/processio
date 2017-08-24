@@ -1,0 +1,20 @@
+<%= render '/shared/modal_owner_to_contact' %>
+<div class = "status-update col-xs-12 col-md-8 col-md-offset-2">
+  <% if @event.status == "owner_to_contact"%>
+  <!-- BTN OWNER TO CONTACT -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Contacter le bailleur
+  </button>
+  <% elsif (@event.status == "owner_contacted") || (@event.status == "tenant_to_notify") %>
+  <!-- BTN OWNER CONTACTED -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Notifier le locataire
+  </button>
+  <% elsif (@event.status == "tenant_notified") %>
+  <p>BIEN OUEJ MA GUEULE !!!</p>
+  <% else %>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Contacter le bailleur
+  </button>
+  <% end %>
+</div>

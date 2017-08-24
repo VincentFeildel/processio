@@ -22,9 +22,13 @@ class EventsController < ApplicationController
   end
 
   def owner_contacted
-    raise
     @event = Event.find(params[:event_id])
-    @event.status == "owner-contacted"
+    @event.update(status: "owner_contacted")
+    redirect_to event_path(@event)
+  end
+  def tenant_notified
+    @event = Event.find(params[:event_id])
+    @event.update(status: "tenant_notified")
     redirect_to event_path(@event)
   end
 
