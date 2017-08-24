@@ -1,8 +1,8 @@
 
 <%=  render 'shared/nav_bar_index' %>
 
+<%= form_tag urgent_events_path, method: :get, remote: true, id: "filter-form" do %>
 
-<%= form_tag events_path, method: :get, remote: true, id: "filter-form" do %>
 <div class="flexbox-checkbox col-xs-12">
   <div class="flexbox-checkbox-item">
     <div class="col-xs-12">
@@ -35,7 +35,7 @@
           <%= check_box_tag :rent_revision, nil, params[:rent_revision], class: "checkbox-input fancy-checkbox" %>
           <%= label_tag :rent_revision %>
         </div>
-        <p>Révision de loyer (<%= @rent_revision.length %>)</p>
+        <p>Révision de loyer (<%= @rent_revision.length %>) </p>
         <% end %>
       </div>
     </div>
@@ -67,7 +67,3 @@ if (linkedRows.length > 0) {
   })
 }
 </script>
-
-
-
-

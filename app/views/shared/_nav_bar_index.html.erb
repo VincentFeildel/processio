@@ -1,0 +1,21 @@
+<div class="navbar-features-small">
+  <%= link_to "Urgents (#{@urgent_events.length})", urgent_events_path, class: 'navbar-wagon-item navbar-wagon-link-small', id: 'urgent'%>
+  <%= link_to "Tous (#{@total_events.length})", events_path, class: 'navbar-wagon-item navbar-wagon-link-small', id: 'all'%>
+</div>
+
+<script>
+  const terrain = document.getElementsByClassName("navbar-features-small")[0];
+
+  console.log(terrain);
+
+  terrain.querySelectorAll("a").forEach((a) => {
+    // a.addEventListener("click", (event) => {
+    let url = window.location.href;
+    if (url.match(/\/urgent/) !== null) {
+      document.getElementById('urgent').classList.add("navbar-active-small");
+    } else {
+        document.getElementById('all').classList.add("navbar-active-small");
+    }
+  });
+
+</script>
