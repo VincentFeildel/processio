@@ -21,6 +21,16 @@ class EventsController < ApplicationController
   def show
   end
 
+  def letter
+    @event = Event.find(params[:event_id])
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "letter"
+      end
+    end
+  end
+
   def owner_contacted
     @event = Event.find(params[:event_id])
     @event.update(status: "owner_contacted")
