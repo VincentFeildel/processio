@@ -2,43 +2,48 @@
 
 <div class="container">
   <h1>Bienvenue <%= @user.first_name %></h1>
-  <%= render 'progressbar' %>
-  <div class="actioncards">
+  <div class="top-home">
     <div class="row">
-      <div class="col-xs-12-sm-9">
-        <div class="actioncard">
-          <h2><%= @nbr_urgent %></h2>
-          <p>Evènements urgents</p>
-          <%= link_to 'Voir', events_path(emergency_level: "urgent") %>
-        </div>
-      </div>
-    </div>
+      <div class="actioncards col-xs-12 col-md-12">
+          <div class="row">
+            <div class='col-xs-12 col-md-12'>
+              <div class="actioncard">
+                <h2><%= @nbr_urgent %></h2>
+                <p>Evènements urgents</p>
+                <%= link_to 'Voir', events_path(emergency_level: "urgent") %>
+              </div>
+            </div>
+          </div>
 
-      <!-- Par catégorie -->
+            <!-- Par catégorie -->
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <div class="actioncard">
+                <h2><%= @nbr_end_lease %></h2>
+                <p>Fins de bail</p>
+                <%= link_to 'Voir', events_path(end_of_lease: 'on') %>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="actioncard">
+                <h2><%= @nbr_rent_rev %></h2>
+                <p>Retards de loyer</p>
+                <%= link_to 'Voir', events_path(late_rent: 'on') %>
+              </div>
+            </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="actioncard">
+                  <h2><%= @nbr_late_rent %></h2>
+                  <p>Révisions de loyer</p>
+                  <%= link_to 'Voir', events_path(rent_revision: 'on') %>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
     <div class="row">
-      <div class="col-xs-12-sm-3">
-        <div class="actioncard">
-          <h2><%= @nbr_end_lease %></h2>
-          <p>Fins de bail</p>
-          <%= link_to 'Voir', events_path(end_of_lease: 'on') %>
-        </div>
-      </div>
-      <div class="col-xs-12-sm-3">
-        <div class="actioncard">
-          <h2><%= @nbr_rent_rev %></h2>
-          <p>Retards de loyer</p>
-          <%= link_to 'Voir', events_path(late_rent: 'on') %>
-        </div>
-      </div>
-        <div class="col-xs-12-sm-3">
-          <div class="actioncard">
-            <h2><%= @nbr_late_rent %></h2>
-            <p>Révisions de loyer</p>
-            <%= link_to 'Voir', events_path(rent_revision: 'on') %>
-        </div>
-      </div>
+      <%= render 'progressbar' %>
     </div>
-
   </div>
 
 <!-- Chart -->
@@ -63,11 +68,12 @@
       }
     %>
 
-  <%= line_chart data %>
-
-</div>
-
-
+  <div class="chart-home text-center">
+    <%= line_chart data %>
+  </div>
 <% else %>
 <%= render 'not_connected' %>
 <% end%>
+</div>
+
+

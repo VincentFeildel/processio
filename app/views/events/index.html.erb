@@ -45,3 +45,24 @@
   <%= render "events", events: @events %>
 </div>
 
+<script>
+var turnObjToArray = function(obj) {
+  return [].map.call(obj, function(element) {
+    return element;
+  })
+};
+
+var intermediary = document.querySelectorAll('.table-row-event-index');
+
+var linkedRows = turnObjToArray(intermediary)
+
+if (linkedRows.length > 0) {
+  linkedRows.forEach((row) => {
+    row.addEventListener("click", function() {
+    window.location.href=`http://localhost:3000/events/${event.target.parentNode.id}`;
+    });
+  })
+}
+</script>
+
+

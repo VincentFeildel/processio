@@ -14,18 +14,20 @@
   <tbody>
 
 <% events.each do |event| %>
-    <tr class = "table-row-event-index">
-      <td><%= event.description %></td>
+    <tr class = "table-row-event-index" id="<%= event.id %>">
+      <td> <%= event.description.capitalize %> </td>
       <% date = event.end_date.to_date - Date.today%>
-      <td><%= event.description == "retard loyer" ? "ns" : date.to_i.to_s + "j" %></td>
-      <td><%= event.lease.tenant_name %></td>
-      <td><%= event.lease.tenant_address %></td>
-      <td><%= event.lease.nature %></td>
-      <td><%= event.lease.monthly_rent %></td>
-      <td><%= event.lease.owner_name %></td>
+      <td>
+        <%= event.description == "retard loyer" ? "ns" : date.to_i.to_s + "j" %>
+      </td>
+      <td> <%= event.lease.tenant_name %> </td>
+      <td> <%= event.lease.tenant_address %> </td>
+      <td> <%= event.lease.nature %> </td>
+      <td> <%= event.lease.monthly_rent %> </td>
+      <td> <%= event.lease.owner_name %> </td>
     </tr>
-
 <% end %>
   </tbody>
 </table>
 </div>
+
