@@ -56,6 +56,7 @@ class EventsController < ApplicationController
 
 
   def show
+    @comment = Comment.new
   end
 
   def letter
