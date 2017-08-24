@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+  </head>
+
+  <body>
+
+    <h1><%= @event.lease.owner_name %></h1>
+    <h1><%= @event.lease.tenant_name %></h1>
+    <h2><%=  @event.lease.tenant_address%></h2>
+    <p>Le <%= Date.today %>,
+    </p>
+
+    <%= render 'events/letters/conge_renouv' %>
+  </body>
+</html>

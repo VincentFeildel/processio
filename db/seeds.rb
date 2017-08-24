@@ -150,9 +150,23 @@ Lease.all.each do |lease|
 
 end
 
-# Indiquer 10 tâches comme réalisées:
+# Indiquer 50 tâches comme réalisées:
 Event.last(50).each do |e|
   e.update(to_do: false)
 end
 
+# Indiquer 50 tâches comme en cours:
+Event.first(70).each do |e|
+  e.update(status: 'tenant_to_notify') if e.description != 'retard loyer'
+end
 
+# Création de la db du graph
+now = Date.today
+balt = Lease.sum(:rent_balance)
+
+for i in 0..29
+  day = now - (30 - i).days
+  bal = rand((balt-20000)..(balt+20000))
+  BalanceDay.create(day: day, balance: bal)
+end
+BalanceDay.create(day: now, balance: balt)

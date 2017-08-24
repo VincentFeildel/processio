@@ -10,10 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20170824131319) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
@@ -21,6 +24,13 @@ ActiveRecord::Schema.define(version: 20170824131319) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["event_id"], name: "index_comments_on_event_id"
+
+  create_table "balance_days", force: :cascade do |t|
+    t.datetime "day"
+    t.integer "balance"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+
   end
 
   create_table "events", force: :cascade do |t|
