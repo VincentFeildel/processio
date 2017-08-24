@@ -1,0 +1,5 @@
+<% comments.each do |comment| %>
+<tr>
+  <td><%= comment.content %></td>
+  <td><%= comment.created_at.strftime("%d/%m/%Y") %></td>
+<% end %>

@@ -1,0 +1,21 @@
+<% if @event.description == "fin de bail" || @event.description == "révision de loyer"%>
+        <!-- OWNER TO CONTACT -->
+          <% if  @event.status == "owner_to_contact"%>
+            <p id = status-black>Envoi de la demande au bailleur</p>
+            <p id = status-black> <%= render '/shared/accordion' %> </p>
+          <!-- OWNER CONTACTED -->
+             <% elsif (@event.status == "owner_contacted") || (@event.status == "tenant_to_notify")%>
+            <p id = status-grey>Envoi de la demande au bailleur</p>
+            <p id = status-black> <%= render '/shared/accordion' %> </p>
+          <!-- TENANT NOTIFIED -->
+            <% elsif @event.status == "tenant_notified"%>
+            <p id = status-grey>Envoi de la demande au bailleur</p>
+            <p id = status-grey> <%= render '/shared/accordion' %> </p>
+          <!-- CASE WHERE STATUS UNKNOWN -->
+            <% else %>
+            <p id = status-black>Envoi de la demande au bailleur</p>
+            <p id = status-black> <%= render '/shared/accordion' %>
+          <% end %>
+        <% elsif @event.description == "retard loyer" %>
+            <p>Notification à envoyer au locataire</p>
+        <% end %>

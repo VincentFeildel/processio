@@ -19,6 +19,7 @@ class EventsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
   end
 
   def owner_contacted

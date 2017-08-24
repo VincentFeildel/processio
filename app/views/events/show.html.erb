@@ -30,6 +30,8 @@
       </div>
     </div>
     <!-- END LEFT DIV -->
+
+    <!-- RIGHT DIV -->
     <div class="lease-informations col-xs-12 col-md-7">
         <!-- EVENT DESCRIPTION -->
         <div>
@@ -47,33 +49,27 @@
         <p id = "event-title"><strong>Date d'échéance</strong></p>
         <p><%= @event.end_date.strftime("%d/%m/%Y") %></p>
       </div>
+
       <!-- STATUS -->
       <div class="event-element col-xs-12">
         <p id = "event-title"> <strong>Statut</strong>
-        <!-- OWNER TO CONTACT -->
-        <% if  @event.status == "owner_to_contact"%>
-          <p id = status-black>Envoi de la demande au bailleur</p>
-          <p id = status-black> <%= render '/shared/accordion' %> </p>
-        <!-- OWNER CONTACTED -->
-           <% elsif (@event.status == "owner_contacted") || (@event.status == "tenant_to_notify")%>
-          <p id = status-grey>Envoi de la demande au bailleur</p>
-          <p id = status-black> <%= render '/shared/accordion' %> </p>
-        <!-- TENANT NOTIFIED -->
-          <% elsif @event.status == "tenant_notified"%>
-          <p id = status-grey>Envoi de la demande au bailleur</p>
-          <p id = status-grey> <%= render '/shared/accordion' %> </p>
-        <!-- CASE WHERE STATUS UNKNOWN -->
-          <% else %>
-          <p id = status-black>Envoi de la demande au bailleur</p>
-          <p id = status-black> <%= render '/shared/accordion' %>
-        <% end %>
+        <%= render 'shared/status_task_list' %>
+
           <%= render '/shared/button_status' %>
         </div>
         <div class="col-xs-10 col-md-10">
-          <div class="form-group">
-            <textarea class="form-control post-message" rows="5" id="comment" placeholder="Poster un message"></textarea>
-            <button type="submit" class="btn btn-primary">Poster</button>
-          </div>
+
+        <%= render 'shared/form' %>
+        <% if  !@event.comments.blank?%>
+          <%= render 'shared/comment', comments: @event.comments %>
+          <% else %>
+          <p>Il n'y a pas de commentaire sur cet évenement</p>
+        <% end %>
+
+<!--             <div class="form-group">
+              <textarea class="form-control post-message" rows="5" id="comment" placeholder="Poster un message"></textarea>
+              <button type="submit" class="btn btn-primary">Poster</button>
+          </div> -->
         </div>
       </div>
     </div>
