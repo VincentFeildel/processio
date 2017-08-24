@@ -1,25 +1,32 @@
 class EventsController < ApplicationController
    before_action :set_event, only: [:show]
   def index
-    # Create a hash with the params and the human redable corresponding value
     @total_events = Event.all
     @urgent_events = Event.where("emergency_level = ?", "urgent")
     @late_rent = Event.where("description = ?", "retard loyer")
     @end_of_lease = Event.where("description = ?", "fin de bail")
     @rent_revision = Event.where("description = ?", "révision de loyer")
-    new_hash = {"late_rent" => "retard loyer", "end_of_lease" => "fin de bail", "rent_revision" => "révision de loyer"}
     @events=[]
-    # Iterate on hash to add the events ot the @events array if they are selected
-    new_hash.each do |key, value|
-      if params[key.to_sym] == "on"
-        # Add a condition to check if the emergency level is urgent
-        @events << Event.where("description = ?", value)
-        @events = @events.flatten
+    # Add a condition if you come from searchbar
+    unless params[:search].blank?
+      @total_events.each do |event|
+        @events << event if event.lease.tenant_name.downcase.include?(params[:search].downcase)
       end
-    end
-      # Return all events if nothin is selected and check if emergency level is urgent
-    if @events == [] && !params.values.include?("on")
-      @events = Event.all
+    else
+      # Create a hash with the params and the human redable corresponding value
+      new_hash = {"late_rent" => "retard loyer", "end_of_lease" => "fin de bail", "rent_revision" => "révision de loyer"}
+      # Iterate on hash to add the events ot the @events array if they are selected
+      new_hash.each do |key, value|
+        if params[key.to_sym] == "on"
+          # Add a condition to check if the emergency level is urgent
+          @events << Event.where("description = ?", value)
+          @events = @events.flatten
+        end
+      end
+        # Return all events if nothin is selected and check if emergency level is urgent
+      if @events == [] && !params.values.include?("on")
+        @events = Event.all
+      end
     end
     respond_to do |format|
       format.html
@@ -28,12 +35,12 @@ class EventsController < ApplicationController
   end
 
   def index_urgent
-    # Create a hash with the params and the human redable corresponding value
     @total_events = Event.all
     @urgent_events = Event.where("emergency_level = ?", "urgent")
     @late_rent = Event.where("description = ? AND emergency_level = ?", "retard loyer", "urgent")
     @end_of_lease = Event.where("description = ? AND emergency_level = ?", "fin de bail", "urgent")
     @rent_revision = Event.where("description = ? AND emergency_level = ?", "révision de loyer", "urgent")
+    # Create a hash with the params and the human redable corresponding value
     new_hash = {"late_rent" => "retard loyer", "end_of_lease" => "fin de bail", "rent_revision" => "révision de loyer"}
     @events=[]
     # Iterate on hash to add the events ot the @events array if they are selected

@@ -6,12 +6,14 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Profile picture with dropdown list -->
-    <div class="search-bar">
-      <form action="events_path">
-        <input type="text">
-        <i class='fa fa-search', type='submit'></i>
-      </form>
+
+     <div class="search-bar ">
+      <%= form_tag events_path, method: :get, class: "search-bar " do %>
+      <%=  search_field_tag 'search', params[:search], class: "search-bar", placeholder: "recherche locataire" %>
+          <i class='fa fa-search', type='submit'></i>
+    <% end %>
     </div>
+
 
     <div class="navbar-wagon-item">
       <div class="dropdown">
