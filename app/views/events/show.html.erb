@@ -47,27 +47,27 @@
         <p id = "event-title"><strong>Date d'échéance</strong></p>
         <p><%= @event.end_date.strftime("%d/%m/%Y") %></p>
       </div>
+      <!-- STATUS -->
       <div class="event-element col-xs-12">
         <p id = "event-title"> <strong>Statut</strong>
-          <div class="form-check has-danger">
-            <label class="form-check-label nature-event">
-              <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
-              Envoi de la demande au bailleur <i class="fa fa-envelope" aria-hidden="true"></i>
-            </label>
-          </div>
-          <div class="form-check has-danger">
-            <label class="form-check-label nature-event">
-              <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
-              Réponse du bailleur
-            </label>
-          </div>
-          <div class="form-check has-warning nature-event">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" id="checkboxWarning" value="option1">
-              <%= render '/shared/accordion' %>
-            </label>
-          </div>
-          <%= render '/shared/status' %>
+        <!-- OWNER TO CONTACT -->
+        <% if  @event.status == "owner_to_contact"%>
+          <p id = status-black>Envoi de la demande au bailleur</p>
+          <p id = status-black> <%= render '/shared/accordion' %> </p>
+        <!-- OWNER CONTACTED -->
+           <% elsif (@event.status == "owner_contacted") || (@event.status == "tenant_to_notify")%>
+          <p id = status-grey>Envoi de la demande au bailleur</p>
+          <p id = status-black> <%= render '/shared/accordion' %> </p>
+        <!-- TENANT NOTIFIED -->
+          <% elsif @event.status == "tenant_notified"%>
+          <p id = status-grey>Envoi de la demande au bailleur</p>
+          <p id = status-grey> <%= render '/shared/accordion' %> </p>
+        <!-- CASE WHERE STATUS UNKNOWN -->
+          <% else %>
+          <p id = status-black>Envoi de la demande au bailleur</p>
+          <p id = status-black> <%= render '/shared/accordion' %>
+        <% end %>
+          <%= render '/shared/button_status' %>
         </div>
         <div class="col-xs-10 col-md-10">
           <div class="form-group">

@@ -1,0 +1,28 @@
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <!-- BUTTONS -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- OWNER TO CONTACT -->
+        <% if @event.status == "owner_to_contact" %>
+        <%= link_to "Envoyer au bailleur", event_owner_contacted_path(@event) %>
+        <!-- OWNER ALREADY CONTACTED -->
+        <% elsif (@event.status == "owner_contacted") || (@event.status == "tenant_to_notify")%>
+        <%= link_to "Envoyer au locataire", event_tenant_notified_path(@event) %>
+        <% else %>
+        <%= link_to "Envoyer au bailleur", event_owner_contacted_path(@event) %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
