@@ -1,0 +1,2 @@
+class BalanceDay < ApplicationRecord
+end
