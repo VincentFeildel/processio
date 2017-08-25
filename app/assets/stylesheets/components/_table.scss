@@ -1,5 +1,4 @@
 
-
 .table-head-event-index {
   border-bottom: 2px solid $leasyblue !important ;
 }
@@ -18,6 +17,7 @@
 }
 
 tbody tr:hover {
-  background-color: $leasyyellow !important;
+  background-color: $leasyyellowligthopacity !important;
+  transition: all 0.5s ease-out;
   cursor: pointer !important;
 }
