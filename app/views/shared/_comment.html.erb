@@ -1,5 +1,8 @@
+<div class="col-xs-12 comment-structure">
 <% comments.each do |comment| %>
 <tr>
-  <td><%= comment.content %></td>
-  <td><%= comment.created_at.strftime("%d/%m/%Y") %></td>
+    <td><p id = comment-line><img src="https://kitt.lewagon.com/placeholder/users/florentlienard" class="avatar-comment" > - Stéphane - <%= comment.created_at.strftime("%d/%m/%Y") %></p></td>
+    <td ><%=comment.content%></td>
 <% end %>
+</div>
+
