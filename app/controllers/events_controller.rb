@@ -74,18 +74,15 @@ class EventsController < ApplicationController
         render pdf: "letter"
       end
     end
+    @event.update(status: (@event.status == 'owner_to_contact' ?  'owner_contacted' : 'tenant_notified'))
   end
 
-  def owner_contacted
-    @event = Event.find(params[:event_id])
-    @event.update(status: "owner_contacted")
+  def mail
+    # Instruction to get params and fill it in a new mail instance and send it
+    @event.update(status: (@event.status == 'owner_to_contact' ?  'owner_contacted' : 'tenant_notified'))
     redirect_to event_path(@event)
   end
-  def tenant_notified
-    @event = Event.find(params[:event_id])
-    @event.update(status: "tenant_notified")
-    redirect_to event_path(@event)
-  end
+
 
   def home
   end
