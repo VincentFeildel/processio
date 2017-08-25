@@ -1,16 +1,16 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <%= link_to 'Leasy', root_path %>
-
+  <a href="/" class="navbar-wagon-brand">
+    <img src="<%= image_path "leasy_logo.png" %>" alt="logo_leasy">
+  </a>
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-
     <!-- Profile picture with dropdown list -->
 
-     <div class="search-bar ">
-      <%= form_tag events_path, method: :get, class: "search-bar " do %>
-      <%=  search_field_tag 'search', params[:search], class: "search-bar", placeholder: "recherche locataire" %>
-          <i class='fa fa-search', type='submit'></i>
+     <div class="search-bar-div">
+      <%= form_tag events_path, method: :get do %>
+      <%=  search_field_tag 'search', params[:search], class: "search-bar", placeholder: "Recherche propriétaire" %>
+          <i class='fa fa-search', type='submit', style="color: rgb(220,220,220)"></i>
     <% end %>
     </div>
 
@@ -21,6 +21,7 @@
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><a href="#">Profil</a></li>
           <li><a href="#">Messages</a></li>
+          <li> <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete%> </li>
         </ul>
       </div>
     </div>
@@ -42,20 +43,17 @@
   <%= link_to 'Evenements', events_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'events'%>
   <%= link_to 'Contrats', leases_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'leases'%>
 </div>
-
 <script>
-
-  const zone = document.getElementsByClassName("navbar-features")[0];
-
-  zone.querySelectorAll("a").forEach((a) => {
-    // a.addEventListener("click", (event) => {
-    let url = window.location.href;
-    if (url.match(/\/event/) !== null | url.match(/\/urgent_events/) !== null) {
-      document.getElementById('events').classList.add("navbar-active");
-    } else if (url.match(/\/lease/) !== null) {
-        document.getElementById('leases').classList.add("navbar-active");
-    } else {
-        document.getElementById('home').classList.add("navbar-active");
-    }
-  });
+const zone = document.getElementsByClassName("navbar-features")[0];
+zone.querySelectorAll("a").forEach((a) => {
+// a.addEventListener("click", (event) => {
+let url = window.location.href;
+if (url.match(/\/event/) !== null | url.match(/\/urgent_events/) !== null) {
+document.getElementById('events').classList.add("navbar-active");
+} else if (url.match(/\/lease/) !== null) {
+document.getElementById('leases').classList.add("navbar-active");
+} else {
+document.getElementById('home').classList.add("navbar-active");
+}
+});
 </script>

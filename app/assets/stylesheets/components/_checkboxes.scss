@@ -22,7 +22,7 @@
 }
 
 .fancy-checkbox:checked + label {
-  background-color: rgb(144, 238, 144);
+  background-color: $leasypurple;
 }
 
 .fancy-checkbox + label:before {
@@ -60,7 +60,7 @@
 .flexbox-subcheckbox{
   display: flex;
   flex-direction: row;
-  justify-content: sparce-around;
+  justify-content: space-evenly;
   p{
     margin-left: 15px
   }

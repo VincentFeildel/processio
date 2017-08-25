@@ -10,7 +10,7 @@ class EventsController < ApplicationController
     # Add a condition if you come from searchbar
     unless params[:search].blank?
       @total_events.each do |event|
-        @events << event if event.lease.tenant_name.downcase.include?(params[:search].downcase)
+        @events << event if event.lease.owner_name.downcase.include?(params[:search].downcase)
       end
     else
       # Create a hash with the params and the human redable corresponding value
