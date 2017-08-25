@@ -1,20 +1,33 @@
 <div class="container container-white">
+
 <table class="table table-hover background-transparent" style = "background-color: white;">
   <thead class = "table-head-event-index">
     <tr class = "table-head-event-index">
-      <th style = "width: 139px;" class = "table-head-event-index">Description</th>
+      <th style = "width: 40px;" class = "table-head-event-index">Status</th>
+      <th style = "width: 150px;" class = "table-head-event-index">Description</th>
       <th style = "width: 50px;" class = "table-head-event-index">Deadline</th>
       <th style = "width: 200px;" class = "table-head-event-index">Locataire</th>
       <th style = "width: 240px;" class = "table-head-event-index">Adresse</th>
       <th class = "table-head-event-index" style = "width: 240px;">Nature</th>
       <th class = "table-head-event-index">Loyer (€/m)</th>
-      <th style = "width: 230px;" class = "table-head-event-index">Propriétaire</th>
+      <th style = "width: 200px;" class = "table-head-event-index">Propriétaire</th>
     </tr>
   </thead>
   <tbody>
 
 <% events.each do |event| %>
     <tr class = "table-row-event-index" id="<%= event.id %>">
+      <td>
+        <% if event.emergency_level == "non-due" %>
+          <i class="fa fa-arrow-down" aria-hidden="true" style="color: rgb(145, 197, 249);"></i>
+        <% elsif event.emergency_level == "due" %>
+          <i class="fa fa-arrow-right" aria-hidden="true" style="color: rgb(145, 197, 249);"></i>
+        <% elsif event.emergency_level == "overdue"%>
+          <i class="fa fa-search" aria-hidden="true" style="color:rgb(145, 197, 249)"></i>
+        <% else %>
+          <i class="fa fa-arrow-up" aria-hidden="true" style="color: red;"></i>
+        <% end %>
+      </td>
       <td> <%= event.description.capitalize %> </td>
       <% date = event.end_date.to_date - Date.today%>
       <td>

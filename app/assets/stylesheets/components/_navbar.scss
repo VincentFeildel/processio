@@ -49,6 +49,11 @@
   padding: 8px;
 }
 
+.navbar-wagon-link-small:hover {
+  color: $brand-primary;
+  text-decoration: none;
+}
+
 .navbar-wagon-link:hover {
   color: $brand-primary;
   text-decoration: none;
@@ -123,4 +128,25 @@
   align-items: center;
   justify-content: space-around;
   margin-bottom: 15px;
+  border-top: 1px solid rgba(200,200,200,0.2);
 }
+
+.search-bar{
+  border-color: $light-gray;
+  border: none;
+  outline: none;
+}
+
+
+.search-bar:focus{
+  border-radius: 5px;
+  border-color: $gray;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(220, 220, 220, 0.9) !important;
+}
+
+
+.search-bar::-webkit-input-placeholder {
+    color: rgb(220,220,220);
+    font-weight: lighter;
+}
+
