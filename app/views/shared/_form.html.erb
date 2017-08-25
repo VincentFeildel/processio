@@ -1,4 +1,4 @@
 <%= simple_form_for ([@event, @comment]) do |f| %>
-  <%= f.text_field :content %>
-  <%= f.submit %>
+  <ul class = "text-left"><%= f.text_field :content, :input_html => {:style=> 'width: 100px'} %></ul>
+    <ul class = "text-left"><%= f.submit class: 'btn btn-primary', id: 'btn-comment'%></ul>
 <% end %>
