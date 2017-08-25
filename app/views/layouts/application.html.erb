@@ -11,9 +11,8 @@
   </head>
   <body>
     <div class="page-framing">
-      <%=  render 'shared/nav_bar' %>
+      <%= render 'shared/nav_bar' unless !user_signed_in? %>
     </div>
-
     <div class="content-page">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>

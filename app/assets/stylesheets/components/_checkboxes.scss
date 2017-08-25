@@ -22,7 +22,7 @@
 }
 
 .fancy-checkbox:checked + label {
-  background-color: rgb(144, 238, 144);
+  background-color: $leasypurple;
 }
 
 .fancy-checkbox + label:before {
