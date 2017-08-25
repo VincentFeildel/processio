@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= wicked_pdf_stylesheet_link_tag 'application', media: 'all' %>
   </head>
 
   <body>
 
+    <%= wicked_pdf_image_tag 'logo_client' %>
     <h1><%= @event.lease.owner_name %></h1>
     <h1><%= @event.lease.tenant_name %></h1>
     <h2><%=  @event.lease.tenant_address%></h2>
