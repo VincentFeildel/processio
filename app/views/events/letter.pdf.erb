@@ -5,15 +5,31 @@
     <%= wicked_pdf_stylesheet_link_tag 'application', media: 'all' %>
   </head>
 
+
   <body>
+  <div class="letterstyle">
 
-    <%= wicked_pdf_image_tag 'logo_client' %>
-    <h1><%= @event.lease.owner_name %></h1>
-    <h1><%= @event.lease.tenant_name %></h1>
-    <h2><%=  @event.lease.tenant_address%></h2>
-    <p>Le <%= Date.today %>,
-    </p>
+    <!-- header -->
 
-    <%= render 'events/letters/conge_renouv' %>
+    <div class="letterhead">
+      <%= wicked_pdf_image_tag 'logo_client' %>
+      <h1><%= @event.lease.owner_name %></h1>
+      <h1><%= @event.lease.tenant_name %></h1>
+      <h2><%=  @event.lease.tenant_address%></h2>
+      <p>Le <%= Date.today %>,
+      </p>
+    </div>
+
+    <!-- content -->
+    <div class="lettercontent">
+      <%= render 'events/letters/conge_renouv' %>
+    </div>
+
+    <!-- footer -->
+    <div class="letterfooter">
+      <%= wicked_pdf_image_tag 'signature' %>
+    </div>
+
+  </div>
   </body>
 </html>

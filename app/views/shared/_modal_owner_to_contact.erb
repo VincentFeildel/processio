@@ -8,7 +8,7 @@
         <h5 class="modal-title" id="exampleModalLongTitle">
           <%= "Envoi au #{dest}" %>
         </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id='closecross'>
         <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -37,7 +37,7 @@
           <% end %>
           <hr>
           <%= link_to "#{@event.id}/letter.pdf", class: 'choice-link', target: 'blank' do %>
-          <div class="sending-choice pdf text-center">
+          <div class="sending-choice pdf text-center" id='letterlink'>
             <h1 class="pdf">Générer une lettre</h1>
             <i class="pdf fa fa-file-pdf-o" aria-hidden="true"></i>
           </div>
@@ -52,9 +52,15 @@
 <script>
   const tohide = document.getElementsByClassName("sending-choices")[0]
   const toshow = document.getElementsByClassName("mail-form")[0]
-  const button = document.getElementById('maillink');
-  button.addEventListener("click", function () {
+  const buttonMail = document.getElementById('maillink');
+  const buttonLetter = document.getElementById('letterlink');
+
+  buttonMail.addEventListener("click", function () {
     tohide.classList.add("hide");
     toshow.classList.remove("hide");
+  });
+
+  buttonLetter.addEventListener("click", function () {
+    $("#closecross").click();
   });
 </script>
