@@ -1,50 +1,42 @@
 <% if current_user %>
 
 <div class="container">
-  <h3 class='text-center'>Bienvenue <%= @user.first_name %></h3>
-  <div class="top-home">
-    <div class="row">
-      <div class="actioncards col-xs-12 col-md-12">
-          <div class="row">
-            <div class='col-xs-12 col-md-12'>
-              <div class="actioncard">
-                <h2><%= @nbr_urgent %></h2>
-                <p><strong>Evènements urgents</strong></p>
-                <%= link_to 'Voir', urgent_events_path %>
-              </div>
-            </div>
-          </div>
 
-            <!-- Par catégorie -->
-          <div class="row">
-            <div class="col-xs-12 col-md-4">
-              <div class="actioncard">
-                <h2><%= @nbr_end_lease %></h2>
-                <p>Fins de bail</p>
-                <%= link_to 'Voir', events_path(end_of_lease: 'on') %>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-              <div class="actioncard">
-                <h2><%= @nbr_rent_rev %></h2>
-                <p>Retards de loyer</p>
-                <%= link_to 'Voir', events_path(late_rent: 'on') %>
-              </div>
-            </div>
-              <div class="col-xs-12 col-md-4">
-                <div class="actioncard">
-                  <h2><%= @nbr_late_rent %></h2>
-                  <p>Révisions de loyer</p>
-                  <%= link_to 'Voir', events_path(rent_revision: 'on') %>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="row top-home">
+    <div class="welcomecard col-xs-12 col-md-6">
+      <h3>Bienvenue, <%=@user.first_name %></h3>
+      <p>Nous avons détecté pour vous <%=@nbr_total%> évènements sur vos contrats,</p>
+      <p>dont 91 qui demandent une action urgente.</p>
+      <br>
+      <p>On commence?</p>
     </div>
-    <div class="row">
+    <div class="actioncard col-xs-12 col-md-6">
+      <div class="urgent-indicator">
+        <h2><%= @nbr_urgent %></h2>
+        <p>Evènements urgents</p>
+        <%= link_to 'Voir', urgent_events_path %>
+      </div>
       <%= render 'progressbar' %>
     </div>
   </div>
+
+  <p>Types d'évènements:</p>
+  <div class="row middle-home">
+    <div class="categorycard col-xs-12 col-md-4">
+      <p>Fins de bail <strong>(<%=@nbr_end_lease%>)</strong></p>
+      <%= link_to image_tag('end'), events_path(end_of_lease: 'on') %>
+    </div>
+    <div class="categorycard col-xs-12 col-md-4">
+      <p>Retards de loyer <strong>(<%=@nbr_late_rent%>)</strong></p>
+      <%= link_to image_tag('late'), events_path(late_rent: 'on') %>
+    </div>
+    <div class="categorycard col-xs-12 col-md-4">
+      <p>Revisions de loyer <strong>(<%=@nbr_rent_rev%>)</strong></p>
+      <%= link_to image_tag('revision'), events_path(rent_revision: 'on') %>
+    </div>
+  </div>
+
+
 
 <!-- Chart -->
 
