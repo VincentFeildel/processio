@@ -20,6 +20,7 @@ $speed: 5s;
     justify-content: space-around;
     text-align: center;
     margin: auto auto;
+    border-left: 1px solid rgba(200,200,200,0.5);
     height: 100%;
     @each $id,
     $color in (1, $brand-primary),

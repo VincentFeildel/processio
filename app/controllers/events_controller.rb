@@ -69,7 +69,6 @@ class EventsController < ApplicationController
   def letter
     @event = Event.find(params[:event_id])
     respond_to do |format|
-      format.html
       format.pdf do
         render pdf: "letter"
       end
