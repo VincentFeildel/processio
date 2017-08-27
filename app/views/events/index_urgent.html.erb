@@ -3,45 +3,9 @@
 
 <%= form_tag urgent_events_path, method: :get, remote: true, id: "filter-form" do %>
 
-<div class="flexbox-checkbox col-xs-8 col-xs-offset-2">
-  <div class="flexbox-checkbox-item">
-    <div class="col-xs-12">
-      <div class = "flexbox-subcheckbox">
-        <div>
-          <%= check_box_tag :late_rent, nil, params[:late_rent], class: "checkbox-input fancy-checkbox" %>
-          <%= label_tag :late_rent%>
-        </div>
-        <p> Retard de loyer (<%= @late_rent.length %>) </p>
-      </div>
-    </div>
-  </div>
+<%= render 'shared/checkbox_forms' %>
 
-  <div class="flexbox-checkbox-item">
-    <div class="col-xs-12">
-      <div class = "flexbox-subcheckbox">
-        <div>
-          <%= check_box_tag :end_of_lease, nil, params[:end_of_lease], class: "checkbox-input fancy-checkbox" %>
-          <%= label_tag :end_of_lease%>
-        </div>
-        <p>Fin de bail (<%= @end_of_lease.length %>) </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="flexbox-checkbox-item">
-    <div class="col-xs-12">
-      <div class = "flexbox-subcheckbox">
-        <div>
-          <%= check_box_tag :rent_revision, nil, params[:rent_revision], class: "checkbox-input fancy-checkbox" %>
-          <%= label_tag :rent_revision %>
-        </div>
-        <p>Révision de loyer (<%= @rent_revision.length %>) </p>
-        <% end %>
-      </div>
-    </div>
-
-  </div>
-</div>
+<% end %>
 
 
 <div id="events-container">
