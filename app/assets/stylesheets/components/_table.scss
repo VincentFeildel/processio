@@ -1,23 +1,46 @@
-
+table {
+  font-size: 12px;
+}
 .table-head-event-index {
   border-bottom: 2px solid $leasyblue !important ;
 }
-
 .container-white {
   background-color: transparent;
   padding: 0px;
 }
-
 .background-transparent {
   background-color: transparent !important;
 }
-
 .table-row-event-index {
   border-bottom: 2px dotted $leasyturquoise !important ;
 }
-
 tbody tr:hover {
   background-color: $leasyyellowligthopacity !important;
   transition: all 0.5s ease-out;
   cursor: pointer !important;
+}
+.row-event {
+  background: white;
+  height: 50px;
+}
+.spacer {
+  height: 1px;
+  td {
+    background: none;
+    margin: none;
+    padding-top: 2px;
+    padding-top: 2px;
+    border-radius: 10px;
+  }
+}
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  vertical-align: middle;
+}
+tr {
+  outline: thin solid #F4F8F9;}
+
+.centered-icon {
+  display: flex;
 }
