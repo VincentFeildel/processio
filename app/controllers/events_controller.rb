@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-   before_action :set_event, only: [:show]
+   before_action :set_event, only: [:show, :update]
   def index
     @total_events = Event.all
     @urgent_events = Event.where("emergency_level = ?", "urgent")
@@ -103,7 +103,7 @@ class EventsController < ApplicationController
   end
 
   def update
-    @event.update(new_rent)
+    @event.update(new_rent: params[:new_rent])
   end
 
 

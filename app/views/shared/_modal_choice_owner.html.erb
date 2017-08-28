@@ -7,6 +7,7 @@
       <% new_rent = ((Indice.find(1).indice / Indice.find(i-1).indice) * @event.lease.monthly_rent).round %>
   <% end %>
   <% i += 1 %>
+  <% new_rent = ((Indice.find(1).indice / Indice.find(i-1).indice) * @event.lease.monthly_rent).round if i == 41  %>
 <% end %>
 
 <!-- HTML -->
@@ -16,7 +17,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle">
-          <%= "Fin de bail: choix du bailleur" %>
+          <%= "Fin de bail: décision du bailleur" %>
         </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" id='closecross'>
         <span aria-hidden="true">&times;</span>
@@ -25,21 +26,20 @@
 
       <div class="modal-body">
 
-      <p>Merci de renseigner le choix de <%= @event.lease.owner_name %> pour son bien situé au <%= @event.lease.tenant_address %> et dont le bail donné à <%= "#{@event.lease.tenant_first_name} #{@event.lease.tenant_name}"%> (société <%= @event.lease.tenant_company %>) touche à sa fin</p>
+      <p>Merci de renseigner le choix de <%= @event.lease.owner_name %> pour son bien situé au <%= @event.lease.tenant_address %> et dont le bail donné à <%= "#{@event.lease.tenant_first_name} #{@event.lease.tenant_name}"%> (société <%= @event.lease.tenant_company %>) touche à sa fin.</p>
       <!-- Form for owner choice -->
 
         <%= simple_form_for(@event) do |e| %>
         <p>Ancien loyer mensuel du bail: <%= @event.lease.monthly_rent %>€</p>
-        <p>Nouveau loyer proposé au bailleur: <%= new_rent %>€*</p>
-        <%= e.input :new_rent, placeholder: new_rent%>
-        <small id="HelpRent" class="form-text text-muted">*Selon le dernier indice de référence des loyers</small>
-
-          <%= e.submit "Suivant", class: "btn btn-primary"  %>
+        <p>Nouveau loyer proposé au bailleur: <strong><%= new_rent %>€</strong>*</p>
+        <%= e.input :new_rent, label: 'Nouveau loyer décidé par le bailleur:', value: new_rent %>
+        <%= e.submit "Valider nouveau loyer", class: "btn btn-primary"  %>
         <% end %>
 
       </div>
 
       <div class="modal-footer">
+        <p>*Nouveau loyer calculé selon l'indice des loyers commerciaux</p>
 
       </div>
 
