@@ -120,7 +120,13 @@ class EventsController < ApplicationController
   def mail
     @event = Event.find(params[:event_id])
     # Instruction to get params and fill it in a new mail instance and send it
-    @event.update(status: (@event.status == 'owner_to_contact' ?  'owner_contacted' : 'tenant_notified'))
+    if event.status == 'owner_to_contact'
+      EventMailer.notify_owner(@event, params[:response]).deliver_now
+      @event.update(status: 'owner_contacted')
+    else
+      EventMailer.notify_tenant(@event, params[:response]).deliver_now
+      @event.update(status: 'tenant_notified')
+    end
     redirect_to event_path(@event)
   end
 

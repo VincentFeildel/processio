@@ -15,18 +15,19 @@
 
       <div class="modal-body">
         <div class="mail-form hide">
-          <form>
+          <%= form_tag event_mail_path(@event) do %>
             <div class="form-group">
               <label for="exampleInputEmail1">
               <p></p>
                 <%= "Mail à envoyer à #{@event.lease.owner_email}" %>
               </label>
-              <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Cher monsieur, nous vous contactons pour informer que votre bail                                                (...)"></textarea>
+              <textarea class="form-control" id="exampleTextarea" rows="3" name= "response" placeholder="Cher monsieur, nous vous contactons pour informer que votre bail                                                (...)"></textarea>
               <small id="emailHelp" class="form-text text-muted">Modifiez le mail ci-dessus si besoin puis envoyez.</small>
             </div>
+            <%= submit_tag "Envoyer au #{dest}", class: 'btn btn-primary' %>
+            <% end %>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modalchoice">Choix du bailleur</button>
-          </form>
-        <%= link_to "Envoyer au #{dest}", event_mail_path(@event), class: 'btn btn-primary', type: "submit" %>
+
         </div>
 
         <div class="sending-choices">
