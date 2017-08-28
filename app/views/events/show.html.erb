@@ -3,24 +3,22 @@
     <div class="stakeholders col-xs-12 col-md-4">
     <!-- PROPRIETAIRE -->
       <div class="stakeholder">
-        <p id = "left-event-title"><strong>Propriétaire</strong></p>
+        <p id = "left-event-title"><strong>PROPRIÉTAIRE</strong></p>
         <p><strong>Nom :</strong> <%= @event.lease.owner_name %></p>
         <p><strong>Adresse :</strong> <%= @event.lease.owner_address %></p>
         <p><strong>Email : </strong><%= @event.lease.owner_email %></p>
       </div>
-
       <!-- BIEN -->
       <div class="stakeholder">
-        <p id = "left-event-title"><strong>Bien</strong></p>
+        <p id = "left-event-title"><strong>BIEN</strong></p>
         <p><strong>Adresse :</strong> <%= @event.lease.tenant_address %></p>
         <p><strong>Nature du bail :</strong> <%= @event.lease.nature %></p>
         <p><strong>N° du lot :</strong> <%= @event.lease.num_lot %></p>
       </div>
       <!-- END BIEN -->
-
       <!-- LOCATAIRE -->
       <div class="stakeholder">
-        <p id = "left-event-title"><strong>Locataire</strong></p>
+        <p id = "left-event-title"><strong>LOCATAIRE</strong></p>
         <% if (@event.lease.nature == "Commercial 3 ans") || (@event.lease.nature == "Commercial 9 ans")%>
         <p>Société : <%= @event.lease.tenant_name %> </p>
         <% else %>
@@ -46,22 +44,29 @@
 
           <!-- END DATE -->
       <div class="event-element col-xs-12">
-        <p id = "event-title"><strong>Date d'échéance</strong></p>
+        <p id = "event-title"><strong>DATE D'ÉCHÉANCE</strong></p>
         <p><%= @event.end_date.strftime("%d/%m/%Y") %></p>
       </div>
 
       <!-- STATUS -->
       <div class="event-element col-xs-12">
-        <p id = "event-title"> <strong>Statut</strong></p>
+
+      <% if  @event.status == "owner_to_contact"%>
+       <p  id = "event-title"> <strong> TÂCHES (0/2) :</strong></p>
+        <% elsif @event.status == "owner_contected" || @event.status == "tenant_to_notify" %>
+        <p  id = "event-title"> <strong>TÂCHES  (1/2) </strong></p>
+        <% elsif @event.status == "tenant_notified"%>
+        <p  id = "event-title"> <strong>TÂCHES (2/2) :</strong> </p>
+      <% end %>
         <%= render 'shared/status_task_list' %>
 
-          <%= render '/shared/button_status' %>
+          <%#= render '/shared/button_status' %>
         </div>
-        <div class="col-xs-10 col-md-10">
+        <div class = form-box>
 
         <%= render 'shared/form' %>
         <% if  !@event.comments.blank?%>
-          <%= render 'shared/comment', comments: @event.comments %>
+          <%= render 'shared/comment', comments: @event.comments.reverse %>
           <% else %>
           <p>Il n'y a pas de commentaire sur cet évenement</p>
         <% end %>
@@ -69,4 +74,3 @@
       </div>
     </div>
   </div>
-</div>
