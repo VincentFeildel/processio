@@ -1,0 +1,2 @@
+class Indice < ApplicationRecord
+end

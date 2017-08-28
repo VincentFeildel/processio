@@ -74,7 +74,8 @@ CSV.foreach(filepath, csv_options) do |row|
   l.next_revision = Date.strptime(row['next_revision'],'%m/%d/%Y') + incr.days
   l.save
 end
-
+puts '----------------'
+puts 'Contrats de bail créés!!'
 
 # Génération des évènements
 
@@ -149,6 +150,9 @@ Lease.all.each do |lease|
   end
 
 end
+puts '----------------'
+puts 'Evenements créés!!'
+
 
 # Indiquer 50 tâches comme réalisées:
 Event.last(50).each do |e|
@@ -159,8 +163,11 @@ end
 Event.first(70).each do |e|
   e.update(status: 'tenant_to_notify') if e.description != 'retard loyer'
 end
-
+puts '----------------'
+puts 'Evenements en cours et réalisés modifiés'
 # Création de la db du graph
+BalanceDay.all.each { |bd| bd.destroy }
+
 now = Date.today
 balt = Lease.sum(:rent_balance)
 
@@ -170,3 +177,19 @@ for i in 0..29
   BalanceDay.create(day: day, balance: bal)
 end
 BalanceDay.create(day: now, balance: balt)
+
+puts '----------------'
+puts 'DB graph créée'
+puts ':)'
+# populate indice table
+Indice.all.each { |i| i.destroy }
+filepath = 'db/indices.csv'
+
+CSV.foreach(filepath, csv_options) do |row|
+  date = Date.strptime(row['app_date'],'%m/%d/%Y')
+  indice = row['indice']
+  Indice.create(app_date: date, indice: indice)
+end
+
+puts '----------------'
+puts 'Indices loyer créés!!'
