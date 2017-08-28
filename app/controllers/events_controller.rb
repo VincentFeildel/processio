@@ -102,6 +102,10 @@ class EventsController < ApplicationController
     end
   end
 
+  def update
+    @event.update(new_rent)
+  end
+
 
   def show
     @comment = Comment.new

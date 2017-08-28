@@ -29,8 +29,9 @@
       <!-- Form for owner choice -->
 
         <%= simple_form_for(@event) do |e| %>
-        <p>Nouveau loyer proposé au bailleur: <%= new_rent %>€</p>
-        <%= e.input :new_rent %>
+        <p>Ancien loyer mensuel du bail: <%= @event.lease.monthly_rent %>€</p>
+        <p>Nouveau loyer proposé au bailleur: <%= new_rent %>€*</p>
+        <%= e.input :new_rent, placeholder: new_rent%>
         <small id="HelpRent" class="form-text text-muted">*Selon le dernier indice de référence des loyers</small>
 
           <%= e.submit "Suivant", class: "btn btn-primary"  %>
