@@ -103,6 +103,7 @@ class EventsController < ApplicationController
   end
 
   def update
+    raise
     @event.update(new_rent: params[:new_rent])
   end
 
