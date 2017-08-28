@@ -17,7 +17,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle">
-          <%= "Fin de bail: décision du bailleur" %>
+          <%= "Fin de bail: notification du locataire" %>
         </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" id='closecross'>
         <span aria-hidden="true">&times;</span>
@@ -25,17 +25,38 @@
       </div>
 
       <div class="modal-body">
+        <!-- etape decision bailleur -->
 
-      <p>Merci de renseigner le choix de <%= @event.lease.owner_name %> pour son bien situé au <%= @event.lease.tenant_address %> et dont le bail donné à <%= "#{@event.lease.tenant_first_name} #{@event.lease.tenant_name}"%> (société <%= @event.lease.tenant_company %>) touche à sa fin.</p>
-      <!-- Form for owner choice -->
-
-        <%= simple_form_for(@event) do |e| %>
-        <p>Ancien loyer mensuel du bail: <%= @event.lease.monthly_rent %>€</p>
-        <p>Nouveau loyer proposé au bailleur: <strong><%= new_rent %>€</strong>*</p>
-        <%= e.input :new_rent, label: 'Nouveau loyer décidé par le bailleur:', value: new_rent %>
-        <%= e.submit "Valider nouveau loyer", class: "btn btn-primary"  %>
-        <% end %>
-
+        <!-- etape choix loyer -->
+        <div>
+          <div class="content-choice row">
+            <div class="instructions col-xs-12 col-md-6">
+              <p>Merci de renseigner le choix de <strong><%= @event.lease.owner_name %></strong> dont le bail donné à <%= "#{@event.lease.tenant_first_name} #{@event.lease.tenant_name}"%> (société <%= @event.lease.tenant_company %>) touche à sa fin.</p>
+              <br>
+              <br>
+              <p class='loc'><i class="fa fa-map-marker"></i> <%= "#{@event.lease.tenant_address}, lot #{@event.lease.num_lot}" %></p>
+            </div>
+            <!-- Form for owner choice -->
+              <div class="ownerchoice rightform col-xs-12 col-md-6">
+                <h3>Qu'a choisi <%= @event.lease.owner_name %>?</h3>
+                <div class="options">
+                  <div class="option"><p><strong>Renouvellement</strong> du bail</p></div>
+                  <div class="option"><p><strong>Refus</strong> de renouvellement du bail</p></div>
+                </div>
+              </div>
+              <div class="rightform col-xs-12 col-md-6 hide" id="newrent-choice">
+                <div class="step"><i class="fa fa-arrow-left"></i> Retour décision bailleur</div>
+                <%= simple_form_for(@event) do |e| %>
+                <p><i class="fa fa-money"></i> Ancien loyer mensuel du bail: <%= @event.lease.monthly_rent %>€</p>
+                <p><i class="fa fa-money"></i> Nouveau loyer proposé au bailleur: <strong><%= new_rent %>€</strong>*</p>
+                  <label for="event[new_rent]">Nouveau loyer demandé par le bailleur:</label>
+                  <input class="form-control numeric integer optional" type="number" step="1" name="event[new_rent]" id="event_new_rent" placeholder="<%= new_rent %>">
+                  <br>
+                <%= e.submit "Valider nouveau loyer", class: "btn btn-primary"  %>
+                <% end %>
+              </div>
+          </div>
+        </div>
       </div>
 
       <div class="modal-footer">
@@ -46,3 +67,20 @@
     </div>
   </div>
 </div>
+
+<script>
+  const tohideC = document.getElementsByClassName("ownerchoice")[0]
+  const toshowC = document.getElementById("newrent-choice")
+  const buttonback = document.getElementsByClassName('step')[0];
+  const buttonoption = document.getElementsByClassName('option')[0];
+
+  buttonoption.addEventListener("click", function () {
+    tohideC.classList.add("hide");
+    toshowC.classList.remove("hide");
+  });
+
+  buttonback.addEventListener("click", function () {
+    toshowC.classList.add("hide");
+    tohideC.classList.remove("hide");
+  });
+</script>
