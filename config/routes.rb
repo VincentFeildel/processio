@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :events, only: [:index, :show] do
+  resources :events, only: [:index, :show, :update] do
     get 'letter', to: 'events#letter'
     post 'mail', to: 'events#mail'
     resources :comments
