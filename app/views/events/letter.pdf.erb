@@ -12,12 +12,19 @@
     <!-- header -->
 
     <div class="letterhead">
-      <%= wicked_pdf_image_tag 'logo_client' %>
-      <h1><%= @event.lease.owner_name %></h1>
-      <h1><%= @event.lease.tenant_name %></h1>
-      <h2><%=  @event.lease.tenant_address%></h2>
-      <p>Le <%= Date.today %>,
-      </p>
+      <div class="letterhead-left">
+        <%= wicked_pdf_image_tag('logo_client', class: 'imageletter') %>
+        <p><strong>IMMO 3000</strong></p>
+        <p><%= "#{current_user.first_name} #{current_user.last_name}" %></p>
+        <p><%= current_user.position %> </p>
+      </div>
+
+      <div class="letterhead-right">
+        <h1><%= @event.lease.tenant_name %></h1>
+        <h2><%=  @event.lease.tenant_address%></h2>
+        <p>Paris, le <%= Date.today %> </p>
+      </div>
+
     </div>
 
     <!-- content -->
