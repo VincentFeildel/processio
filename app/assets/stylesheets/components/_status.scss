@@ -1,3 +1,25 @@
+.status-box {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin: 25px 0;
+  padding: 15px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: rgb(240, 240, 240);
+  border-width: 1px;
+}
+.status_title_grey {
+  font-size: 14px;
+  color: lightgrey;
+  margin-top: 10px;
+  // width: 200px;
+}
+.status_title_black {
+  margin-top: 20px;
+  white-space: normal;
+}
 .status-update {
   margin: 30px;
 }
@@ -7,5 +29,13 @@
 }
 #status-black {
   color: #5B5B5B;
+}
 
+.status_conclusion {
+  color: $leasypurple;
+}
+.picto_status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

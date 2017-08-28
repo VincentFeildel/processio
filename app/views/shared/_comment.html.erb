@@ -1,8 +1,10 @@
 <div class="col-xs-12 comment-structure">
-<% comments.each do |comment| %>
-<tr>
-    <td><p id = comment-line><img src="https://kitt.lewagon.com/placeholder/users/florentlienard" class="avatar-comment" > - Stéphane - <%= comment.created_at.strftime("%d/%m/%Y") %></p></td>
-    <td ><%=comment.content%></td>
-<% end %>
-</div>
-
+    <% comments.each do |comment| %>
+<!--     <div class="col-xs-12 comment-structure"> -->
+    <tr>
+      <td><p id = comment-line><img src="https://kitt.lewagon.com/placeholder/users/florentlienard" class="avatar-comment" > - Stéphane - <%= comment.created_at.strftime("%d/%m/%Y à %Hh%M") %></p></td>
+      <td ><%=comment.content%></td>
+      </tr>
+<!--     </div> -->
+      <% end %>
+    </div>
