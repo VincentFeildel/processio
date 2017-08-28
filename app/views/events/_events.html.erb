@@ -14,7 +14,7 @@
     </thead>
     <tbody>
     <% events.each do |event| %>
-        <tr class = "row-event" id="<%= event.id %>">
+        <tr class = "table-row-event-index" id="<%= event.id %>">
           <td>
             <% if event.emergency_level == "non-due" %>
             <%= image_tag("Low.png", :width => 33, :height => 15) %>
@@ -38,7 +38,7 @@
           <td> <%= event.lease.owner_name %> </td>
         </tr>
         <tr class="spacer">
-          <td colspan="8"></td>
+          <td class = "col_spacer" colspan="8"></td>
         </tr>
     <% end %>
     </tbody>

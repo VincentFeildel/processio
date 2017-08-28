@@ -19,7 +19,7 @@ tbody tr:hover {
   transition: all 0.5s ease-out;
   cursor: pointer !important;
 }
-.row-event {
+.table-row-event-index {
   background: white;
   height: 50px;
 }
@@ -41,6 +41,7 @@ tbody tr:hover {
 tr {
   outline: thin solid #F4F8F9;}
 
-.centered-icon {
-  display: flex;
+.col_spacer:hover{
+  background: #F4F8F9;
+  cursor: auto !important;
 }
