@@ -8,6 +8,12 @@
 
 .letterhead-left {
   width: 100%;
+  p  {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+  }
+
 
   .imageletter {
     height: 100px;
@@ -16,4 +22,25 @@
 .letterhead-right {
   width: 100%;
   text-align: right;
+  p  {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  }
+}
+
+.lettercontent {
+  margin-top: 70px;
+  padding: 0px 10px;
+  p {
+    font-size: 12px;
+  }
+}
+
+.letterfooter {
+  margin-top: 20px;
+  margin-left: 40px;
+  img {
+    height: 70px;
+  }
 }

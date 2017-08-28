@@ -15,13 +15,19 @@
       <div class="letterhead-left">
         <%= wicked_pdf_image_tag('logo_client', class: 'imageletter') %>
         <p><strong>IMMO 3000</strong></p>
+        <p>16 rue des plantes</p>
+        <p>75002 PARIS</p>
         <p><%= "#{current_user.first_name} #{current_user.last_name}" %></p>
         <p><%= current_user.position %> </p>
       </div>
 
       <div class="letterhead-right">
-        <h1><%= @event.lease.tenant_name %></h1>
-        <h2><%=  @event.lease.tenant_address%></h2>
+        <p><%= "#{@event.lease.tenant_first_name} #{@event.lease.tenant_name}" %></p>
+        <p><%=  @event.lease.tenant_address%></p>
+        <p>75017 PARIS</p>
+        <br>
+        <br>
+        <br>
         <p>Paris, le <%= Date.today %> </p>
       </div>
 
