@@ -24,6 +24,7 @@
               <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Cher monsieur, nous vous contactons pour informer que votre bail                                                (...)"></textarea>
               <small id="emailHelp" class="form-text text-muted">Modifiez le mail ci-dessus si besoin puis envoyez.</small>
             </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modalchoice">Choix du bailleur</button>
           </form>
         <%= link_to "Envoyer au #{dest}", event_mail_path(@event), class: 'btn btn-primary', type: "submit" %>
         </div>
@@ -48,6 +49,8 @@
     </div>
   </div>
 </div>
+
+<%= render '/shared/modal_choice_owner' %>
 
 <script>
   const tohide = document.getElementsByClassName("sending-choices")[0]

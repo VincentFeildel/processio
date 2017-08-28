@@ -1,0 +1,13 @@
+.choice_owner {
+  background: linear-gradient(to bottom, $brand-primary, $leasylightmain) !important;
+  color: white !important;
+  .modal-header, .modal-footer {
+    border: none;
+  }
+  .close {
+    font-size: 24px;
+    color: white;
+    opacity: 0.8;
+    font-weight: lighter;
+  }
+}
