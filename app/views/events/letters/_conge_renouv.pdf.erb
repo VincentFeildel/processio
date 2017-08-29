@@ -13,7 +13,7 @@
     <p>Que le requérant entend par la présente notification mettre fin au bail et donne en conséquence congé à M. <%=@event.lease.tenant_name%> pour la date du <%= end_date %>;</p>
     <br>
     <p>Que ce congé est donné afin de voir s'ouvrir le droit de M. <%=@event.lease.tenant_name%> au renouvellement de son bail et afin que soient déterminées les conditions du nouveau bail, conformément aux dispositions de l'article L. 145-11 du Code de commerce.
-    Si M. <%=@event.lease.tenant_name%> entend se prévaloir de son droit au renouvellement du bail, M. <%= @event.lease.owner_name %> demande que le nouveau loyer soit fixé à la somme de NOUV_LOYER par an en principal à compter du <%= new_date %>, étant précisé :</p>
+    Si M. <%=@event.lease.tenant_name%> entend se prévaloir de son droit au renouvellement du bail, M. <%= @event.lease.owner_name %> demande que le nouveau loyer soit fixé à la somme de <%= @event.new_rent %> € par mois en principal à compter du <%= new_date %>, étant précisé :</p>
     <br>
     <p>(i)   Que le dépôt de garantie devra être réajusté en conséquence ;</p>
     <p>(ii)  Que toutes les autres clauses et conditions du bail demeureront inchangées.

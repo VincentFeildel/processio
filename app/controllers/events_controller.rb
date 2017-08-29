@@ -103,8 +103,13 @@ class EventsController < ApplicationController
   end
 
   def update
-    raise
-    @event.update(new_rent: params[:new_rent])
+    @event.update(new_rent: params[:event][:new_rent].to_i)
+    respond_to do |format|
+      format.html do
+        render :show
+      end
+      format.js
+    end
   end
 
 
@@ -119,7 +124,11 @@ class EventsController < ApplicationController
         render pdf: "letter"
       end
     end
-    @event.update(status: (@event.status == 'owner_to_contact' ?  'owner_contacted' : 'tenant_notified'))
+    if @event.status == 'owner_to_contact'
+      @event.update(status: 'owner_contacted')
+    else
+      @event.update(status: 'tenant_notified', to_do: false)
+    end
   end
 
   def mail
