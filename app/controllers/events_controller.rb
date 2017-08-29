@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-   before_action :set_event, only: [:show]
+   before_action :set_event, only: [:show, :update]
 
   def index
     @total_events = Event.all.to_a.delete_if {|event| !event.to_do }
