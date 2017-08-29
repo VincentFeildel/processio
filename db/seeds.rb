@@ -156,7 +156,7 @@ puts 'Evenements créés!!'
 
 # Indiquer 50 tâches comme réalisées:
 Event.last(50).each do |e|
-  e.update(to_do: false)
+  e.update(status: 'tenant_notified', to_do: false)
 end
 
 # Indiquer 50 tâches comme en cours:
