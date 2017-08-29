@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 20170828145433) do
 
   create_table "indices", force: :cascade do |t|
     t.datetime "app_date"
-    t.float "indice"
+    t.float "indice"@
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
