@@ -5,7 +5,7 @@
   <div class="row top-home">
     <div class="welcomecard col-xs-12 col-md-6">
       <h3>Bienvenue <%=@user.first_name %>,</h3>
-      <p>J’ai détecté <%=@nbr_total%> évenements à traiter dont <%= @nbr_urgent %> qui méritent une action assez rapide !</p>
+      <p>J’ai détecté <%=@nbr_total%> évenements à traiter dont <%= @nbr_urgent %> qui méritent une action assez rapide.</p>
       <p>On commence?</p>
     </div>
     <div class="actioncard col-xs-12 col-md-6">
@@ -19,18 +19,18 @@
   </div>
 
   <div class="row middle-home">
-    <div class="categorycard col-xs-12 col-md-4">
-      <p><strong>Fins de bail </strong>(<%= @nbr_end_lease %>)</p>
-      <%= link_to image_tag('end'), events_path(end_of_lease: 'on') %>
-    </div>
-    <div class="categorycard col-xs-12 col-md-4">
-      <p><strong>Retards de loyer </strong> (<%=@nbr_late_rent%>)</p>
-      <%= link_to image_tag('late'), events_path(late_rent: 'on') %>
-    </div>
-    <div class="categorycard col-xs-12 col-md-4">
-      <p><strong>Revisions de loyer</strong> (<%=@nbr_rent_rev%>)</p>
-      <%= link_to image_tag('revision'), events_path(rent_revision: 'on') %>
-    </div>
+    <%= link_to events_path(end_of_lease: 'on'), class: 'categorycard col-xs-12 col-md-4' do %>
+        <p><strong>Fins de bail </strong>(<%= @nbr_end_lease %>)</p>
+        <%= image_tag('end')%>
+    <% end %>
+    <%= link_to events_path(late_rent: 'on'), class: 'categorycard col-xs-12 col-md-4' do %>
+        <p><strong>Retards de loyer </strong>(<%= @nbr_late_rent %>)</p>
+        <%= image_tag('late')%>
+    <% end %>
+      <%= link_to events_path(rent_revision: 'on'), class: 'categorycard col-xs-12 col-md-4' do %>
+        <p><strong>Révisions de loyer </strong>(<%= @nbr_rent_rev %>)</p>
+        <%= image_tag('revision')%>
+    <% end %>
   </div>
 
 <!-- Chart -->

@@ -30,21 +30,31 @@
         <!-- etape choix loyer -->
         <div>
           <div class="content-choice row">
-            <div class="instructions col-xs-12 col-md-6">
-              <p>Merci de renseigner le choix de <strong><%= @event.lease.owner_name %></strong> dont le bail donné à <%= "#{@event.lease.tenant_first_name} #{@event.lease.tenant_name}"%> (société <%= @event.lease.tenant_company %>) touche à sa fin.</p>
-              <br>
-              <br>
-              <p class='loc'><i class="fa fa-map-marker"></i> <%= "#{@event.lease.tenant_address}, lot #{@event.lease.num_lot}" %></p>
+            <div class="instructions">
+              <div class="column_info-1">
+                <p><strong>Bailleur</strong> : <%= @event.lease.owner_name%></p>
+                <p><strong>Locataire</strong> : <%= @event.lease.tenant_first_name %> <%=@event.lease.tenant_name%></p>
+                <p><strong>Date d'échéance</strong> : <%= @event.end_date.strftime("%d/%m/%Y") %></p>
+              </div>
+              <div class="column_info-2">
+                <p><strong>Adresse</strong> : <%= @event.lease.tenant_address%></p>
+                <p><strong>N° de lot</strong> : <%= @event.lease.num_lot %></p>
+                <p><strong>Nature du bail</strong> : <%= @event.lease.nature %></p>
+              </div>
             </div>
+
             <!-- Form for owner choice -->
-              <div class="ownerchoice rightform col-xs-12 col-md-6">
-                <h3>Qu'a choisi <%= @event.lease.owner_name %>?</h3>
+              <div class="ownerchoice rightform col-xs-12">
+                <h4 class = "text-center">Quelle est la décision de <%= @event.lease.owner_name%> ?</h4>
                 <div class="options">
-                  <div class="option"><p><strong>Renouvellement</strong> du bail</p></div>
-                  <div class="option"><p><strong>Refus</strong> de renouvellement du bail</p></div>
+                  <div class="option option-column-1"></i><p>Renouvellement du bail</p></div>
+                  <div class="option option-column-2"><p>Refus de renouvellement du bail</p></div>
                 </div>
               </div>
-              <div class="rightform col-xs-12 col-md-6 hide" id="newrent-choice">
+            </div>
+
+              <!-- OTHER MODAL -->
+              <div class="rightform col-xs-12 hide" id="newrent-choice">
                 <div class="step"><i class="fa fa-arrow-left"></i> Retour décision bailleur</div>
                 <%= simple_form_for @event, remote: true do |e| %>
                 <p><i class="fa fa-money"></i> Ancien loyer mensuel du bail: <%= @event.lease.monthly_rent %>€</p>
