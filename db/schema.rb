@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170828145433) do
+ActiveRecord::Schema.define(version: 20170829130330) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,8 @@ ActiveRecord::Schema.define(version: 20170828145433) do
     t.string "description"
     t.string "choice_owner"
     t.integer "new_rent"
+    t.string "com_tenant"
+    t.string "com_owner"
     t.index ["lease_id"], name: "index_events_on_lease_id"
   end
 

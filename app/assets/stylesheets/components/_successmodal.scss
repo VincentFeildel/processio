@@ -1,4 +1,4 @@
-.sending-choices {
+.success-choices {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -15,15 +15,30 @@
   }
 }
 
-.modal-header .close {
-  margin-top: -24px;
+.header-success {
+  background: rgba(200,200,200,0.7);
+  text-align: center;
+  padding: 0px 15px;
+  align-items: center;
+  display: flex;
+  color: white;
+  .headercontent {
+    display: flex;
+  }
+  h5 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  img {
+    height: 50px;
+  }
 }
 
 .modal-body {
   padding-top: 0px;
 }
 
-.sending-choice {
+.success-choice {
   // position: relative;
   opacity: 0.7;
   align-items: center;
@@ -31,20 +46,19 @@
   h1 {
     font-size: 20px;
   }
-  .mail {
+  .back {
     color: $brand-primary;
   }
 
-  .pdf {
-    color: $leasyyellow;
+  .show {
+    color: rgb(200,200,200);
   }
   .fa {
     font-size: 90px;
   }
 }
 
-.sending-choice:hover {
+.success-choice:hover {
   opacity: 1;
   cursor: pointer;
 }
-

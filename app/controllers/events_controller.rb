@@ -127,9 +127,11 @@ class EventsController < ApplicationController
       end
     end
     if @event.status == 'owner_to_contact'
-      @event.update(status: 'owner_contacted')
+      @event.com_owner = 'lettre'
+      @event.update(status: 'tenant_to_notify')
     else
       @event.update(status: 'tenant_notified', to_do: false)
+      @event.com_tenant = 'lettre'
     end
   end
 

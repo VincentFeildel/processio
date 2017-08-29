@@ -51,8 +51,6 @@
   </div>
 </div>
 
-<%= render '/shared/modal_choice_owner' %>
-
 <script>
   const tohide = document.getElementsByClassName("sending-choices")[0]
   const toshow = document.getElementsByClassName("mail-form")[0]
@@ -66,5 +64,7 @@
 
   buttonLetter.addEventListener("click", function () {
     $("#closecross").click();
+    $('#ModalSuccess').modal('show');
+    $('#TitleSuccess').text("Votre lettre a bien été générée!");
   });
 </script>

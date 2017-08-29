@@ -1,0 +1,37 @@
+<% @event.status == 'tenant_to_notify' ? (dest = 'locataire') : (dest = 'bailleur') %>
+<% dest == 'locataire' ? (com = @event.com_tenant) : (com = @event.com_owner) %>
+
+<div class="modal fade" id="ModalSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header header-success">
+        <div class="headercontent">
+          <%= image_tag 'success' %>
+          <h5 id="TitleSuccess"></h5>
+        </div>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="success-choices">
+          <%= link_to events_path, class: 'choice-link' do %>
+          <div class="success-choice text-center" id="maillink">
+            <h1 class="back">Liste des évènements</h1>
+            <i class="back fa fa-arrow-left" aria-hidden="true"></i>
+          </div>
+          <% end %>
+          <hr>
+          <%= link_to event_path(@event), class: 'choice-link' do %>
+          <div class="success-choice pdf text-center" id='letterlink'>
+            <h1 class="show">Retour à l'évènement</h1>
+            <i class="show fa fa-refresh" aria-hidden="true"></i>
+          </div>
+          <% end %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
