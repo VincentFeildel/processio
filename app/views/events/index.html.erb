@@ -1,12 +1,13 @@
 
 <%=  render 'shared/nav_bar_index' %>
 
-
+<div class="spacer-checkboxes">
+</div>
 <%= form_tag events_path, method: :get, remote: true, id: "filter-form" do %>
-
 <%= render 'shared/checkbox_forms' %>
-
 <% end %>
+<div class="spacer-checkboxes-1">
+</div>
 
 <div id="events-container">
   <%= render "events", events: @events %>

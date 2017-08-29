@@ -13,8 +13,6 @@
           <i class='fa fa-search', type='submit', style="color: rgb(220,220,220)"></i>
     <% end %>
     </div>
-
-
     <div class="navbar-wagon-item">
       <div class="dropdown">
         <img src="https://kitt.lewagon.com/placeholder/users/florentlienard" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
@@ -39,9 +37,28 @@
 </div>
 <!-- Second nav bar -->
 <div class="navbar-features">
-  <%= link_to 'Accueil', root_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'home'%>
-  <%= link_to 'Évenements', events_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'events'%>
-  <%= link_to 'Contrats', leases_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'leases'%>
+      <!-- Home -->
+  <%= link_to root_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'home' do %>
+    <div class="first-row">
+            <span class = picto-nav><i class="fa fa-home" aria-hidden="true"></i></span>
+        <span class = "name-tab">Accueil</span>
+    </div>
+  <% end %>
+        <!-- Events -->
+        <%= link_to events_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'events' do %>
+        <div class="first-row">
+                <span class = picto-nav><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+            <span class = "name-tab">Évenements</span>
+        </div>
+      <% end %>
+        <%= link_to leases_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'leases' do %>
+        <div class="first-row">
+          <span class = picto-nav><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
+          <span class = "name-tab">Contrats</span>
+        </div>
+        <% end %>
+        <!-- Leases -->
+
 </div>
 <script>
 const zone = document.getElementsByClassName("navbar-features")[0];

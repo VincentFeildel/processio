@@ -47,9 +47,11 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  font-size: 14px;
   p{
     margin: 0px;
     padding: 0px;
+    font-weight: bolder;
   }
 }
 
@@ -64,4 +66,10 @@
   p{
     margin-left: 15px
   }
+}
+.spacer-checkboxes {
+  height: 30px;
+}
+.spacer-checkboxes-1 {
+  height: 60px;
 }
