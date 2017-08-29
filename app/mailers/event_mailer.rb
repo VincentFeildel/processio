@@ -8,7 +8,7 @@ class EventMailer < ApplicationMailer
   def notify_owner(event, text)
     @event = event
     @text = text
-    @user = current_user
+    # @user = current_user
     mail(to: @event.lease.owner_email, subject: '#{@event.description}')
   end
 
@@ -20,7 +20,7 @@ class EventMailer < ApplicationMailer
   def notify_tenant(event, text)
     @event = event
     @text = text
-    @user = current_user
+    # @user = current_user
     mail(to: @event.lease.owner_email, subject: '#{@event.description}')
   end
 

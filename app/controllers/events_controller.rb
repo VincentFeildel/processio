@@ -1,11 +1,12 @@
 class EventsController < ApplicationController
-   before_action :set_event, only: [:show, :update]
+   before_action :set_event, only: [:show]
+
   def index
-    @total_events = Event.all
-    @urgent_events = Event.where("emergency_level = ?", "urgent")
-    @late_rent = Event.where("description = ?", "retard loyer")
-    @end_of_lease = Event.where("description = ?", "fin de bail")
-    @rent_revision = Event.where("description = ?", "révision de loyer")
+    @total_events = Event.all.to_a.delete_if {|event| !event.to_do }
+    @urgent_events = Event.where("emergency_level = ?", "urgent").to_a.delete_if {|event| !event.to_do }
+    @late_rent = Event.where("description = ?", "retard loyer").to_a.delete_if {|event| !event.to_do }
+    @end_of_lease = Event.where("description = ?", "fin de bail").to_a.delete_if {|event| !event.to_do }
+    @rent_revision = Event.where("description = ?", "révision de loyer").to_a.delete_if {|event| !event.to_do }
     @events=[]
     landing = true
     # Add a condition if you come from searchbar
@@ -20,14 +21,14 @@ class EventsController < ApplicationController
       new_hash.each do |key, value|
         if params[key.to_sym] == "on"
           # Add a condition to check if the emergency level is urgent
-          @events << Event.where("description = ?", value)
+          @events << Event.where("description = ?", value).to_a.delete_if {|event| !event.to_do }
           @events = @events.flatten
           landing = false
         end
       end
         # Return all events if nothin is selected and check if emergency level is urgent
       if @events == [] && !params.values.include?("on")
-        @events = Event.all
+        @events = @total_events
       end
     end
 
@@ -55,11 +56,11 @@ class EventsController < ApplicationController
   end
 
   def index_urgent
-    @total_events = Event.all
-    @urgent_events = Event.where("emergency_level = ?", "urgent")
-    @late_rent = Event.where("description = ? AND emergency_level = ?", "retard loyer", "urgent")
-    @end_of_lease = Event.where("description = ? AND emergency_level = ?", "fin de bail", "urgent")
-    @rent_revision = Event.where("description = ? AND emergency_level = ?", "révision de loyer", "urgent")
+    @total_events = Event.all.to_a.delete_if {|event| !event.to_do }
+    @urgent_events = Event.where("emergency_level = ?", "urgent").to_a.delete_if {|event| !event.to_do }
+    @late_rent = Event.where("description = ? AND emergency_level = ?", "retard loyer", "urgent").to_a.delete_if {|event| !event.to_do }
+    @end_of_lease = Event.where("description = ? AND emergency_level = ?", "fin de bail", "urgent").to_a.delete_if {|event| !event.to_do }
+    @rent_revision = Event.where("description = ? AND emergency_level = ?", "révision de loyer", "urgent").to_a.delete_if {|event| !event.to_do }
     # Create a hash with the params and the human redable corresponding value
     new_hash = {"late_rent" => "retard loyer", "end_of_lease" => "fin de bail", "rent_revision" => "révision de loyer"}
     @events=[]
@@ -69,14 +70,14 @@ class EventsController < ApplicationController
     new_hash.each do |key, value|
       if params[key.to_sym] == "on"
         # Add a condition to check if the emergency level is urgent
-        @events << Event.where("description = ? AND emergency_level = ?", value, "urgent")
+        @events << Event.where("description = ? AND emergency_level = ?", value, "urgent").to_a.delete_if {|event| !event.to_do }
         @events = @events.flatten
         landing = false
       end
     end
       # Return all events if nothin is selected and check if emergency level is urgent
     if @events == [] && !params.values.include?("on")
-      @events = Event.where("emergency_level = ?", "urgent")
+      @events = @urgent_events
     end
 
     # adding some code to have checkbox's checked = true directly and adapt afterwards
@@ -102,11 +103,6 @@ class EventsController < ApplicationController
     end
   end
 
-  def update
-    raise
-    @event.update(new_rent: params[:new_rent])
-  end
-
 
   def show
     @comment = Comment.new
@@ -130,7 +126,7 @@ class EventsController < ApplicationController
       @event.update(status: 'owner_contacted')
     else
       EventMailer.notify_tenant(@event, params[:response]).deliver_now
-      @event.update(status: 'tenant_notified')
+      @event.update(status: 'tenant_notified', to_do: false)
     end
     redirect_to event_path(@event)
   end
