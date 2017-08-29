@@ -1,0 +1,34 @@
+<% start_date = @event.lease.end_date - 9.years %>
+<% new_rent = 0 %>
+<% i = 1 %>
+<% while new_rent == 0 do %>
+  <% if Indice.find(i).app_date < start_date %>
+      <% new_rent = ((Indice.find(1).indice / Indice.find(i-1).indice) * @event.lease.monthly_rent).round %>
+  <% end %>
+  <% i += 1 %>
+  <% new_rent = ((Indice.find(1).indice / Indice.find(i-1).indice) * @event.lease.monthly_rent).round if i == 41  %>
+<% end %>
+
+Cher Madame, Cher Monsieur,
+
+Nous vous contactons au sujet de votre bien situé au <%= @event.lease.tenant_address.capitalize %>, afin de traiter une situation de <%= @event.description.capitalize %>.
+
+Plusieurs choix se posent à vous:
+
+  (i) le congé avec refus de renouvellement, auquel cas le locataire aura 3 mois pour prendre congé (possibilité pour le locataire de faire appel de cette décision, mais risque faible).
+
+  (ii) le congé avec offre de renouvellement, auquel cas le bail sera renouveller et il vous sera possible de fixer le montant du nouveau loyer.
+
+
+
+En cas de choix de l'option (ii), merci de nous indiquer le loyer que vous souhaitez appliquer, étant donnée que sur la base de l'indice de reférence nous vous conseillons un loyer de <%=
+new_rent %> €.
+
+Nous vous remercions de nous répondre dans les plus brefs délais et en tout état de cause avant le <%= @event.urgent_date.to_date %>.
+
+Je reste bien entendu à votre disposition pour tout renseignement complémentaire,
+
+Bien cordialement,
+
+<%= current_user.first_name + " " + current_user.last_name %>
+
