@@ -21,12 +21,11 @@
               <p></p>
                 <%= "Mail à envoyer à #{@event.lease.owner_email}" %>
               </label>
-              <textarea class="form-control" id="exampleTextarea" rows="3" name= "response" placeholder="Cher monsieur, nous vous contactons pour informer que votre bail                                                (...)"></textarea>
+              <textarea class="form-control" id="exampleTextarea" rows="3" name= "response" > <%= render '/shared/email_owner_contact' %> </textarea>
               <small id="emailHelp" class="form-text text-muted">Modifiez le mail ci-dessus si besoin puis envoyez.</small>
             </div>
             <%= submit_tag "Envoyer au #{dest}", class: 'btn btn-primary' %>
             <% end %>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modalchoice">Choix du bailleur</button>
 
         </div>
 
@@ -69,12 +68,21 @@
   });
 </script>
 
-<script>
+<%#script previously made to transform placeholder in real input
   const text = document.getElementById('exampleTextarea');
   text.addEventListener("click", function () {
     event.target.innerHTML = "Cher monsieur, nous vous contactons pour informer que votre bail                                                (...)";
   });
+%>
 
 
 
-</script>
+
+
+
+
+
+
+
+
+
