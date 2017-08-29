@@ -19,7 +19,7 @@
         <h5 class="modal-title" id="exampleModalLongTitle">
           <%= "Fin de bail: notification du locataire" %>
         </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id='closecross'>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id='closecrosschoice'>
         <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -46,7 +46,7 @@
               </div>
               <div class="rightform col-xs-12 col-md-6 hide" id="newrent-choice">
                 <div class="step"><i class="fa fa-arrow-left"></i> Retour décision bailleur</div>
-                <%= simple_form_for(@event) do |e| %>
+                <%= simple_form_for @event, remote: true do |e| %>
                 <p><i class="fa fa-money"></i> Ancien loyer mensuel du bail: <%= @event.lease.monthly_rent %>€</p>
                 <p><i class="fa fa-money"></i> Nouveau loyer proposé au bailleur: <strong><%= new_rent %>€</strong>*</p>
                   <label for="event[new_rent]">Nouveau loyer demandé par le bailleur:</label>
