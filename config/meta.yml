@@ -1,7 +1,7 @@
 # config/meta.yml
 
-meta_product_name: "Product Name"
-meta_title: "Product name - Product tagline"
-meta_description: "Relevant description"
-meta_image: "leasy_logo_blue.png"                       # should exist in `app/assets/images/`
+meta_product_name: "Leasy"
+meta_title: "Leasy - Automatisez votre gestion locative"
+meta_description: "Leasy vous permet de gérer de manière automatique, fiable et efficace l'ensemble de vos dossiers de gestion locative."
+meta_image: "leasy_logo_blue.png"             # should exist in `app/assets/images/`
 twitter_account: "@product_twitter_account"   # required for Twitter Cards
