@@ -153,11 +153,11 @@ end
 puts '----------------'
 puts 'Evenements créés!!'
 
-
 # Indiquer 50 tâches comme réalisées:
-Event.last(50).each do |e|
+Event.where(description: 'fin de bail').last(50).each do |e|
   e.update(status: 'tenant_notified', to_do: false)
 end
+
 
 # Indiquer 50 tâches comme en cours:
 Event.first(70).each do |e|
@@ -170,10 +170,11 @@ BalanceDay.all.each { |bd| bd.destroy }
 
 now = Date.today
 balt = Lease.sum(:rent_balance)
+bal = balt + 15000
 
 for i in 0..29
   day = now - (30 - i).days
-  bal = rand((balt-20000)..(balt+20000))
+  bal -= rand(0..1000)
   BalanceDay.create(day: day, balance: bal)
 end
 BalanceDay.create(day: now, balance: balt)
@@ -181,14 +182,17 @@ BalanceDay.create(day: now, balance: balt)
 puts '----------------'
 puts 'DB graph créée'
 puts ':)'
-# populate indice table
-Indice.all.each { |i| i.destroy }
-filepath = 'db/indices.csv'
 
-CSV.foreach(filepath, csv_options) do |row|
-  date = Date.strptime(row['app_date'],'%m/%d/%Y')
-  indice = row['indice']
-  Indice.create(app_date: date, indice: indice)
+# populate indice table
+if Indice.all.count == 0
+  Indice.all.each { |i| i.destroy }
+  filepath = 'db/indices.csv'
+
+  CSV.foreach(filepath, csv_options) do |row|
+    date = Date.strptime(row['app_date'],'%m/%d/%Y')
+    indice = row['indice']
+    Indice.create(app_date: date, indice: indice)
+  end
 end
 
 puts '----------------'

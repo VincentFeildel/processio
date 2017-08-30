@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <%= wicked_pdf_stylesheet_link_tag 'application', media: 'all' %>
+    <%= wicked_pdf_stylesheet_link_tag 'application' %>
   </head>
 
 
@@ -30,12 +30,16 @@
         <br>
         <p>Paris, le <%= Date.today %> </p>
       </div>
-
     </div>
 
     <!-- content -->
     <div class="lettercontent">
-      <%= render 'events/letters/conge_renouv' %>
+      <% case @event.description %>
+        <% when 'fin de bail' %>
+        <%= render 'events/letters/conge_renouv' %>
+        <% when 'retard loyer' %>
+        <%= render 'events/letters/relance_retard' %>
+      <% end %>
     </div>
 
     <!-- footer -->
