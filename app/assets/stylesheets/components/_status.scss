@@ -46,3 +46,14 @@
 .post_comment {
   align: right;
 }
+.top-show-right {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  align-items: center;
+}
+.icon-status {
+  padding-bottom: 13px;
+}

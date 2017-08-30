@@ -1,4 +1,4 @@
 <%= simple_form_for ([@event, @comment]) do |f| %>
   <ul class = "text-left form-dialog"><%= f.input :content, label: 'Commentaire', placeholder: "Votre message ...", :input_html => {:style=> 'width: 100%'} %></ul>
-    <ul class = "text-left"><%= f.submit "Poster un commentaire", class: "btn btn-primary post_comment"%></ul>
+    <ul class = "align-btn-left"><%= f.submit "Poster un commentaire", class: "btn btn-primary post_comment"%></ul>
 <% end %>

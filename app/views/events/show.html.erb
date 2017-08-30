@@ -14,6 +14,7 @@
         <p><strong>Adresse :</strong> <%= @event.lease.tenant_address %></p>
         <p><strong>Nature du bail :</strong> <%= @event.lease.nature %></p>
         <p><strong>N° du lot :</strong> <%= @event.lease.num_lot %></p>
+        <p><strong>Loyer mensuel :</strong> <%= @event.lease.monthly_rent %> €</p>
       </div>
       <!-- END BIEN -->
       <!-- LOCATAIRE -->
@@ -32,7 +33,7 @@
     <!-- RIGHT DIV -->
     <div class="lease-informations col-xs-12 col-md-7">
         <!-- EVENT DESCRIPTION -->
-        <div>
+        <div class = "top-show-right">
         <% if (@event.description == "fin de bail")%>
         <p id = "type_event_bail"> <%= @event.description.capitalize %> </p>
         <% elsif (@event.description == "révision de loyer")%>
@@ -40,11 +41,27 @@
         <% else %>
         <p id = "type_event_paiement"><%= @event.description.capitalize %> </p>
         <% end %>
+          <div class = "icon-status">
+            <% if @event.emergency_level == "non-due" %>
+            <%= image_tag("Low.png", :width => 40, :height => 18) %>
+            <% elsif @event.emergency_level == "due" %>
+            <%= image_tag("Middle.png", :width => 40, :height => 18) %>
+            <% elsif @event.emergency_level == "overdue"%>
+            <%= image_tag("triangle.png", :width => 20, :height => 20, :class => align="center")%>
+            <% else %>
+            <%= image_tag("High.png", :width => 40, :height => 18) %>
+            <% end %>
+          </div>
         </div>
-          <!-- END DATE -->
+          <!-- END TOP -->
       <div class="event-element col-xs-12">
-        <p id = "event-title"><strong><i class="icon-show fa fa-calendar-times-o" aria-hidden="true"></i> DATE D'ÉCHÉANCE</strong></p>
+      <% if @event.description == "retard loyer" %>
+        <p id = "event-title"><strong><i class="icon-show fa fa-exclamation-circle" aria-hidden="true"></i> MONTANT À PAYER</strong></p>
+        <p><%= @event.lease.rent_balance%> €</p>
+        <% else %>
+                <p id = "event-title"><strong><i class="icon-show fa fa-calendar-times-o" aria-hidden="true"></i> DATE D'ÉCHÉANCE</strong></p>
         <p><%= @event.end_date.strftime("%d/%m/%Y") %></p>
+      <% end %>
       </div>
       <!-- STATUS -->
       <div class="event-element col-xs-12">
