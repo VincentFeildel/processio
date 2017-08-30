@@ -3,6 +3,7 @@ class LeasesController < ApplicationController
   def index
     @leases = Lease.all
   end
+
   def new
     @lease = Lease.new
   end
