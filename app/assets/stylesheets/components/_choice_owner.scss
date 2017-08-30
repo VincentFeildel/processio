@@ -2,33 +2,66 @@
 
   .ownerchoice {
     .options {
-      justify-content: space-around;
+      justify-content: space-between;
+      display: flex;
       align-items: center;
+
       cursor: pointer;
       width: 100%;
-      margin: 0px;
-      .option {
-        padding: 10px 10px;
-        background: $brand-primary;
+      .option-column-1 {
+        background: #31CD64;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
         color: white;
-        font-size: 18px;
-        margin: 10px 0px;
-        height: 80px;
+        font-size: 16px;
+        margin: 10px 20px;
         align-items: center;
         text-align: center;
-        border-radius: 2px;
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #31CD64;
         width: 100%;
       }
-      .option:hover {
+      .option-column-1:hover {
         text-decoration: none;
-        border: 2px solid $brand-primary;
         background: white;
-        color: $brand-primary;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #31CD64;
+        color: #31CD64;
+      }
+      .option-column-2 {
+        background: #F63E39;
+        color: white;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 16px;
+        margin: 10px 20px;
+        align-items: center;
+        text-align: center;
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #F63E39;
+        width: 100%;
+      }
+      .option-column-2:hover {
+        text-decoration: none;
+        color: #31CD64;
+        background: white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #F63E39;
       }
     }
   }
   .content-choice {
     display: flex;
+    flex-direction: column;
+    padding: 30px;
   }
   .step {
     padding-bottom: 10px;
@@ -40,6 +73,8 @@
   .modal-body {
     display: flex;
     padding-top: 10px;
+    // background: #F4F8F9;
+    background: white;
   }
   .btn {
     width: 100%;
@@ -51,21 +86,39 @@
   }
 
   .instructions {
-    background: linear-gradient(to bottom, $brand-primary, $leasylightmain);
+    // background: linear-gradient(to bottom, $brand-primary, $leasylightmain);
     padding: 20px;
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
-    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // background: white;
+    background: #F4F8F9;
+    border-color: rgb(230, 230, 230);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    // box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+    color: rgb(91, 91, 91);
     margin: 0px 10px;
     p {
       justify-content: space-between;
     }
   }
+  .column_info-1 {
+    padding: 15px;
+  }
+    .column_info-2 {
+    padding: 15px;
+  }
 
   .rightform {
     box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
-    background: rgba(245,245,245,0.5);
+    background: white;
     padding: 30px;
     margin-right: 10px;
+    border-color: white;
+    box-shadow: none;
     align-items: center;
     .fa-money {
       color: $brand-primary;

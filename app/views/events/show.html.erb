@@ -3,14 +3,14 @@
     <div class="stakeholders col-xs-12 col-md-4">
     <!-- PROPRIETAIRE -->
       <div class="stakeholder">
-        <p id = "left-event-title"><strong>PROPRIÉTAIRE</strong></p>
+        <p id = "left-event-title"><strong><i class="icon-show fa fa-user" aria-hidden="true"></i> PROPRIÉTAIRE</strong></p>
         <p><strong>Nom :</strong> <%= @event.lease.owner_name %></p>
         <p><strong>Adresse :</strong> <%= @event.lease.owner_address %></p>
         <p><strong>Email : </strong><%= @event.lease.owner_email %></p>
       </div>
       <!-- BIEN -->
       <div class="stakeholder">
-        <p id = "left-event-title"><strong>BIEN</strong></p>
+        <p id = "left-event-title"><strong><i class=" icon-show fa fa-home" aria-hidden="true"></i>BIEN</strong></p>
         <p><strong>Adresse :</strong> <%= @event.lease.tenant_address %></p>
         <p><strong>Nature du bail :</strong> <%= @event.lease.nature %></p>
         <p><strong>N° du lot :</strong> <%= @event.lease.num_lot %></p>
@@ -18,7 +18,7 @@
       <!-- END BIEN -->
       <!-- LOCATAIRE -->
       <div class="stakeholder">
-        <p id = "left-event-title"><strong>LOCATAIRE</strong></p>
+        <p id = "left-event-title"><strong><i class="icon-show fa fa-user-o" aria-hidden="true"></i>LOCATAIRE</strong></p>
         <% if (@event.lease.nature == "Commercial 3 ans") || (@event.lease.nature == "Commercial 9 ans")%>
         <p>Société : <%= @event.lease.tenant_name %> </p>
         <% else %>
@@ -34,7 +34,7 @@
         <!-- EVENT DESCRIPTION -->
         <div>
         <% if (@event.description == "fin de bail")%>
-        <p id = "type_event_bail"><i class="fa fa-file-text" aria-hidden="true"></i> <%= @event.description.capitalize %> </p>
+        <p id = "type_event_bail"> <%= @event.description.capitalize %> </p>
         <% elsif (@event.description == "révision de loyer")%>
         <p id = "type_event_loyer"><%= @event.description.capitalize %> </p>
         <% else %>
@@ -43,27 +43,26 @@
         </div>
           <!-- END DATE -->
       <div class="event-element col-xs-12">
-        <p id = "event-title"><strong>DATE D'ÉCHÉANCE</strong></p>
+        <p id = "event-title"><strong><i class="icon-show fa fa-calendar-times-o" aria-hidden="true"></i> DATE D'ÉCHÉANCE</strong></p>
         <p><%= @event.end_date.strftime("%d/%m/%Y") %></p>
       </div>
       <!-- STATUS -->
       <div class="event-element col-xs-12">
       <% if  @event.status == "owner_to_contact"%>
-       <p  id = "event-title"> <strong> TÂCHES (0/2) :</strong></p>
+       <p  id = "event-title"> <strong><i class="icon-show fa fa-list-ul" aria-hidden="true"></i> TÂCHES (0/2) :</strong></p>
         <% elsif @event.status == "owner_contected" || @event.status == "tenant_to_notify" %>
-        <p  id = "event-title"> <strong>TÂCHES  (1/2) </strong></p>
+        <p  id = "event-title"> <strong><i class="icon-show fa fa-list-ul" aria-hidden="true"></i>TÂCHES  (1/2) </strong></p>
         <% elsif @event.status == "tenant_notified"%>
-        <p  id = "event-title"> <strong>TÂCHES (2/2) :</strong> </p>
+        <p  id = "event-title"> <strong><i class="icon-show fa fa-list-ul" aria-hidden="true"></i>TÂCHES (2/2) :</strong> </p>
       <% end %>
         <%= render 'shared/status_task_list' %>
-          <%#= render '/shared/button_status' %>
         </div>
         <div class = form-box>
         <%= render 'shared/form' %>
         <% if  !@event.comments.blank?%>
           <%= render 'shared/comment', comments: @event.comments.reverse %>
           <% else %>
-          <p>Il n'y a pas de commentaire sur cet évenement</p>
+          <p id = no-comment-yet>Il n'y a pas encore de commentaire sur cet évenement</p>
         <% end %>
         </div>
       </div>

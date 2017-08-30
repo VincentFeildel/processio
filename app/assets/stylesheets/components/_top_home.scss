@@ -4,7 +4,6 @@
   width: 100%;
   justify-content: space-between;
 }
-
 .actioncard {
   background: white;
   padding: 20px 0px;
@@ -27,16 +26,16 @@
     font-weight: bold;
     background: $brand-primary;
     color: white;
-    font-size: 30px;
-
+    font-size: 22px;
+    border-radius: 2px;
   }
 
   a:hover {
-    cursor: pointer;
     text-decoration: none;
-    border: 2px solid $brand-primary;
+    border: 1px solid $brand-primary;
     background: white;
     color: $brand-primary;
+    transition: 0.3s;
   }
 }
 
@@ -47,6 +46,10 @@
   box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
   text-align: left;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: left;
   margin: 10px;
 
   h2, p, a {
@@ -87,8 +90,6 @@
   width: 100%;
   justify-content: space-around;
 }
-
-
 .categorycard {
   background: white;
   padding: 20px;
@@ -96,14 +97,25 @@
   text-align: center;
   align-items: center;
   margin: 10px;
+  color: #5B5B5B;
 
   img {
-    height: 150px;
+    height: 100px;
     margin: 10px;
   }
-
 }
-
 .categorycard:hover {
-  border-top: 7px solid $brand-primary;
+  // border-top: 7px solid $brand-primary;
+  box-shadow: 0px 0px 7px rgba(0,0,0,0.2);
+  text-decoration: none;
+  color: #5B5B5B;
+  transition: 0.3s ;
 }
+
+.icon-modale {
+  margin-right: 5px;
+}
+.icon-show {
+  margin-right: 10px;
+}
+
