@@ -45,9 +45,7 @@ class EventsController < ApplicationController
 
     # sorting the events array
     pivot = @events
-    @events = pivot.sort_by do |event|
-      event.urgent_date
-    end
+    @events = pivot.sort_by {|event| [event.urgent_date, event.lease.rent_balance]}
 
     respond_to do |format|
       format.html
@@ -93,9 +91,7 @@ class EventsController < ApplicationController
 
     # sorting the events array
     pivot = @events
-    @events = pivot.sort_by do |event|
-      event.urgent_date
-    end
+    @events = pivot.sort_by {|event| [event.urgent_date, event.lease.rent_balance]}
 
     respond_to do |format|
       format.html
@@ -123,7 +119,7 @@ class EventsController < ApplicationController
     @event = Event.find(params[:event_id])
     respond_to do |format|
       format.pdf do
-        render pdf: "letter"
+        render pdf: "letter", disposition: "attachment"
       end
     end
     if @event.status == 'owner_to_contact'
@@ -143,7 +139,6 @@ class EventsController < ApplicationController
       EventMailer.notify_tenant(@event, params[:response]).deliver_now
       @event.update(status: 'tenant_notified', to_do: false, com_tenant: "mail")
     end
-    redirect_to event_path(@event)
   end
 
   def home
