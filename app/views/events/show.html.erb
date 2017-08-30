@@ -90,3 +90,6 @@
 <%= render '/shared/modal_choice_owner' %>
 <%= render '/shared/modal_owner_to_contact' %>
 <%= render '/shared/modal_success' %>
+<% if @event.description == 'retard loyer' %>
+  <%= render '/shared/modal_choice_late_rent' %>
+<% end %>
