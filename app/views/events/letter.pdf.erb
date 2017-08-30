@@ -30,12 +30,16 @@
         <br>
         <p>Paris, le <%= Date.today %> </p>
       </div>
-    <p><strong>Objet:</strong>Congé de votre bail commercial</p>
     </div>
 
     <!-- content -->
     <div class="lettercontent">
-      <%= render 'events/letters/conge_renouv' %>
+      <% case @event.description %>
+        <% when 'fin de bail' %>
+        <%= render 'events/letters/conge_renouv' %>
+        <% when 'retard loyer' %>
+        <%= render 'events/letters/relance_retard' %>
+      <% end %>
     </div>
 
     <!-- footer -->

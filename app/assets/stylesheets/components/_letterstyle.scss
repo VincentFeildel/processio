@@ -3,8 +3,14 @@
   p {
     font-size: 15px;
   }
-
 }
+
+.letterhead {
+  p {
+  font-size: 12px;
+  }
+}
+
 .letterhead-left {
   width: 100%;
   p  {
@@ -15,7 +21,7 @@
 
 
   .imageletter {
-    height: 100px;
+    height: 70px;
   }
 }
 .letterhead-right {
@@ -41,6 +47,6 @@
   margin-top: 20px;
   margin-left: 40px;
   img {
-    height: 70px;
+    height: 50px;
   }
 }

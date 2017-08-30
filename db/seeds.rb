@@ -153,11 +153,11 @@ end
 puts '----------------'
 puts 'Evenements créés!!'
 
-
 # Indiquer 50 tâches comme réalisées:
-Event.last(50).each do |e|
+Event.where(description: 'fin de bail').last(50).each do |e|
   e.update(status: 'tenant_notified', to_do: false)
 end
+
 
 # Indiquer 50 tâches comme en cours:
 Event.first(70).each do |e|
@@ -170,11 +170,11 @@ BalanceDay.all.each { |bd| bd.destroy }
 
 now = Date.today
 balt = Lease.sum(:rent_balance)
-bal = balt
+bal = balt + 15000
 
 for i in 0..29
   day = now - (30 - i).days
-  bal += rand(0..1000)
+  bal -= rand(0..1000)
   BalanceDay.create(day: day, balance: bal)
 end
 BalanceDay.create(day: now, balance: balt)
