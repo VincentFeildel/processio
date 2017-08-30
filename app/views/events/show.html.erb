@@ -34,7 +34,7 @@
         <!-- EVENT DESCRIPTION -->
         <div>
         <% if (@event.description == "fin de bail")%>
-        <p id = "type_event_bail"><i class="fa fa-file-text" aria-hidden="true"></i> <%= @event.description.capitalize %> </p>
+        <p id = "type_event_bail"> <%= @event.description.capitalize %> </p>
         <% elsif (@event.description == "révision de loyer")%>
         <p id = "type_event_loyer"><%= @event.description.capitalize %> </p>
         <% else %>
@@ -56,14 +56,13 @@
         <p  id = "event-title"> <strong>TÂCHES (2/2) :</strong> </p>
       <% end %>
         <%= render 'shared/status_task_list' %>
-          <%#= render '/shared/button_status' %>
         </div>
         <div class = form-box>
         <%= render 'shared/form' %>
         <% if  !@event.comments.blank?%>
           <%= render 'shared/comment', comments: @event.comments.reverse %>
           <% else %>
-          <p>Il n'y a pas de commentaire sur cet évenement</p>
+          <p id = no-comment-yet>Il n'y a pas encore de commentaire sur cet évenement</p>
         <% end %>
         </div>
       </div>

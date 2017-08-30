@@ -4,39 +4,34 @@
 
   <div class="row top-home">
     <div class="welcomecard col-xs-12 col-md-6">
-      <h3>Bienvenue, <%=@user.first_name %></h3>
-      <p>Nous avons détecté pour vous <%=@nbr_total%> évènements sur vos contrats,</p>
-      <p>dont <%= @nbr_urgent %> qui demandent une action urgente.</p>
-      <br>
+      <h3>Bienvenue <%=@user.first_name %>,</h3>
+      <p>J’ai détecté <%=@nbr_total%> évenements à traiter dont <%= @nbr_urgent %> qui méritent une action assez rapide.</p>
       <p>On commence?</p>
     </div>
     <div class="actioncard col-xs-12 col-md-6">
       <div class="urgent-indicator">
         <h2><%= @nbr_urgent %></h2>
-        <p>Evènements urgents</p>
+        <p>Évenements urgents</p>
         <%= link_to 'Voir', urgent_events_path %>
       </div>
       <%= render 'progressbar' %>
     </div>
   </div>
 
-  <p>Types d'évènements:</p>
   <div class="row middle-home">
-    <div class="categorycard col-xs-12 col-md-4">
-      <p>Fins de bail <strong>(<%=@nbr_end_lease%>)</strong></p>
-      <%= link_to image_tag('end'), events_path(end_of_lease: 'on') %>
-    </div>
-    <div class="categorycard col-xs-12 col-md-4">
-      <p>Retards de loyer <strong>(<%=@nbr_late_rent%>)</strong></p>
-      <%= link_to image_tag('late'), events_path(late_rent: 'on') %>
-    </div>
-    <div class="categorycard col-xs-12 col-md-4">
-      <p>Revisions de loyer <strong>(<%=@nbr_rent_rev%>)</strong></p>
-      <%= link_to image_tag('revision'), events_path(rent_revision: 'on') %>
-    </div>
+    <%= link_to events_path(end_of_lease: 'on'), class: 'categorycard col-xs-12 col-md-4' do %>
+        <p><strong>Fins de bail </strong>(<%= @nbr_end_lease %>)</p>
+        <%= image_tag('end')%>
+    <% end %>
+    <%= link_to events_path(late_rent: 'on'), class: 'categorycard col-xs-12 col-md-4' do %>
+        <p><strong>Retards de loyer </strong>(<%= @nbr_late_rent %>)</p>
+        <%= image_tag('late')%>
+    <% end %>
+      <%= link_to events_path(rent_revision: 'on'), class: 'categorycard col-xs-12 col-md-4' do %>
+        <p><strong>Révisions de loyer </strong>(<%= @nbr_rent_rev %>)</p>
+        <%= image_tag('revision')%>
+    <% end %>
   </div>
-
-
 
 <!-- Chart -->
 
@@ -53,9 +48,7 @@
         ]
       }
 %>
-
   <%= line_chart data, width: "800px", height: "500px" %>
-
 <% else %>
 <%= render 'not_connected' %>
 <% end%>
