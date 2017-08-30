@@ -32,23 +32,27 @@
           <div class="content-choice row">
             <div class="instructions">
               <div class="column_info-1">
-                <p><strong>Bailleur</strong> : <%= @event.lease.owner_name%></p>
-                <p><strong>Locataire</strong> : <%= @event.lease.tenant_first_name %> <%=@event.lease.tenant_name%></p>
-                <p><strong>Date d'échéance</strong> : <%= @event.end_date.strftime("%d/%m/%Y") %></p>
+                <p><strong><i class="icon-modale fa fa-user" aria-hidden="true"></i>
+ Bailleur</strong> : <%= @event.lease.owner_name%></p>
+                <p><strong><i class="icon-modale fa fa-user-o" aria-hidden="true"></i> Locataire</strong> : <%= @event.lease.tenant_first_name %> <%=@event.lease.tenant_name%></p>
+                <p><strong><i class="icon-modale fa fa-calendar-times-o" aria-hidden="true"></i>
+ Date d'échéance</strong> : <%= @event.end_date.strftime("%d/%m/%Y") %></p>
               </div>
               <div class="column_info-2">
-                <p><strong>Adresse</strong> : <%= @event.lease.tenant_address%></p>
-                <p><strong>N° de lot</strong> : <%= @event.lease.num_lot %></p>
-                <p><strong>Nature du bail</strong> : <%= @event.lease.nature %></p>
+                <p><strong><i class="icon-modale fa fa-location-arrow" aria-hidden="true"></i>
+ Adresse</strong> : <%= @event.lease.tenant_address%></p>
+                <p><i class="icon-modale fa fa-key" aria-hidden="true"></i>
+<strong>N° de lot</strong> : <%= @event.lease.num_lot %></p>
+                <p><strong><i class="icon-modale fa fa-file-text-o" aria-hidden="true"></i> Nature du bail</strong> : <%= @event.lease.nature %></p>
               </div>
             </div>
 
             <!-- Form for owner choice -->
               <div class="ownerchoice rightform col-xs-12">
-                <h4 class = "text-center">Quelle est la décision de <%= @event.lease.owner_name%> ?</h4>
+                <p class = "text-center"><strong>Quel est le choix de <%= @event.lease.owner_name%> ?</strong></p>
                 <div class="options">
-                  <div class="option option-column-1"></i><p>Renouvellement du bail</p></div>
-                  <div class="option option-column-2"><p>Refus de renouvellement du bail</p></div>
+                  <div class="option option-column-1"></i><p>Renouvellement</p></div>
+                  <div class="option option-column-2"><p>Refus</p></div>
                 </div>
               </div>
             </div>
