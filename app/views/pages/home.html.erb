@@ -21,15 +21,15 @@
   <div class="row middle-home">
     <%= link_to events_path(end_of_lease: 'on'), class: 'categorycard col-xs-12 col-md-4' do %>
         <p><strong>Fins de bail </strong>(<%= @nbr_end_lease %>)</p>
-        <%= image_tag('end')%>
+        <%= image_tag('end.png')%>
     <% end %>
     <%= link_to events_path(late_rent: 'on'), class: 'categorycard col-xs-12 col-md-4' do %>
         <p><strong>Retards de loyer </strong>(<%= @nbr_late_rent %>)</p>
-        <%= image_tag('late')%>
+        <%= image_tag('late.png')%>
     <% end %>
       <%= link_to events_path(rent_revision: 'on'), class: 'categorycard col-xs-12 col-md-4' do %>
         <p><strong>Révisions de loyer </strong>(<%= @nbr_rent_rev %>)</p>
-        <%= image_tag('revision')%>
+        <%= image_tag('revision.png')%>
     <% end %>
   </div>
 
