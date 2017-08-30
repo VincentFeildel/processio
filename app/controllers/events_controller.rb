@@ -46,7 +46,7 @@ class EventsController < ApplicationController
     # sorting the events array
     pivot = @events
     @events = pivot.sort_by do |event|
-      event.end_date
+      event.urgent_date
     end
 
     respond_to do |format|
@@ -94,7 +94,7 @@ class EventsController < ApplicationController
     # sorting the events array
     pivot = @events
     @events = pivot.sort_by do |event|
-      event.end_date
+      event.urgent_date
     end
 
     respond_to do |format|
@@ -127,11 +127,9 @@ class EventsController < ApplicationController
       end
     end
     if @event.status == 'owner_to_contact'
-      @event.com_owner = 'lettre'
-      @event.update(status: 'tenant_to_notify')
+      @event.update(status: 'tenant_to_notify', com_owner: "lettre")
     else
-      @event.update(status: 'tenant_notified', to_do: false)
-      @event.com_tenant = 'lettre'
+      @event.update(status: 'tenant_notified', to_do: false, com_tenant: "lettre")
     end
   end
 
@@ -140,10 +138,10 @@ class EventsController < ApplicationController
     # Instruction to get params and fill it in a new mail instance and send it
     if @event.status == 'owner_to_contact'
       EventMailer.notify_owner(@event, params[:response]).deliver_now
-      @event.update(status: 'owner_contacted')
+      @event.update(status: 'owner_contacted', com_owner: "mail")
     else
       EventMailer.notify_tenant(@event, params[:response]).deliver_now
-      @event.update(status: 'tenant_notified', to_do: false)
+      @event.update(status: 'tenant_notified', to_do: false, com_tenant: "mail")
     end
     redirect_to event_path(@event)
   end

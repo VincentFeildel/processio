@@ -24,7 +24,7 @@
               <textarea class="form-control" id="exampleTextarea" rows="3" name= "response" > <%= render '/shared/email_owner_contact' %> </textarea>
               <small id="emailHelp" class="form-text text-muted">Modifiez le mail ci-dessus si besoin puis envoyez.</small>
             </div>
-            <%= submit_tag "Envoyer au #{dest}", class: 'btn btn-primary' %>
+            <%= submit_tag "Envoyer au #{dest}", class: 'btn btn-primary', id: "mail-envoye" %>
             <% end %>
 
         </div>
@@ -54,6 +54,7 @@
   const toshow = document.getElementsByClassName("mail-form")[0]
   const buttonMail = document.getElementById('maillink');
   const buttonLetter = document.getElementById('letterlink');
+  const buttonSendMail = document.getElementById('mail-envoye');
 
   buttonMail.addEventListener("click", function () {
     tohide.classList.add("hide");
@@ -65,6 +66,13 @@
     $('#ModalSuccess').modal('show');
     $('#TitleSuccess').text("Votre lettre a bien été générée!");
   });
+
+    buttonSendMail.addEventListener("click", function () {
+    $("#closecross").click();
+    $('#ModalSuccess').modal('show');
+    $('#TitleSuccess').text("Votre mail a bien été généré!");
+  });
+
 </script>
 
 <%#script previously made to transform placeholder in real input

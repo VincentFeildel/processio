@@ -27,7 +27,7 @@
             <% end %>
           </td>
           <td> <%= event.description.capitalize %> </td>
-          <% date = event.end_date.to_date - Date.today%>
+          <% date = event.urgent_date.to_date - Date.today%>
           <td>
             <%= event.description == "retard loyer" ? "ns" : date.to_i.to_s + "j" %>
           </td>
