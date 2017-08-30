@@ -46,7 +46,7 @@ class EventsController < ApplicationController
     # sorting the events array
     pivot = @events
     @events = pivot.sort_by do |event|
-      event.end_date
+      event.urgent_date
     end
 
     respond_to do |format|
@@ -94,7 +94,7 @@ class EventsController < ApplicationController
     # sorting the events array
     pivot = @events
     @events = pivot.sort_by do |event|
-      event.end_date
+      event.urgent_date
     end
 
     respond_to do |format|
