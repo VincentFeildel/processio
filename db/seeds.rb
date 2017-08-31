@@ -103,6 +103,7 @@ Lease.all.each do |lease|
     end
     e.to_do = true
     e.save
+    e.delete if e.emergency_level == 'overdue'
   # Revision de loyer
   elsif now > lease.next_revision - 2.months
     e = Event.new()
