@@ -43,15 +43,32 @@
           labels: @labels,
           datasets: [
             {
-                label: "Evolution des loyers impayés",
+                label: "Volume en euros",
                 backgroundColor: "rgba(127,119,244,0.5)",
                 borderColor: "rgba(127,119,244,0.3)",
                 data: @data
             }
           ]
         }
+        options = {
+          width: "200px",
+          height: "125px",
+          scales: {
+              xAxes: [{
+                          gridLines: {
+                              display:false
+                          }
+                      }],
+              yAxes: [{
+                          gridLines: {
+                              display:false
+                          }
+                      }]
+              }
+
+          };
   %>
-    <%= line_chart data, width: "200px", height: "125px" %>
+    <%= line_chart data, options %>
   <% else %>
   <%= render 'not_connected' %>
   <% end%>
