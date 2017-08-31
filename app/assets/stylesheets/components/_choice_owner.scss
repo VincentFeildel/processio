@@ -2,26 +2,26 @@
 
   .ownerchoice {
     .options {
-      justify-content: space-between;
+      justify-content: space-around;
       display: flex;
       align-items: center;
 
       cursor: pointer;
       width: 100%;
       .option-column-1 {
-        background: #31CD64;
+        background: rgba(17,213,144,0.5);
         padding-top: 10px;
         padding-right: 10px;
         padding-left: 10px;
         color: white;
-        font-size: 16px;
+        font-size: 20px;
         margin: 10px 20px;
         align-items: center;
         text-align: center;
         border-radius: 3px;
         border-style: solid;
         border-width: 1px;
-        border-color: #31CD64;
+        border-color: rgba(17,213,144,0.5);
         width: 100%;
       }
       .option-column-1:hover {
@@ -29,39 +29,37 @@
         background: white;
         border-style: solid;
         border-width: 1px;
-        border-color: #31CD64;
-        color: #31CD64;
+        border-color: rgba(17,213,144,0.5);
+        color: rgba(17,213,144,0.5);
       }
       .option-column-2 {
-        background: #F63E39;
+        background: rgba(246, 62, 57, 0.7);
         color: white;
         padding-top: 10px;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: 16px;
+        font-size: 20px;
         margin: 10px 20px;
         align-items: center;
         text-align: center;
         border-radius: 3px;
         border-style: solid;
         border-width: 1px;
-        border-color: #F63E39;
+        border-color: rgba(246, 62, 57, 0.7);
         width: 100%;
       }
       .option-column-2:hover {
         text-decoration: none;
-        color: #F63E39;
+        color: rgba(246, 62, 57, 0.7);
         background: white;
         border-style: solid;
         border-width: 1px;
-        border-color: #F63E39;
+        border-color: rgba(246, 62, 57, 0.7);
       }
     }
   }
   .content-choice {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
+    padding: 0px 15px;
   }
   .step {
     padding-bottom: 10px;
@@ -71,15 +69,15 @@
     cursor: pointer;
   }
   .modal-body {
-    display: flex;
-    padding-top: 10px;
+    padding: 0px;
     // background: #F4F8F9;
     background: white;
   }
   .btn {
     width: 100%;
   }
-  .modal-footer {
+  .asterisque {
+    margin-top: 20px;
     text-align: left;
     font-size: 12px;
     color: rgb(100,100,100)
@@ -87,8 +85,8 @@
 
   .instructions {
     // background: linear-gradient(to bottom, $brand-primary, $leasylightmain);
-    padding: 20px;
-    font-size: 14px;
+    padding: 8px;
+    font-size: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -98,9 +96,10 @@
     border-style: solid;
     border-width: 1px;
     border-radius: 3px;
+    width: 100%;
     // box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
     color: rgb(91, 91, 91);
-    margin: 0px 10px;
+    // margin: 0px 10px;
     p {
       justify-content: space-between;
     }
@@ -116,7 +115,6 @@
     box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
     background: white;
     padding: 30px;
-    margin-right: 10px;
     border-color: white;
     box-shadow: none;
     align-items: center;
@@ -128,7 +126,7 @@
       font-size: 20px;
     }
     input, input:active {
-      border: none;
+      border: 1px solid $leasylightmain;
       font-size: 20px;
       box-shadow: none;
       opacity: 1px;
