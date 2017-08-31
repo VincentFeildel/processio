@@ -133,19 +133,11 @@ Lease.all.each do |lease|
     e.description = 'retard loyer'
     e.lease = lease
     e.start_date = now
-    e.end_date = now
+    e.end_date = now + 3.days
     e.urgent_date = now
     e.status = 'tenant_to_notify'
     # emergency level
-    if now >= e.end_date
-      e.emergency_level = 'overdue'
-    elsif now >= e.urgent_date
-      e.emergency_level = 'urgent'
-    elsif now >= e.start_date
-      e.emergency_level = 'due'
-    else
-      e.emergency_level = 'non-due'
-    end
+    e.emergency_level = 'urgent'
     e.to_do = true
     e.save
   end
@@ -155,14 +147,14 @@ puts '----------------'
 puts 'Evenements créés!!'
 
 # Indiquer 50 tâches comme réalisées:
-Event.where(description: 'fin de bail').last(50).each do |e|
+Event.where(description: 'révision de loyer').last(50).each do |e|
   e.update(status: 'tenant_notified', to_do: false)
 end
 
 
 # Indiquer 50 tâches comme en cours:
-Event.first(70).each do |e|
-  e.update(status: 'tenant_to_notify') if e.description != 'retard loyer'
+Event.where(description: 'révision de loyer').first(70).each do |e|
+  e.update(status: 'tenant_to_notify')
 end
 puts '----------------'
 puts 'Evenements en cours et réalisés modifiés'
