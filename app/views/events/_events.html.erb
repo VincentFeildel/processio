@@ -27,9 +27,9 @@
             <% end %>
           </td>
           <td> <%= event.description.capitalize %> </td>
-          <% date = event.urgent_date.to_date - Date.today%>
+          <% date = event.end_date.to_date - Date.today%>
           <td>
-            <%= event.description == "retard loyer" ? "ns" : number_with_delimiter(date.to_i, :delimeter => " ").to_s.gsub(',',' ') + " jours" %>
+            <%= event.description == "retard loyer" || event.description == "révision de loyer" ? "ns" : number_with_delimiter(date.to_i, :delimeter => " ").to_s.gsub(',',' ') + " jours" %>
           </td>
           <td> <%= event.lease.tenant_name %> </td>
           <td> <%= event.lease.tenant_address+
