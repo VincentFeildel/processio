@@ -1,7 +1,24 @@
 <div class="navbar-wagon">
+<div class = "left-nav-bar navbar-features">
+      <!-- Home -->
+      <div class="event-nav-bar">
+          <%= link_to events_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'events' do %>
+                <div class="first-row">
+                    <span class = "name-tab">Évenements</span>
+                </div>
+          <% end %>
+      </div>
+      <div class="lease-nav-bar">
+        <%= link_to leases_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'leases' do %>
+        <div class="first-row">
+          <span class = "name-tab">Contrats</span>
+        </div>
+        <% end %>
+      </div>
+    </div>
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
-    <img width="120" height="54" src="<%= image_path "leasy_logo_blue.png"%>" alt="logo_leasy">
+    <img width="115" height="54" src="<%= image_path "leasy_logo_blue.png"%>">
   </a>
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
@@ -18,7 +35,6 @@
         <img src="https://kitt.lewagon.com/placeholder/users/florentlienard" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><a href="#">Profil</a></li>
-          <li><a href="#">Messages</a></li>
           <li> <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete%> </li>
         </ul>
       </div>
@@ -36,30 +52,6 @@
   </div>
 </div>
 <!-- Second nav bar -->
-<div class="navbar-features">
-      <!-- Home -->
-  <%= link_to root_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'home' do %>
-    <div class="first-row">
-            <span class = picto-nav><i class="fa fa-home" aria-hidden="true"></i></span>
-        <span class = "name-tab">Accueil</span>
-    </div>
-  <% end %>
-        <!-- Events -->
-        <%= link_to events_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'events' do %>
-        <div class="first-row">
-                <span class = picto-nav><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
-            <span class = "name-tab">Évenements</span>
-        </div>
-      <% end %>
-        <%= link_to leases_path, class: 'navbar-wagon-item navbar-wagon-link', id: 'leases' do %>
-        <div class="first-row">
-          <span class = picto-nav><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
-          <span class = "name-tab">Contrats</span>
-        </div>
-        <% end %>
-        <!-- Leases -->
-
-</div>
 <script>
 const zone = document.getElementsByClassName("navbar-features")[0];
 zone.querySelectorAll("a").forEach((a) => {

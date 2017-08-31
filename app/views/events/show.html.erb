@@ -1,7 +1,19 @@
 <div class="container">
   <div class="row">
     <div class="stakeholders col-xs-12 col-md-4">
-    <!-- PROPRIEÂtrong> <%= @event.lease.monthly_rent %> €</p>
+    <!-- PROPRIETAIRE -->
+      <div class="stakeholder">
+        <p id = "left-event-title"><strong><i class="icon-show fa fa-user" aria-hidden="true"></i> PROPRIÉTAIRE</strong></p>
+        <p><strong>Nom :</strong> <%= @event.lease.owner_name %></p>
+        <p><strong>Email : </strong><%= @event.lease.owner_email %></p>
+      </div>
+      <!-- BIEN -->
+      <div class="stakeholder">
+        <p id = "left-event-title"><strong><i class=" icon-show fa fa-home" aria-hidden="true"></i>BIEN</strong></p>
+        <p><strong>Adresse :</strong> <%= @event.lease.tenant_address %></p>
+        <p><strong>Nature du bail :</strong> <%= @event.lease.nature %></p>
+        <p><strong>N° du lot :</strong> <%= @event.lease.num_lot %></p>
+        <p><strong>Loyer mensuel :</strong> <%= @event.lease.monthly_rent %> €</p>
       </div>
       <!-- END BIEN -->
       <!-- LOCATAIRE -->
@@ -43,7 +55,7 @@
           <!-- END TOP -->
       <div class="event-element col-xs-12">
       <% if @event.description == "retard loyer" %>
-        <p id = "event-title"><strong><i class="icon-show fa fa-exclamation-circle" aria-hidden="true"></i> MONTANT À PAYER</strong></p>
+        <p id = "event-title"><strong><i class="icon-show fa fa-exclamation-circle" aria-hidden="true"></i> IMPAYÉ</strong></p>
         <p><%= @event.lease.rent_balance%> €</p>
         <% else %>
                 <p id = "event-title"><strong><i class="icon-show fa fa-calendar-times-o" aria-hidden="true"></i> DATE D'ÉCHÉANCE</strong></p>

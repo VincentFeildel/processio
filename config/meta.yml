@@ -4,4 +4,4 @@ meta_product_name: "Leasy"
 meta_title: "Leasy - Automatisez votre gestion locative"
 meta_description: "Leasy permet aux professionels de l'immobilier de gérer facilement l'ensemble de leurs dossiers locatifs."
 meta_image: "cover.png"             # should exist in `app/assets/images/`
-twitter_account: "@product_twitter_account"   # required for Twitter Cards
+twitter_account: "@Planete_tech"   # required for Twitter Cards
