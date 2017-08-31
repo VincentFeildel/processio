@@ -60,8 +60,8 @@
               <div class="rightform col-xs-12 hide" id="newrent-choice">
                 <div class="step"><i class="fa fa-arrow-left"></i> Retour décision bailleur</div>
                 <%= simple_form_for @event, remote: true do |e| %>
-                <p><i class="fa fa-money"></i> Ancien loyer mensuel du bail: <%= @event.lease.monthly_rent %>€</p>
-                <p><i class="fa fa-money"></i> Nouveau loyer proposé au bailleur: <strong><%= new_rent %>€</strong>*</p>
+                <p><i class="fa fa-money"></i> Ancien loyer mensuel du bail: <%= number_with_delimiter(@event.lease.monthly_rent, :delimeter => " ").to_s.gsub(',',' ') %>€</p>
+                <p><i class="fa fa-money"></i> Nouveau loyer proposé au bailleur: <strong><%= number_with_delimiter(new_rent, :delimeter => " ").to_s.gsub(',',' ') %>€</strong>*</p>
                   <label for="event[new_rent]">Nouveau loyer demandé par le bailleur:</label>
                   <input class="form-control numeric integer optional" type="number" step="1" name="event[new_rent]" id="event_new_rent" placeholder="<%= new_rent %>">
                   <br>

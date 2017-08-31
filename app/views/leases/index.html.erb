@@ -22,7 +22,7 @@
           <td> <%= lease.num_lot %> </td>
           <td> <%= lease.tenant_address %> </td>
           <td> <%= lease.tenant_name %> </td>
-          <td> <%= lease.monthly_rent %> € </td>
+          <td> <%= number_with_delimiter(lease.monthly_rent, :delimeter => " ").to_s.gsub(',',' ') %> € </td>
           <td> <%= lease.nature %> </td>
           <td> <%= lease.next_revision.to_date %> </td>
           <td> <%= lease.end_date.to_date %> </td>

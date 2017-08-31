@@ -13,7 +13,7 @@
     déclare à M. <%=@event.lease.tenant_name%></p>
     <p>Que le requérant a donné à bail à loyer à M. <%=@event.lease.tenant_name%>, divers locaux à usage commercial consistant en une boutique et un bureau, dans un immeuble situé au <%= @event.lease.tenant_address%> à Paris.</p>
 
-    <p>A la date de ce jour, vous n'avez pas réglé les loyers et les charges des mois de <%= Date.today.strftime("%B") %>, ce qui représente une somme totale de <%= @event.lease.rent_balance %> euros.</p>
+    <p>A la date de ce jour, vous n'avez pas réglé les loyers et les charges des mois de <%= Date.today.strftime("%B") %>, ce qui représente une somme totale de <%= number_with_delimiter(@event.lease.rent_balance, :delimeter => " ").to_s.gsub(',',' ') %> euros.</p>
 
 
     <p>Que le requérant entend par la présente notification mettre fin au bail et donne en conséquence congé à M. <%=@event.lease.tenant_name%> pour la date du <%= end_date %>;</p>
