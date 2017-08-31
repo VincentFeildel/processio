@@ -9,7 +9,7 @@ class EventMailer < ApplicationMailer
     @event = event
     @text = text
     # @user = current_user
-    mail(to: "sesboue.olivier@gmail.com", subject: "#{@event.lease.num_lot} - #{@event.description.capitalize}")
+    mail(to: "sesboue.olivier@gmail.com", subject: "Lot #{@event.lease.num_lot} - #{@event.lease.tenant_address.capitalize} - #{@event.description.capitalize}")
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
