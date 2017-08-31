@@ -1,12 +1,12 @@
 .banner {
   background-position: center;
   color: white;
-  text-align: center;
+  text-align: right;
   height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
-  // align-items: center;
+  align-items: right;
   justify-content: center;
 }
 .banner h1 {
@@ -25,24 +25,38 @@
   background-color: transparent;
   border-style: solid;
   border-width: 2px;
-  border-radius: 3px;
+  border-radius: 2px;
+  border-color: white;
   font-size: 26px;
   padding: 10px 15px;
-  color: white;
+  text-decoration: none;
+  width: 250px;
+  transition: .3s;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #405663;
+  background-color: white;
   text-decoration: none;
 }
 .elements-log {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
-    margin-top: 50px;
+    height: 50vh;
+    margin-top: 140px;
+    margin-left: 600px;
 }
 .btn-log:hover{
-  text-decoration: none;
+  color: white;
   border-color: white;
-  color: #405663;
-  background-color: white;
   text-decoration: none;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+}
+.btn-log-connect {
+  text-align: center;
+  top: 200px;
 }

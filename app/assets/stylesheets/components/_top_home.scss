@@ -6,6 +6,7 @@
 }
 .actioncard {
   background: white;
+  transition: .2s;
   padding: 20px 0px;
   box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
   display: flex;
@@ -97,6 +98,7 @@
   text-align: center;
   align-items: center;
   margin: 10px;
+  transition: .2s;
   color: #5B5B5B;
 
   img {
@@ -109,9 +111,8 @@
   box-shadow: 0px 0px 7px rgba(0,0,0,0.2);
   text-decoration: none;
   color: #5B5B5B;
-  transition: 0.3s ;
+  transition: 0.4s ;
 }
-
 .icon-modale {
   margin-right: 5px;
 }
