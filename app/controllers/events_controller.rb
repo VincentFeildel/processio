@@ -45,7 +45,7 @@ class EventsController < ApplicationController
 
     # sorting the events array
     pivot = @events
-    @events = pivot.sort_by {|event| [event.urgent_date, event.lease.rent_balance]}
+    @events = pivot.sort_by {|event| [event.end_date, event.lease.rent_balance]}
 
     respond_to do |format|
       format.html
@@ -91,7 +91,7 @@ class EventsController < ApplicationController
 
     # sorting the events array
     pivot = @events
-    @events = pivot.sort_by {|event| [event.urgent_date, event.lease.rent_balance]}
+    @events = pivot.sort_by {|event| [event.end_date, event.lease.rent_balance]}
 
     respond_to do |format|
       format.html
