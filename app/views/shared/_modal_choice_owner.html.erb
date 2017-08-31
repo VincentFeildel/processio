@@ -66,13 +66,11 @@
                   <input class="form-control numeric integer optional" type="number" step="1" name="event[new_rent]" id="event_new_rent" placeholder="<%= new_rent %>">
                   <br>
                 <%= e.submit "Valider nouveau loyer", class: "btn btn-primary"  %>
+                  <p class="asterisque">*Nouveau loyer calculé selon l'indice des loyers commerciaux</p>
                 <% end %>
               </div>
           </div>
         </div>
-              <div class="modal-footer">
-        <p>*Nouveau loyer calculé selon l'indice des loyers commerciaux</p>
-      </div>
       </div>
     </div>
   </div>

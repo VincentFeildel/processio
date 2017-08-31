@@ -5,7 +5,6 @@
       <div class="stakeholder">
         <p id = "left-event-title"><strong><i class="icon-show fa fa-user" aria-hidden="true"></i> PROPRIÉTAIRE</strong></p>
         <p><strong>Nom :</strong> <%= @event.lease.owner_name %></p>
-        <p><strong>Adresse :</strong> <%= @event.lease.owner_address %></p>
         <p><strong>Email : </strong><%= @event.lease.owner_email %></p>
       </div>
       <!-- BIEN -->
@@ -56,7 +55,7 @@
           <!-- END TOP -->
       <div class="event-element col-xs-12">
       <% if @event.description == "retard loyer" %>
-        <p id = "event-title"><strong><i class="icon-show fa fa-exclamation-circle" aria-hidden="true"></i> MONTANT À PAYER</strong></p>
+        <p id = "event-title"><strong><i class="icon-show fa fa-exclamation-circle" aria-hidden="true"></i> IMPAYÉ</strong></p>
         <p><%= @event.lease.rent_balance%> €</p>
         <% else %>
                 <p id = "event-title"><strong><i class="icon-show fa fa-calendar-times-o" aria-hidden="true"></i> DATE D'ÉCHÉANCE</strong></p>
@@ -65,12 +64,20 @@
       </div>
       <!-- STATUS -->
       <div class="event-element col-xs-12">
-      <% if  @event.status == "owner_to_contact"%>
-       <p  id = "event-title"> <strong><i class="icon-show fa fa-list-ul" aria-hidden="true"></i> TÂCHES (0/2) :</strong></p>
-        <% elsif @event.status == "owner_contected" || @event.status == "tenant_to_notify" %>
-        <p  id = "event-title"> <strong><i class="icon-show fa fa-list-ul" aria-hidden="true"></i>TÂCHES  (1/2) </strong></p>
-        <% elsif @event.status == "tenant_notified"%>
-        <p  id = "event-title"> <strong><i class="icon-show fa fa-list-ul" aria-hidden="true"></i>TÂCHES (2/2) :</strong> </p>
+      <% if @event.description == 'retard loyer' %>
+        <% if  @event.status == "tenant_to_notify"%>
+          <p  id = "event-title"> <strong><i class="icon-show fa fa-list-ul" aria-hidden="true"></i> TÂCHES (0/1) :</strong></p>
+        <% else %>
+          <p  id = "event-title"> <strong><i class="icon-show fa fa-list-ul" aria-hidden="true"></i> TÂCHES (1/1) :</strong></p>
+        <% end %>
+      <% else %>
+        <% if  @event.status == "owner_to_contact"%>
+         <p  id = "event-title"> <strong><i class="icon-show fa fa-list-ul" aria-hidden="true"></i> TÂCHES (0/2) :</strong></p>
+          <% elsif @event.status == "owner_contacted" || @event.status == "tenant_to_notify" %>
+          <p  id = "event-title"> <strong><i class="icon-show fa fa-list-ul" aria-hidden="true"></i>TÂCHES  (1/2) </strong></p>
+          <% elsif @event.status == "tenant_notified"%>
+          <p  id = "event-title"> <strong><i class="icon-show fa fa-list-ul" aria-hidden="true"></i>TÂCHES (2/2) :</strong> </p>
+        <% end %>
       <% end %>
         <%= render 'shared/status_task_list' %>
         </div>

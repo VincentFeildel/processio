@@ -16,7 +16,7 @@
 }
 
 .header-success {
-  background: #11D590;
+  background: rgba(17,213,144,0.5);
   text-align: center;
   padding: 0px 15px;
   align-items: center;
@@ -28,6 +28,7 @@
   h5 {
     font-size: 20px;
     font-weight: bold;
+    line-height: 24px;
   }
   img {
     height: 50px;

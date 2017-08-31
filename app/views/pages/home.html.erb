@@ -34,24 +34,46 @@
   </div>
 
 <!-- Chart -->
+<div class="container-chart">
+  <div class="chart-card">
+  <p class = "text-center"><strong>Évolution des loyers impayés</strong></p>
 
-<%
-      data = {
-        labels: @labels,
-        datasets: [
-          {
-              label: "Evolution des loyers impayés",
-              backgroundColor: "rgba(127,119,244,0.5)",
-              borderColor: "#91C5F9",
-              data: @data
-          }
-        ]
-      }
-%>
-  <%= line_chart data, width: "800px", height: "500px" %>
-<% else %>
-<%= render 'not_connected' %>
-<% end%>
+  <%
+        data = {
+          labels: @labels,
+          datasets: [
+            {
+                label: "Volume en euros",
+                backgroundColor: "rgba(127,119,244,0.5)",
+                borderColor: "rgba(127,119,244,0.3)",
+                data: @data
+            }
+          ]
+        }
+        options = {
+          width: "200px",
+          height: "125px",
+          scales: {
+              xAxes: [{
+                          gridLines: {
+                              display:false
+                          }
+                      }],
+              yAxes: [{
+                          gridLines: {
+                              display:false
+                          }
+                      }]
+              }
+
+          };
+  %>
+    <%= line_chart data, options %>
+  <% else %>
+  <%= render 'not_connected' %>
+  <% end%>
+  </div>
+</div>
 </div>
 
 

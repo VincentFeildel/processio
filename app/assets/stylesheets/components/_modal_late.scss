@@ -1,0 +1,33 @@
+.laterent {
+  padding-top: 10px;
+
+  .sending-choices {
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
+
+.infolate {
+  width: 100%;
+  background: #F4F8F9;
+  padding: 15px;
+}
+
+.latechoice {
+  font-size: 20px;
+  background: $brand-primary;
+  border: none;
+  width: 200px;
+}
+
+.latechoice:hover {
+  color: $brand-primary;
+  background: white;
+  border: 2px solid $brand-primary;
+}
+
+
+
+.latemodal {
+  width: 440px;
+}

@@ -1,7 +1,7 @@
 <% @event.status == 'tenant_to_notify' ? (dest = 'locataire') : (dest = 'bailleur') %>
 
 <div class="modal fade" id="ModalLate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog latemodal" role="document">
     <div class="modal-content">
 
       <div class="modal-header">
@@ -13,11 +13,13 @@
         </button>
       </div>
 
-      <div class="modal-body">
-
+      <div class="laterent modal-body">
+        <div class="infolate">
+          <p><i class="fa fa-info-circle"></i> La mise en demeure constitue le point de départ des intérêts de retard.</p>
+        </div>
         <div class="sending-choices">
-          <button data-toggle='modal' data-target="#exampleModalLong">Relance simple</button>
-          <button>Mise en demeure</button>
+          <button class="btn btn-primary latechoice" data-toggle='modal' data-target="#exampleModalLong" data-dismiss="modal">Relance simple</button>
+          <button class="btn btn-primary latechoice">Mise en demeure</button>
         </div>
       </div>
     </div>
