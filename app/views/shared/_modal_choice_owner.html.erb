@@ -63,7 +63,7 @@
                 <p><i class="fa fa-money"></i> Ancien loyer mensuel du bail: <%= number_with_delimiter(@event.lease.monthly_rent, :delimeter => " ").to_s.gsub(',',' ') %>€</p>
                 <p><i class="fa fa-money"></i> Nouveau loyer proposé au bailleur: <strong><%= number_with_delimiter(new_rent, :delimeter => " ").to_s.gsub(',',' ') %>€</strong>*</p>
                   <label for="event[new_rent]">Nouveau loyer demandé par le bailleur:</label>
-                  <input class="form-control numeric integer optional" type="number" step="1" name="event[new_rent]" id="event_new_rent" placeholder="<%= new_rent %>">
+                  <input class="form-control numeric integer optional" type="number" step="1" name="event[new_rent]" id="event_new_rent" placeholder="<%= number_with_delimiter(new_rent, :delimeter => '').to_s.gsub(',',' ') %>">
                   <br>
                 <%= e.submit "Valider nouveau loyer", class: "btn btn-primary"  %>
                   <p class="asterisque">*Nouveau loyer calculé selon l'indice des loyers commerciaux</p>
