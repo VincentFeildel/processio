@@ -170,14 +170,17 @@ BalanceDay.all.each { |bd| bd.destroy }
 
 now = Date.today
 balt = Lease.sum(:rent_balance)
-bal = balt + 15000
+sum_rents_last = Lease.sum(:monthly_rent)
+sum_rents = sum_rents_last - 12000
+bal = balt + 12000
 
-for i in 0..29
-  day = now - (30 - i).days
-  bal -= rand(0..1000)
-  BalanceDay.create(day: day, balance: bal)
+for i in 0..5
+  day = now - (6 - i).months
+  bal -= rand(0..4000)
+  sum_rents += rand(0..4000)
+  BalanceDay.create(day: day, balance: bal, all_rents: sum_rents)
 end
-BalanceDay.create(day: now, balance: balt)
+BalanceDay.create(day: now, balance: balt, all_rents: sum_rents_last)
 
 puts '----------------'
 puts 'DB graph créée'

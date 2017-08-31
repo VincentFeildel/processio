@@ -26,10 +26,12 @@ class PagesController < ApplicationController
 
     # Graph data:
     @labels = []
-    @data = []
+    @data_overdue = []
+    @data_rents = []
     BalanceDay.all.each do |b|
       @labels << "#{b.day.day}/#{b.day.month}"
-      @data << b.balance
+      @data_overdue << b.balance
+      @data_rents << b.all_rents
     end
   end
 end
