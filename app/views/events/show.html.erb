@@ -13,7 +13,7 @@
         <p><strong>Adresse :</strong> <%= @event.lease.tenant_address %></p>
         <p><strong>Nature du bail :</strong> <%= @event.lease.nature %></p>
         <p><strong>N° du lot :</strong> <%= @event.lease.num_lot %></p>
-        <p><strong>Loyer mensuel :</strong> <%= @event.lease.monthly_rent %> €</p>
+        <p><strong>Loyer mensuel :</strong> <%= number_with_delimiter(@event.lease.monthly_rent, :delimeter => " ").to_s.gsub(',',' ') %> €</p>
       </div>
       <!-- END BIEN -->
       <!-- LOCATAIRE -->
@@ -56,7 +56,7 @@
       <div class="event-element col-xs-12">
       <% if @event.description == "retard loyer" %>
         <p id = "event-title"><strong><i class="icon-show fa fa-exclamation-circle" aria-hidden="true"></i> IMPAYÉ</strong></p>
-        <p><%= @event.lease.rent_balance%> €</p>
+        <p><%= number_with_delimiter(@event.lease.rent_balance, :delimeter => " ").to_s.gsub(',',' ')%> €</p>
         <% else %>
                 <p id = "event-title"><strong><i class="icon-show fa fa-calendar-times-o" aria-hidden="true"></i> DATE D'ÉCHÉANCE</strong></p>
         <p><%= @event.end_date.strftime("%d/%m/%Y") %></p>

@@ -18,7 +18,7 @@ Plusieurs choix se posent à vous:
 
   (ii) le congé avec offre de renouvellement, auquel cas le bail sera renouveller et il vous sera possible de fixer le montant du nouveau loyer.
 
-En cas de choix de l'option (ii), merci de nous indiquer le loyer que vous souhaitez appliquer, étant donnée que sur la base de l'indice de reférence nous vous conseillons un loyer de <%= new_rent %> €.
+En cas de choix de l'option (ii), merci de nous indiquer le loyer que vous souhaitez appliquer, étant donnée que sur la base de l'indice de reférence nous vous conseillons un loyer de <%= number_with_delimiter(new_rent, :delimeter => " ").to_s.gsub(',',' ') %> €.
 
 Nous vous remercions de nous répondre dans les plus brefs délais et en tout état de cause avant le <%= @event.urgent_date.to_date %>.
 
