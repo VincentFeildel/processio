@@ -141,11 +141,14 @@
   outline: none;
   margin-left: 60px;
   margin-top: 5px;
+  font-size: 14px;
+  padding: 5px;
+  width: 180px;
 }
 .search-bar:focus{
-  border-radius: 5px;
+  border-radius: 1px;
   border-color: $gray;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(220, 220, 220, 0.9) !important;
+  box-color: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(220, 220, 220, 0.9) !important;
 }
 .search-bar::-webkit-input-placeholder {
     color: rgb(220,220,220);
