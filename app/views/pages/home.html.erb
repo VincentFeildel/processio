@@ -4,8 +4,8 @@
 
   <div class="row top-home">
     <div class="welcomecard col-xs-12 col-md-6">
-      <h3>Bienvenue Vincent,</h3>
-      <p>J’ai détecté <%=@nbr_total%> évenements à traiter dont <%= @nbr_urgent %> qui méritent une action assez rapide.</p>
+      <h3>Bienvenue <%= current_user.first_name %>,</h3>
+      <p>J’ai détecté <%=@nbr_total%> évenements à traiter, dont <%= @nbr_urgent %> qui arrivent à échéance dans le mois et qui doivent donc être traités en priorité.</p>
       <p>On commence?</p>
     </div>
     <div class="actioncard col-xs-12 col-md-6">
@@ -46,7 +46,19 @@
                 label: "Volume en euros",
                 backgroundColor: "rgba(135, 225, 228, 0.7)",
                 borderColor: "#3BD0D6",
-                data: @data
+                data: @data_overdue
+            }
+          ]
+        }
+
+        data_rents = {
+          labels: @labels,
+          datasets: [
+            {
+                label: "Volume en euros",
+                backgroundColor: "#F8FA90",
+                borderColor: "#FFBF2D",
+                data: @data_rents
             }
           ]
         }
@@ -69,6 +81,7 @@
           };
   %>
     <%= line_chart data, options %>
+    <%= line_chart data_rents, options %>
   <% else %>
   <%= render 'not_connected' %>
   <% end%>
