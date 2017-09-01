@@ -5,13 +5,14 @@
   <div class="row top-home">
     <div class="welcomecard col-xs-12 col-md-6">
       <h3>Bienvenue <%= current_user.first_name %>,</h3>
-      <p>J’ai détecté <%=@nbr_total%> évenements à traiter, dont <%= @nbr_urgent %> qui arrivent à échéance dans le mois et qui doivent donc être traités en priorité.</p>
+      <p>J’ai détecté <strong><%=@nbr_total%></strong> évenements à traiter, dont <strong><%= @nbr_urgent %></strong> qui arrivent à échéance dans le mois, à traiter en priorité.</p>
       <p>On commence?</p>
     </div>
     <div class="actioncard col-xs-12 col-md-6">
       <div class="urgent-indicator">
         <h2><%= @nbr_urgent %></h2>
         <p>Évenements urgents</p>
+        <br>
         <%= link_to 'Voir', urgent_events_path %>
       </div>
       <%= render 'progressbar' %>
@@ -34,9 +35,6 @@
   </div>
 
 <!-- Chart -->
-<div class="container-chart">
-  <div class="chart-card">
-  <p class = "text-center"><strong>Évolution des loyers impayés</strong></p>
 
   <%
         data = {
@@ -64,7 +62,7 @@
         }
         options = {
           width: "200px",
-          height: "125px",
+          height: "200px",
           scales: {
               xAxes: [{
                           gridLines: {
@@ -80,13 +78,20 @@
 
           };
   %>
-    <%= line_chart data, options %>
-    <%= line_chart data_rents, options %>
-  <% else %>
-  <%= render 'not_connected' %>
-  <% end%>
+  <div class="container-chart">
+    <div class="chart-card">
+      <p class = "text-center"><strong>Évolution des loyers impayés</strong></p>
+      <%= line_chart data, options %>
+    </div>
+    <div class="chart-card">
+      <p class = "text-center"><strong>Évolution du total des loyers</strong></p>
+      <%= line_chart data_rents, options %>
+    </div>
   </div>
+
 </div>
-</div>
+<% else %>
+<%= render 'not_connected' %>
+<% end%>
 
 

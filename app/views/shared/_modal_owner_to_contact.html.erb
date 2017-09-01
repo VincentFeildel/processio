@@ -17,11 +17,11 @@
         <div class="mail-form hide">
           <%= form_tag event_mail_path(@event) do %>
             <div class="form-group">
-              <label for="exampleInputEmail1">
+              <label for="exampleInputEmail1" class="labelmail">
               <p></p>
-                <%= "Mail à envoyer à #{@event.lease.owner_email}" %>
+                <strong>Mail à envoyer à : </strong><%= @event.lease.owner_email %>
               <p></p>
-                <%= "Sujet : Lot #{@event.lease.num_lot} - #{@event.lease.tenant_address.capitalize} - #{@event.description.capitalize}" %>
+                <strong>Sujet : </strong> <%= "Lot #{@event.lease.num_lot} - #{@event.lease.tenant_address.capitalize} - #{@event.description.capitalize}" %>
               <p></p>
               </label>
               <textarea class="form-control" id="exampleTextarea" rows="3" name= "response" > <%= render '/shared/email_owner_contact' %> </textarea>

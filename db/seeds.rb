@@ -170,7 +170,7 @@ bal = balt + 12000
 for i in 0..5
   day = now - (6 - i).months
   bal -= rand(0..4000)
-  sum_rents += rand(0..4000)
+  sum_rents += rand(0..2000)
   BalanceDay.create(day: day, balance: bal, all_rents: sum_rents)
 end
 BalanceDay.create(day: now, balance: balt, all_rents: sum_rents_last)
