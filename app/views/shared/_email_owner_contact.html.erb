@@ -10,17 +10,18 @@
 <% end %>
 Chère Madame, Cher Monsieur,
 
-Nous vous contactons au sujet de votre bien situé au <%= @event.lease.tenant_address.capitalize %> (lot #<%= @event.lease.num_lot %>), afin de traiter une situation de <%= @event.description.capitalize %>.
+Nous vous contactons au sujet de votre bien situé au <%= @event.lease.tenant_address.capitalize %> (lot #<%= @event.lease.num_lot %>), dont le bail arrive à échéance le <%= "#{@event.lease.end_date.day}/#{@event.lease.end_date.month}/#{@event.lease.end_date.year}" %>.
+Le locataire doit être notifié de votre décision avant le <%= "#{@event.end_date.day}/#{@event.end_date.month}/#{@event.end_date.year}" %> (dernier délai).
 
 Plusieurs choix se posent à vous:
 
-  (i) le congé avec refus de renouvellement, auquel cas le locataire aura 3 mois pour prendre congé (possibilité pour le locataire de faire appel de cette décision, mais risque faible).
+  (i) le congé avec refus de renouvellement, auquel cas le locataire aura 3 mois pour prendre congé (une indemnité d'éviction sera à régler, si vous choisissez cette option nous vous présenterons le mode de calcul et les différentes implications).
 
   (ii) le congé avec offre de renouvellement, auquel cas le bail sera renouveller et il vous sera possible de fixer le montant du nouveau loyer.
 
 En cas de choix de l'option (ii), merci de nous indiquer le loyer que vous souhaitez appliquer, étant donnée que sur la base de l'indice de reférence nous vous conseillons un loyer de <%= number_with_delimiter(new_rent, :delimeter => " ").to_s.gsub(',',' ') %> €.
 
-Nous vous remercions de nous répondre dans les plus brefs délais et en tout état de cause avant le <%= @event.urgent_date.to_date %>.
+Nous vous remercions de nous répondre dans les plus brefs délais et en tout état de cause avant le <%= @event.end_date.to_date %>.
 
 Je reste bien entendu à votre disposition pour tout renseignement complémentaire,
 
