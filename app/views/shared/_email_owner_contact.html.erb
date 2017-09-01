@@ -8,7 +8,7 @@
   <% i += 1 %>
   <% new_rent = ((Indice.find(1).indice / Indice.find(i-1).indice) * @event.lease.monthly_rent).round if i == 41  %>
 <% end %>
-Madame, Monsieur, <%= event.lease.last_name %>
+Madame, Monsieur, <%= @event.lease.owner_name %>
 
 Nous vous contactons au sujet de votre bien situé au <%= @event.lease.tenant_address.capitalize %> (lot #<%= @event.lease.num_lot %>), dont le bail arrive à échéance le <%= "#{@event.lease.end_date.day}/#{@event.lease.end_date.month}/#{@event.lease.end_date.year}" %>.
 Le locataire doit être notifié de votre décision avant le <%= "#{@event.end_date.day}/#{@event.end_date.month}/#{@event.end_date.year}" %> (dernier délai).
