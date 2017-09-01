@@ -1,7 +1,7 @@
 <div class="col-xs-12 comment-structure">
     <% comments.each do |comment| %>
     <tr>
-      <td><p id = comment-line><img src="https://kitt.lewagon.com/placeholder/users/florentlienard" class="avatar-comment" > - Stéphane - <%= comment.created_at.strftime("%d/%m/%Y à %Hh%M") %></p></td>
+      <td><p id = comment-line><img src="https://kitt.lewagon.com/placeholder/users/florentlienard" class="avatar-comment" > - <%= current_user.first_name %> - <%= comment.created_at.strftime("%d/%m/%Y à %Hh%M") %></p></td>
       <td ><%=comment.content%></td>
       </tr>
 <!--     </div> -->
