@@ -8,7 +8,7 @@
   <% i += 1 %>
   <% new_rent = ((Indice.find(1).indice / Indice.find(i-1).indice) * @event.lease.monthly_rent).round if i == 41  %>
 <% end %>
-Chère Madame, Cher Monsieur,
+Madame, Monsieur, <%= event.lease.last_name %>
 
 Nous vous contactons au sujet de votre bien situé au <%= @event.lease.tenant_address.capitalize %> (lot #<%= @event.lease.num_lot %>), afin de traiter une situation de <%= @event.description.capitalize %>.
 
