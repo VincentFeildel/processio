@@ -1,8 +1,69 @@
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.6) 70%), url(<%= image_path('sign_in_session.jpg') %>);">
-  <div class="col-xs-8">
-    <div class ="elements-log">
-      <%= image_tag 'leasy_logo_white.png', width: 100 %>
-      <%= link_to 'Se connecter', new_user_session_path, html_options={class: "btn-log btn-log-connect"}%>
+<div class="loggedout">
+  <div class="loggedout-header">
+    <%= image_tag 'leasy_logo_white.png', width: 100 %>
+    <%= link_to 'Se connecter', new_user_session_path, html_options={class: "link_connect"}%>
+
+  </div>
+
+  <div class="container">
+      <div class="row row-eq-height">
+        <div class="col-xs-12 col-md-6">
+            <div class="loggedout-left">
+              <h1>Relieve property managers from stress and paperwork</h1>
+              <hr>
+              <p>Leasy is a very simple tool connected to your contract database, allowing you to manage all your administrative tasks</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="loggedout-right">
+            <button data-toggle='modal' data-target='#mailfordemo'>Request a free demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="soft-line"></div>
+<h2 class="titlebottom">What leasy does</h2>
+
+<div class="loggedout-bottom">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="bottom-feature">
+          <div class="step-picto"><p>1</p></div>
+          <div class="feature-picto">
+            <i class=" fa fa-calendar-plus-o"></i>
+          </div>
+          <p class="feature-desc">It automatically detects upcoming events related to your leases.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="bottom-feature">
+          <div class="step-picto"><p>2</p></div>
+          <div class="feature-picto">
+            <p class="checklist"><i class="fa fa-square-o"></i>____
+            </p>
+            <p class="checklist"><i class="fa fa-check-square-o"></i>____
+            </p>
+
+          </div>
+          <p class="feature-desc">It associates a list of tasks to the event related to tenant or owner.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="bottom-feature">
+          <div class="step-picto"><p>3</p></div>
+          <div class="feature-picto">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <p class="feature-desc text-center">It generates email or letter related to these tasks.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<%= render '/shared/mailfordemo' %>

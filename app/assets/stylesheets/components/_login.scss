@@ -1,26 +1,117 @@
-.banner {
-  background-position: center;
-  color: white;
-  text-align: right;
-  height: 100vh;
+.loggedout {
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  background-size: cover !important;
-  display: flex;
-  align-items: right;
-  justify-content: center;
+  background: linear-gradient(45deg, rgb(76, 192, 197), $leasylightmain);
+
+  .loggedout-header {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    // background: rgba(10,10,10,0.1);
+    .link_connect, .link_connect:active {
+      color: white;
+      text-decoration: none;
+      position: absolute;
+      font-weight: bold;
+      opacity: 0.7;
+      right: 20px;
+    }
+    .link_connect:hover {
+      opacity: 1;
+    }
+  }
+
+  .loggedout-left {
+    color: white;
+    padding: 20px;
+    hr {
+      // border: 1px solid #3BD0D6;
+    }
+    h1 {
+      letter-spacing: 4px;
+    }
+  }
+
+  .loggedout-right {
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    button {
+      color: white;
+      padding: 20px;
+      font-size: 20px;
+      background: rgba(10,10,10,0);
+      border: 2px solid white;
+      margin: 90px 0px;
+      border-radius: 1px;
+    }
+    button:hover, button:active {
+      color: $brand-primary;
+      background: white;
+      box-shadow: none;
+    }
+  }
+
 }
-.banner h1 {
-  font-size: 50px;
+
+.soft-line {
+  background: $brand-primary;
+  height: 3px;
+}
+
+.titlebottom {
+  text-align: center;
+  letter-spacing: 4px;
+  color: $brand-primary;
+  margin: 20px 0px;
+}
+
+.bottom-feature {
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+  background: white;
+  height: 200px;
+  text-align: center;
+  .feature-desc {
+    padding: 20px 0px;
+    border-top: 1px solid rgba(200,200,200,0.3);
+    text-align: center;
+    width: 80%;
+    margin: 0px 30px;
+  }
+  position: relative;
+}
+
+.step-picto {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 18px;
+  color: white;
+  background: $leasyyellow;
   font-weight: bold;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  p {
+    line-height: 10px;
+    margin: 0px;
+  }
 }
-.banner p {
-  font-size: 25px;
-  font-weight: lighter;
-  color: rgb(255, 255, 255);
-  opacity: 0.6;
-  margin-bottom: 30px;
+
+.feature-picto {
+  height: 100px;
+  color: $brand-primary;
+  text-align: center;
+  align-items: center;
+  font-size: 70px;
+  line-height: 0px;
+  padding: 10px 0px;
 }
+
+.checklist {
+  font-size: 30px;
+}
+
+
+// Code for old connect button:
+
 .btn-log {
   background-color: transparent;
   border-style: solid;
@@ -39,6 +130,16 @@
   background-color: white;
   text-decoration: none;
 }
+
+.btn-log:hover{
+  color: white;
+  border-color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+}
+
 .elements-log {
     display: flex;
     justify-content: space-around;
@@ -48,15 +149,47 @@
     margin-top: 140px;
     margin-left: 600px;
 }
-.btn-log:hover{
+
+.banner {
+  background-position: center;
   color: white;
-  border-color: white;
-  text-decoration: none;
-  background-color: transparent;
-  border-style: solid;
-  border-width: 2px;
+  text-align: right;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: right;
+  justify-content: center;
+
+ p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
 }
-.btn-log-connect {
-  text-align: center;
-  top: 200px;
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 60px;
+
+  a {
+    color: rgba(200,200,200,0.4);
+    text-shadow: 1px;
+    text-decoration: none;
+    opacity: 0.6;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
 }
