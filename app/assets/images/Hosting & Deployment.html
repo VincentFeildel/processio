@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://karr.lewagon.com/lectures/rails/04-hosting-deployment/?print-pdf#/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <title>
+      
+
+      
+
+      
+
+
+
+      Hosting &amp; Deployment
+    </title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link type="text/css" rel="stylesheet" href="./Hosting &amp; Deployment_files/reveal-91f1cb302e917958c8d6dcb28e321b5d477d5b586ffefa7386fbd7ed7ca03510.css">
+
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/assets/reveal_print-780ac81a10d9ac788f6305db6000fb26f15afb0efe19033c61b52a859c965439.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script><link rel="stylesheet" type="text/css" href="./Hosting &amp; Deployment_files/reveal_print-780ac81a10d9ac788f6305db6000fb26f15afb0efe19033c61b52a859c965439.css">
+  </head>
+
+  <body class="print-pdf" style="transition: -webkit-transform 0.8s ease;" cz-shortcut-listen="true">
+
+    <div class="print">
+      
+      <a href="https://karr.lewagon.com/">Syllabus</a>
+      |
+      <a href="https://karr.lewagon.com/lectures/rails/04-hosting-deployment/?print-pdf">PDF (Chrome)</a>
+      
+    </div>
+
+    <div class="reveal linear center" data-transition-speed="default" data-background-transition="default">
+      <div class="slides">
+        <section data-markdown="" data-markdown-parsed="true" class="present" style="display: block;"><h1>Hosting &amp; Deployment</h1>
+<div class="slide-background"></div></section><section hidden="" class="future stack" style="display: block;"><section data-markdown="" data-markdown-parsed="true" style="display: block;"><h2>Development</h2>
+<p><img src="./Hosting &amp; Deployment_files/hosting-laptop-2d97cc1277820412adaf002956a76cc377550a9bb20cce3d0b809aadfd0805cc.png" alt=""></p>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: block;"><h2>Production</h2>
+<p><img src="./Hosting &amp; Deployment_files/hosting-production-1-91f47e6f3a26eff4dc4362c08704765a3f7cf43933195415cf1881c4219d9dd7.png" alt=""></p>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: block;"><h2>Production</h2>
+<p><img src="./Hosting &amp; Deployment_files/hosting-production-2-af1f5a007866cf3208cc5f2a032e202c382368ad2ccc0190451b6efffd2be52c.png" alt=""></p>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: block;"><h2>Production</h2>
+<p><img src="./Hosting &amp; Deployment_files/hosting-production-3-66e3db874ab55d5804b323ec2feec9d0c3c8e2560fb6b5f6a0c2e0da96f7557c.png" alt=""></p>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h2>SQLite is over. Say hello to</h2>
+<p><img src="./Hosting &amp; Deployment_files/hosting-postgresql-5c48045c10875c5264c394f9cbad263032473a8c052e122dea3f64695da0c1f6.png" alt=""></p>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h2>Install on OS X</h2>
+<p>Should already be there from the first day setup. In the terminal, you can run:</p>
+<pre><code class="bash hljs">psql <span class="hljs-operator">-d</span> postgres
+<span class="hljs-comment"># psql (9.5.3)</span>
+<span class="hljs-comment"># Type "help" for help.</span>
+
+<span class="hljs-comment"># postgres=#</span>
+<span class="hljs-comment"># Type \q to quit</span></code></pre>
+<p>Otherwise:</p>
+<pre><code class="bash hljs">brew install postgresql
+brew services start postgresql</code></pre>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h2>Install on Linux</h2>
+<p>Same, should already be installed. If not, <a href="https://github.com/lewagon/setup/blob/master/UBUNTU.md#postgresql">go here</a></p>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><p><img src="./Hosting &amp; Deployment_files/hosting-rails-pg-016cb6dae0b59aafa6c84b4626b7293f8765adca16b8685b65395a04eb0799a3.png" alt=""></p>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h2>New Rails application</h2>
+<p>Generate the rails app with the <code>--database</code> flag:</p>
+<pre><code class="bash hljs"><span class="hljs-built_in">cd</span> ~/code/<span class="hljs-variable">$YOUR_GITHUB_USERNAME</span>
+rails new <span class="hljs-variable">$YOUR_APP_NAME</span> -T --database=postgresql
+<span class="hljs-built_in">cd</span> <span class="hljs-variable">$YOUR_APP_NAME</span></code></pre>
+<p>Init and push your git repo</p>
+<pre><code class="bash hljs">git init
+git add .
+git commit -m <span class="hljs-string">"Initial commit"</span>
+hub create
+git push origin master</code></pre>
+<p>Create the database on PostgreSQL</p>
+<pre><code class="hljs sql">rails db:<span class="hljs-operator"><span class="hljs-keyword">create</span></span></code></pre>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><p>Look at your <code>Gemfile</code>:</p>
+<pre><code class="hljs nginx"><span class="hljs-comment"># Gemfile</span>
+<span class="hljs-title">gem</span> <span class="hljs-string">'pg'</span>  <span class="hljs-comment"># No more `gem "sqlite"` thanks to `--database=postgresql`</span></code></pre>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h2>Scaffold a Post model</h2>
+<p>Open <code>Gemfile</code>, and comment out the <code>jbuilder</code> gem.</p>
+<pre><code class="ruby hljs"><span class="hljs-comment"># gem 'jbuilder'</span></code></pre>
+<p>Then generate a <strong>scaffold</strong> of <code>article</code>.</p>
+<pre><code class="bash hljs">rails generate scaffold article title body:text
+rails db:migrate</code></pre>
+<pre><code class="bash hljs">git add .
+git commit -m <span class="hljs-string">"Add Article scaffold"</span></code></pre>
+<pre><code class="bash hljs">rails s
+<span class="hljs-comment"># Check that everything's working at http://localhost:3000/articles</span></code></pre>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h3><code>root</code></h3>
+<p>Your app does not have any route for <code>/</code>. Add one!</p>
+<pre class="router"><code class="ruby hljs"><span class="hljs-comment"># config/routes.rb</span>
+<span class="hljs-constant">Rails</span>.application.routes.draw <span class="hljs-keyword">do</span>
+  <span class="hljs-comment"># [...]</span>
+
+  root <span class="hljs-string">'articles#index'</span>
+<span class="hljs-keyword">end</span></code></pre>
+<!-- -->
+
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h3>Prepare for Heroku</h3>
+<p>Open your Gemfile and add this line</p>
+<pre><code class="ruby hljs"><span class="hljs-comment"># Gemfile</span>
+ruby <span class="hljs-string">'2.3.4'</span></code></pre>
+<p>Commit your changes:</p>
+<pre><code class="bash hljs">git add .
+git commit -m <span class="hljs-string">"Prepare for Heroku"</span></code></pre>
+<div class="slide-background"></div></section><div class="slide-background"></div></section><section hidden="" class="future stack" style="display: block;"><section data-markdown="" data-markdown-parsed="true" style="display: block;"><h2>Let's deploy this blog!</h2>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: block;"><h2>Production</h2>
+<p><img src="./Hosting &amp; Deployment_files/hosting-production-3-66e3db874ab55d5804b323ec2feec9d0c3c8e2560fb6b5f6a0c2e0da96f7557c.png" alt=""></p>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: block;"><p><img src="./Hosting &amp; Deployment_files/hosting-logo-heroku-186a1a66baa613b7d2a9532a25fe546ed6c998ed5a2125821b888536b22048a7.png" alt=""></p>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: block;"><h2>Sign up</h2>
+<p><a href="https://id.heroku.com/signup">https://id.heroku.com/signup</a></p>
+<h3>Install on OS X</h3>
+<pre><code class="bash hljs"><span class="hljs-comment"># OS X</span>
+brew install heroku</code></pre>
+<h3>Install on Ubuntu</h3>
+<pre><code class="bash hljs">wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh</code></pre>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h2>Help</h2>
+<pre><code class="bash hljs">heroku
+Usage: heroku COMMAND [--app APP] [command-specific-options]
+Primary <span class="hljs-built_in">help</span> topics, <span class="hljs-built_in">type</span> <span class="hljs-string">"heroku help TOPIC"</span> <span class="hljs-keyword">for</span> more details:
+  addons     <span class="hljs-comment"># manage addon resources</span>
+  apps       <span class="hljs-comment"># manage apps (create, destroy)</span>
+  auth       <span class="hljs-comment"># authentication (login, logout)</span>
+  config     <span class="hljs-comment"># manage app config vars</span>
+  domains    <span class="hljs-comment"># manage custom domains</span>
+  logs       <span class="hljs-comment"># display logs for an app</span>
+  ps         <span class="hljs-comment"># manage dynos (dynos, workers)</span>
+  releases   <span class="hljs-comment"># manage app releases</span>
+  run        <span class="hljs-comment"># run one-off commands (console, rake)</span>
+  sharing    <span class="hljs-comment"># manage collaborators on an app</span></code></pre>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h2>Login</h2>
+<pre><code class="bash hljs">heroku login</code></pre>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h2>Create an Heroku app</h2>
+<pre><code class="bash hljs">heroku create <span class="hljs-variable">$YOUR_APP_NAME</span> --region eu</code></pre>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h2>What happened?</h2>
+<pre><code class="bash hljs">git remote -v</code></pre>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><p><img src="./Hosting &amp; Deployment_files/origin_heroku_remotes-15f2436a8cad6f91dc394a9f217a1dad4b13fceb00a08643b3f3ada9df9aa835.png" alt=""></p>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h2>Let's deploy!</h2>
+<p>Push your code to Heroku</p>
+<pre><code class="bash hljs">git push heroku master</code></pre>
+<p>Run a command on Heroku</p>
+<pre><code class="bash hljs">heroku run rails db:migrate</code></pre>
+<div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" class="future" style="display: none;"><h2>Done!</h2>
+<p>Some useful commands</p>
+<pre><code class="bash hljs">heroku open         <span class="hljs-comment"># open in your browser</span></code></pre>
+<pre><code class="bash hljs">heroku logs --tail  <span class="hljs-comment"># show the app logs and keep listening</span></code></pre>
+<pre><code class="bash hljs">heroku run rails c  <span class="hljs-comment"># Run the production console</span></code></pre>
+<div class="slide-background"></div></section><div class="slide-background"></div></section><section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="display: block;"><h2>Happy Hacking!</h2>
+<div class="slide-background"></div></section>
+      </div>
+    <div class="backgrounds"></div><div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><div class="navigate-left"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="slide-number">0</div><div class="state-background"></div><div class="pause-overlay"></div></div>
+
+    <script type="text/javascript" src="./Hosting &amp; Deployment_files/reveal-dff326e41d7f832e815a6d8d1e55b248acd9177d93f01d077459d52934f245a5.js"></script>
+
+    <script>
+
+      var transition = '';  // default/cube/page/concave/zoom/linear/fade/none
+      if (transition == '') {
+        transition = 'linear';
+      }
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        width: 1280,
+        height: 800,
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: true,
+        
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: transition,
+        dependencies: [
+          { src: '/assets/highlightjs/highlight.min-311091627fee40b16ddfe0ad4bc3287ff3823e2d35d593ed18e6625d3df77d54.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          // Speaker notes
+          { src: '/assets/notes-c02803a9658776d88f40b20e69ca4dde6a9e91355c1966d61e19be5ddc89f612.js', async: true, condition: function() { return !!document.body.classList; } },
+
+        ]
+      });
+
+    </script><script type="text/javascript" src="./Hosting &amp; Deployment_files/highlight.min-311091627fee40b16ddfe0ad4bc3287ff3823e2d35d593ed18e6625d3df77d54.js"></script><script type="text/javascript" src="./Hosting &amp; Deployment_files/notes-c02803a9658776d88f40b20e69ca4dde6a9e91355c1966d61e19be5ddc89f612.js"></script>
+
+  
+
+</body></html>

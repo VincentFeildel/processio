@@ -7,16 +7,22 @@
 
   <div class="container">
       <div class="row row-eq-height">
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-5">
             <div class="loggedout-left">
-              <h1>Relieve property managers from stress and paperwork</h1>
+              <h1>Gagnez en productivité dans votre gestion locative</h1>
               <hr>
-              <p>Leasy is a very simple tool connected to your contract database, allowing you to manage all your administrative tasks</p>
+              <p>Leasy est un outil très simple connecté à portefeuille de contrats, vous permettant de gérer vos tâches administratives les plus récurrentes.</p>
+              <button data-toggle='modal' data-target='#mailfordemo'>Obtenir une démo</button>
             </div>
         </div>
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-7">
           <div class="loggedout-right">
-            <button data-toggle='modal' data-target='#mailfordemo'>Request a free demo</button>
+            <div class="laptopframing">
+              <%= image_tag 'laptopframe.png' %>
+              <div class="iframe-position">
+                <iframe id="ytplayer" type="text/html" width="576" height="324" src="http://www.youtube.com/embed/EDdyiaX6bw0?autoplay=1&origin=http://example.com&showinfo=0&autohide=1&modestbranding=1&rel=0&mute=1&start=3625&end=3833&controls=0&version=3" frameborder="0"></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -25,7 +31,7 @@
 </div>
 
 <div class="soft-line"></div>
-<h2 class="titlebottom">What leasy does</h2>
+<h2 class="titlebottom">Ce que fait Leasy</h2>
 
 <div class="loggedout-bottom">
 
@@ -35,9 +41,9 @@
         <div class="bottom-feature">
           <div class="step-picto"><p>1</p></div>
           <div class="feature-picto">
-            <i class=" fa fa-calendar-plus-o"></i>
+            <i class="fa fa-calendar-plus-o"></i>
           </div>
-          <p class="feature-desc">It automatically detects upcoming events related to your leases.</p>
+          <p class="feature-desc">Il détecte automatiquement les évènements à venir à partir de votre base de contrats de bail.</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-4">
@@ -48,9 +54,8 @@
             </p>
             <p class="checklist"><i class="fa fa-check-square-o"></i>____
             </p>
-
           </div>
-          <p class="feature-desc">It associates a list of tasks to the event related to tenant or owner.</p>
+          <p class="feature-desc">Il associe à ces évènements une liste de tâches, liées au bailleur ou au locataire.</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-4">
@@ -59,11 +64,12 @@
           <div class="feature-picto">
             <i class="fa fa-envelope"></i>
           </div>
-          <p class="feature-desc text-center">It generates email or letter related to these tasks.</p>
+          <p class="feature-desc text-center">Il génère les mails/lettres qui conviennent, directement depuis l'évènement.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 <%= render '/shared/mailfordemo' %>
