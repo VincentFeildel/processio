@@ -9,10 +9,12 @@
       <div class="row row-eq-height">
         <div class="col-xs-12 col-md-5">
             <div class="loggedout-left">
-              <h1>Gagnez en productivité dans votre gestion locative</h1>
+              <h1>La gestion locative en un éclair.</h1>
               <hr>
-              <p>Leasy est un outil très simple connecté à portefeuille de contrats, vous permettant de gérer vos tâches administratives les plus récurrentes.</p>
+              <p>Leasy est un outil très simple, pensé pour les professionels de l'immobilier.</p>
+              <p>Connecté à votre portefeuille de contrats, il vous permet de gérer en quelques clics vos tâches administratives les plus récurrentes.</p>
               <button data-toggle='modal' data-target='#mailfordemo'>Obtenir une démo</button>
+              <%= image_tag 'building.png' %>
             </div>
         </div>
         <div class="col-xs-12 col-md-7">
@@ -20,7 +22,7 @@
             <div class="laptopframing">
               <%= image_tag 'laptopframe.png' %>
               <div class="iframe-position">
-                <iframe id="ytplayer" type="text/html" width="576" height="324" src="http://www.youtube.com/embed/EDdyiaX6bw0?autoplay=1&origin=http://example.com&showinfo=0&autohide=1&modestbranding=1&rel=0&mute=1&start=3625&end=3833&controls=0&version=3" frameborder="0"></iframe>
+                <iframe id="ytplayer" type="text/html" width="576" height="324" src="http://www.youtube.com/embed/EDdyiaX6bw0?autoplay=1&origin=http://example.com&showinfo=0&autohide=1&modestbranding=1&loop=1&rel=0&mute=1&start=3625&end=3833&controls=0&version=3" frameborder="0"></iframe>
               </div>
             </div>
           </div>
@@ -39,32 +41,29 @@
     <div class="row">
       <div class="col-xs-12 col-md-4">
         <div class="bottom-feature">
-          <div class="step-picto"><p>1</p></div>
-          <div class="feature-picto">
-            <i class="fa fa-calendar-plus-o"></i>
+          <%= image_tag('calendar.png', class: 'feature-picto') %>
+          <div class="feature-desc text-center">
+            <h3>Détection automatique d'évènements</h3>
+            <p>Il détecte les évènements contractuels à venir à partir de votre portefeuille de baux.</p>
           </div>
-          <p class="feature-desc">Il détecte automatiquement les évènements à venir à partir de votre base de contrats de bail.</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-4">
         <div class="bottom-feature">
-          <div class="step-picto"><p>2</p></div>
-          <div class="feature-picto">
-            <p class="checklist"><i class="fa fa-square-o"></i>____
-            </p>
-            <p class="checklist"><i class="fa fa-check-square-o"></i>____
-            </p>
+          <%= image_tag('list.png', class: 'feature-picto') %>
+          <div class="feature-desc text-center">
+            <h3>Suivi des tâches associées aux évènements</h3>
+            <p>Il associe à ces évènements une liste de tâches, liées au bailleur ou au locataire.</p>
           </div>
-          <p class="feature-desc">Il associe à ces évènements une liste de tâches, liées au bailleur ou au locataire.</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-4">
         <div class="bottom-feature">
-          <div class="step-picto"><p>3</p></div>
-          <div class="feature-picto">
-            <i class="fa fa-envelope"></i>
+          <%= image_tag('mail.png', class: 'feature-picto') %>
+          <div class="feature-desc text-center">
+            <h3>Génération de mails/lettres en un clic</h3>
+            <p>Il génère pour les bailleurs et les locataires des messages prêts à l'envoi et personnalisables.</p>
           </div>
-          <p class="feature-desc text-center">Il génère les mails/lettres qui conviennent, directement depuis l'évènement.</p>
         </div>
       </div>
     </div>
@@ -73,3 +72,5 @@
 
 
 <%= render '/shared/mailfordemo' %>
+
+

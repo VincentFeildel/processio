@@ -1,6 +1,9 @@
 .loggedout {
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background: linear-gradient(45deg, rgb(76, 192, 197), $leasylightmain);
+  position: relative;
+  padding-bottom: 50px;
+  height: 100vh;
 
   .container {
     margin: 0px;
@@ -10,7 +13,7 @@
     text-align: center;
     position: relative;
     padding: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 120px;
     // background: rgba(10,10,10,0.1);
     .link_connect, .link_connect:active {
       color: white;
@@ -29,6 +32,35 @@
     color: white;
     padding: 0px 20px;
     padding-left: 30px;
+
+    img {
+      position: absolute;
+      height: 141px;
+      left: 795px;
+      top: -130px;
+    }
+    #skyline {
+      height: 120px;
+      left: 50px;
+      bottom: -111px;
+    }
+    #plant {
+      height: 120px;
+      left: 151px;
+      bottom: -124px;
+    }
+
+    #garden {
+      height: 40px;
+      left: 200px;
+      bottom: -130px;
+    }
+
+    #house {
+      height: 40px;
+      left: 250px;
+      bottom: -130px;
+    }
 
     hr {
       margin: 30px 0px;
@@ -82,18 +114,34 @@
 }
 
 .bottom-feature {
+  margin-top: 10px;
   box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
   background: white;
-  height: 200px;
+  height: 300px;
   text-align: center;
+  opacity: 0.8;
+  position: relative;
+
   .feature-desc {
     padding: 20px 0px;
+    padding-top: 0px;
     border-top: 1px solid rgba(200,200,200,0.3);
     text-align: center;
     width: 80%;
     margin: 0px 30px;
+
+    h3 {
+      margin-top: 30px;
+      font-size: 20px;
+      color: rgb(60,60,60);
+    }
   }
-  position: relative;
+}
+
+.bottom-feature:hover {
+  margin-top: -5px;
+  -webkit-transition: margin-top 1s, opacity 1s;
+  opacity: 1;
 }
 
 .step-picto {
@@ -112,13 +160,13 @@
 }
 
 .feature-picto {
-  height: 100px;
+  height: 120px;
   color: $brand-primary;
   text-align: center;
   align-items: center;
   font-size: 70px;
   line-height: 0px;
-  padding: 10px 0px;
+  padding: 30px 0px;
 }
 
 .checklist {
@@ -225,3 +273,4 @@
     left: 128px;
     }
 }
+
