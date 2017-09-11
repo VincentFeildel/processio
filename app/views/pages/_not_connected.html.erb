@@ -1,42 +1,37 @@
+<div class="background-container">
 <div class="loggedout">
   <div class="loggedout-header">
     <%= image_tag 'leasy_logo_white.png', width: 100 %>
     <%= link_to 'Se connecter', new_user_session_path, html_options={class: "link_connect"}%>
-
   </div>
-
   <div class="container">
-      <div class="row row-eq-height">
-        <div class="col-xs-12 col-md-5">
-            <div class="loggedout-left">
-              <h1>La gestion locative en un éclair.</h1>
-              <hr>
-              <p>Leasy est un outil très simple, pensé pour les professionels de l'immobilier.</p>
-              <p>Connecté à votre portefeuille de contrats, il vous permet de gérer en quelques clics vos tâches administratives les plus récurrentes.</p>
-              <button data-toggle='modal' data-target='#mailfordemo'>Obtenir une démo</button>
-              <%= image_tag 'building.png' %>
-            </div>
+    <div class="row row-eq-height">
+      <div class="col-xs-12 col-md-5">
+        <div class="loggedout-left">
+          <h1>La gestion locative en un éclair.</h1>
+          <hr>
+          <p>Leasy est un outil très simple, pensé pour les professionels de l'immobilier.</p>
+          <p>Connecté à votre portefeuille de contrats, il vous permet de gérer en quelques clics vos tâches administratives les plus récurrentes.</p>
+          <button data-toggle='modal' data-target='#mailfordemo'>Obtenir une démo</button>
+          <%= image_tag 'building.png' %>
         </div>
-        <div class="col-xs-12 col-md-7">
-          <div class="loggedout-right">
-            <div class="laptopframing">
-              <%= image_tag 'laptopframe.png' %>
-              <div class="iframe-position">
-                <iframe id="ytplayer" type="text/html" width="576" height="324" src="http://www.youtube.com/embed/EDdyiaX6bw0?autoplay=1&origin=http://example.com&showinfo=0&autohide=1&modestbranding=1&loop=1&rel=0&mute=1&start=3625&end=3833&controls=0&version=3" frameborder="0"></iframe>
-              </div>
+      </div>
+      <div class="col-xs-12 col-md-7">
+        <div class="loggedout-right">
+          <div class="laptopframing">
+            <%= image_tag 'laptopframe.png' %>
+            <div class="iframe-position">
+              <iframe id="ytplayer" type="text/html" width="576" height="324" src="http://www.youtube.com/embed/EDdyiaX6bw0?autoplay=1&origin=http://example.com&showinfo=0&autohide=1&modestbranding=1&loop=1&rel=0&mute=1&start=3625&end=3833&controls=0&version=3" frameborder="0"></iframe>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+  </div>
 </div>
-
 <div class="soft-line"></div>
-<h2 class="titlebottom">Ce que fait Leasy</h2>
-
+<p class="titlebottom"><strong>Pourquoi choisir Leasy ?</strong></p>
 <div class="loggedout-bottom">
-
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-4">
@@ -69,8 +64,48 @@
     </div>
   </div>
 </div>
-
-
+<div class="row-description">
+  <div class="description-block">
+    <div class="title-description">
+      <p><strong>1 - Consultez votre planning et votre avancement en quelques minutes</strong></h4>
+    </div>
+    <div class="explanation-description">
+      <p>Leasy calcule en temps réel votre avancement et  classe vos dossiers par ordre de priorité. Chaque jour, Leasy vous présente les urgences à traiter en priorité.</p>
+    </div>
+  </div>
+  <div class="screenshot-block">
+    <%= image_tag 'dashboard.png', width: 500 %>
+  </div>
+</div>
+<div class="inverted-row-description">
+  <div class="inverted-screenshot-block">
+    <%= image_tag 'show.png', width: 500 %>
+  </div>
+  <div class="description-block">
+    <div class="title-description">
+      <p><strong>2 - Accédez aux détails de chaque évenements</strong></h4>
+    </div>
+    <div class="explanation-description">
+      <p>Qu'il s'agisse d'une fin de bail, d'une révision de loyer ou d'un retard de paiement, Leasy présente la liste des tâches à effectuer ainsi que l'historique des avancements réalisé par les collaborateurs.</p>
+    </div>
+  </div>
+</div>
+<div class="row-description">
+  <div class="description-block">
+    <div class="title-description">
+      <p><strong>3 - Automatisez votre communication</strong></h4>
+    </div>
+    <div class="explanation-description">
+      <p>Leasy génère automatiquement les mails et documents nécessaires lors de la réalisation des différents évènements. </p>
+    </div>
+  </div>
+  <div class="screenshot-block">
+    <%= image_tag 'mail-screenshot.png', width: 500 %>
+  </div>
+</div>
+  <div class="city-cover" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 30%), url(<%= image_path 'city-cover.png' %>);">
+    <button data-toggle='modal' data-target='#mailfordemo' class = "btn-log">Demander une démo</button>
+  </div>
+</div>
+<%= render '/shared/footer' %>
 <%= render '/shared/mailfordemo' %>
-
-

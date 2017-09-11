@@ -108,9 +108,10 @@
 }
 .titlebottom {
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   color: $brand-primary;
-  margin: 20px 0px;
+  margin: 30px 0px;
+  font-size: 24px;
 }
 
 .bottom-feature {
@@ -121,6 +122,7 @@
   text-align: center;
   opacity: 0.8;
   position: relative;
+  transition: 0.25s;
 
   .feature-desc {
     padding: 20px 0px;
@@ -139,8 +141,7 @@
 }
 
 .bottom-feature:hover {
-  margin-top: -5px;
-  -webkit-transition: margin-top 1s, opacity 1s;
+  margin-top: -4px;
   opacity: 1;
 }
 
@@ -215,29 +216,29 @@
 }
 
 .banner {
-  background-position: center;
-  color: white;
-  text-align: right;
-  height: 100vh;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  background-size: cover !important;
-  display: flex;
-  align-items: right;
-  justify-content: center;
+    background-position: center;
+    color: white;
+    text-align: right;
+    height: 100vh;
+    /* if you have a 70px navbar => height: calc(100vh - 70px); */
+    background-size: cover !important;
+    display: flex;
+    align-items: right;
+    justify-content: center;
 
- p {
-  font-size: 25px;
-  font-weight: lighter;
-  color: rgb(255, 255, 255);
-  opacity: 0.6;
-  margin-bottom: 30px;
-  }
+   p {
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+    margin-bottom: 30px;
+    }
 
-  h1 {
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  }
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+      text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .back-btn {
@@ -264,7 +265,6 @@
       height: 424px;
       width: 832px;
       padding-bottom: 30px;
-
     }
     .iframe-position {
     // background-size: contain;
@@ -272,5 +272,89 @@
     top: 25px;
     left: 128px;
     }
+}
+.card-row {
+  padding: 30px 50px;
+}
+.row-description {
+  height: 450px;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40 80px;
+}
+.inverted-row-description {
+  height: 450px;
+  width: 100%;
+  background: #f2f4f6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40 80px;
+}
+.description-block {
+  display: flex;
+  flex-direction: column;
+  padding: 0 70px;
+  width: 500px;
+}
+.title-description {
+  padding-bottom: 20px;
+  border-bottom: 1px lightgray solid;
+}
+.explanation-description {
+  padding-top: 20px;
+}
+.background-container {
+  background: #f2f4f6;
+  width: 100%;
+}
+.screenshot-block {
+  margin-right: 70px;
+}
+.inverted-screenshot-block {
+  margin-left: 70px;
+}
+// .diagonal {
+//   background: #f2f4f6;
+//   transform: rotate(7deg);
+//   height: 150px;
+//   width: 200%;
+// }
+// MEDIA QUERIES
+
+@media (max-width: 900px)
+{
+    .screenshot-block
+    {
+        display: none;
+    }
+    .inverted-screenshot-block
+    {
+        display: none;
+    }
+    .row-description {
+      height: 350px;
+      padding: 0 15px;
+    }
+    .inverted-row-description {
+      height: 350px;
+      padding: 0 15px;
+    }
+    .card-row {
+  padding: 15px 15px;
+  }
+}
+.city-cover {
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
